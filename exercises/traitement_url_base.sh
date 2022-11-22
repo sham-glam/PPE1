@@ -40,6 +40,7 @@ fi
  
 # modifier la ligne suivante pour créer effectivement du HTML
 #echo "Je dois devenir du code HTML à partir de la question 3" > $fichier_tableau
+#use curl -I or curl -S 
 
 lineno=1
 unvalid=0
@@ -49,7 +50,7 @@ do
 	if curl --output /dev/null --silent --head --fail "$line"
 		then
 		echo $lineno ":" $line
-		#URL exists: $url"
+		#header= curl -I "$line"
 	else 
 		echo "unvalid url number $lineno"
 		
@@ -74,4 +75,6 @@ done < $fichier_urls
 #1)line 2)line_number, 3)link -> create html table 
 
 # I have the number of lines lineno
+
+
 '
