@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 #===============================================================================
-# VOUS DEVEZ MODIFIER CE BLOC DE COMMENTAIRES.
+# refer to shell.pdf  du cours , pg 41 , in PPE exercises
+#VOUS DEVEZ MODIFIER CE BLOC DE COMMENTAIRES.
 # Ici, on décrit le comportement du programme.
 # Indiquez, entre autres, comment on lance le programme et quels sont
 # les paramètres.
@@ -9,19 +10,24 @@
 # Notamment pour quelque chose de plus léger, il n'y a pas de norme en bash.
 #===============================================================================
 
-fichier_urls=$1 # le fichier d'URL en entrée, depuis le terminal 
+fichier_urls=$1 # le fichier d'URL en entrée, depuis le terminal ? 
 fichier_tableau=$2 # le fichier HTML en sortie
 
-if [ ! -f $1 ]   # 
+if [ $# -ne 2 ]
+then
+echo "ce programme demande 2 arguments "
+exit
+fi
+
+if [ ! -f $1 ]   
 then
 	echo "fichier url vide, fin du programme..."
-	exit 1
-	 
+	exit 
 else
-	if [  -f $2 ] 
+	if [ -f $2 ] 
 	then
 		echo "fichier html existe déjà, veuillez le modifier avant de relancer le script"
-		exit 1
+		exit 
 	fi
 		
 fi 
@@ -37,8 +43,17 @@ lineno=1;
 
 while read -r line;
 do
-	echo "ligne $lineno: $line";
+ 
+if [[ $LINE =∼ "^ https ?:// " ]]
+then
+echo " ressemble à une URL valide "
+OK=$( expr $OK + 1)
+fi
+	echo "ligne $lineno: $line"; #1)line 2)line_number, 3)link -> create html table 
 	lineno=$((lineno+1));
+	
 done < $fichier_urls
 
 # I have the number of lines lineno
+
+
