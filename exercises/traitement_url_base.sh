@@ -42,6 +42,7 @@ fi
 #echo "Je dois devenir du code HTML à partir de la question 3" > $fichier_tableau
 
 lineno=1
+unvalid=0
 
 while read -r line ;
 do	
@@ -51,8 +52,11 @@ do
 		#URL exists: $url"
 	else 
 		echo "unvalid url number $lineno"
+		
 	fi
 	lineno=$((lineno +1))
+	unvalid=$((unvalid +1))
+	
 done < $fichier_urls
 
 :'
