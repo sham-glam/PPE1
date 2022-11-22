@@ -13,47 +13,61 @@
 fichier_urls=$1 # le fichier d'URL en entrée, depuis le terminal ? 
 fichier_tableau=$2 # le fichier HTML en sortie
 
-if [ $# -ne 2 ]
+if [ $# -ne 1 ]
 then
 echo "ce programme demande 2 arguments "
 exit
 fi
 
-if [ ! -f $1 ]   
+
+if [[ ! -s $1 ]]   
 then
 	echo "fichier url vide, fin du programme..."
 	exit 
-else
-	if [ -f $2 ] 
+
+:'
+elif [ -f $2 ] 
 	then
 		echo "fichier html existe déjà, veuillez le modifier avant de relancer le script"
 		exit 
 	fi
-		
+'		
 fi 
  
 # !!!!!!
 # ici on doit vérifier que nos deux paramètres existent, sinon on ferme!
 # !!!!!!
-
-# modifier la ligne suivante pour créer effectivement du HTML
-echo "Je dois devenir du code HTML à partir de la question 3" > $fichier_tableau
-
-lineno=1;
-
-while read -r line;
-do
  
-if [[ $LINE =∼ "^ https ?:// " ]]
-then
-echo " ressemble à une URL valide "
-OK=$( expr $OK + 1)
-fi
-	echo "ligne $lineno: $line"; #1)line 2)line_number, 3)link -> create html table 
-	lineno=$((lineno+1));
-	
+# modifier la ligne suivante pour créer effectivement du HTML
+#echo "Je dois devenir du code HTML à partir de la question 3" > $fichier_tableau
+
+lineno=1
+
+while read -r line ;
+do	
+	if curl --output /dev/null --silent --head --fail "$line"
+		then
+		echo $lineno ":" $line
+		#URL exists: $url"
+	else 
+		echo "unvalid url number $lineno"
+	fi
+	lineno=$((lineno +1))
 done < $fichier_urls
 
+:'
+		if [[ $line =~ ^https:// ]]
+			then
+				echo " ressemble à une URL valide " 
+				#$line >> tableau1.html
+				#echo "$line $lineno: $line" 
+				lineno=$((lineno+1))
+				echo $lineno
+		
+		fi
+done < $fichier_urls
+
+#1)line 2)line_number, 3)link -> create html table 
+
 # I have the number of lines lineno
-
-
+'
