@@ -13,29 +13,31 @@
 fichier_urls=$1 # le fichier d'URL en entrée, depuis le terminal ? 
 fichier_tableau=$2 # le fichier HTML en sortie
 
+# parameters exist, else exit!
+
 if [ $# -ne 1 ]
-then
-echo "ce programme demande 2 arguments "
-exit
+	then
+	echo "ce programme demande au moins 1 argument "
+	exit
 fi
 
 
 if [[ ! -s $1 ]]   
-then
+	then
 	echo "fichier url vide, fin du programme..."
 	exit 
 
 :'
 elif [ -f $2 ] 
 	then
-		echo "fichier html existe déjà, veuillez le modifier avant de relancer le script"
+		echo "fichier HTML existe déjà, veuillez le modifier avant de relancer le script"
 		exit 
 	fi
 '		
 fi 
  
 # !!!!!!
-# ici on doit vérifier que nos deux paramètres existent, sinon on ferme!
+
 # !!!!!!
  
 # modifier la ligne suivante pour créer effectivement du HTML
