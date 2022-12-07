@@ -1,0 +1,20 @@
+Organisation de la page web :
+
+- Accueil.
+
+- Présentation.
+
+- 
+
+- Tableaux.
+
+- Script.
+
+- Analyse des résultats.
+
+- Nuages.
+
+- Blog (à créer).
+
+- Liens utiles.
+

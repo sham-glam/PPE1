@@ -1,0 +1,7 @@
+Qu'allons utiliser pour créer des nuages de mots ou autres : 
+- Tag cloud builder.
+- Tree cloud.
+- Wordle.
+- Tagxedo.
+- Trameur.
+

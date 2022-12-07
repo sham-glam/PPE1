@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# version 07_12
+
 #===============================================================================
 # VOUS DEVEZ MODIFIER CE BLOC DE COMMENTAIRES.
 # Ici, on décrit le comportement du programme.
@@ -28,7 +30,7 @@ then
 	exit
 fi
 
-mot="robot" # à modifier
+mot="fast food" # à modifier
 
 echo $fichier_urls;
 basename=$(basename -s .txt $fichier_urls)
@@ -72,6 +74,10 @@ while read -r URL; do
 		dump=""
 		charset=""
 	fi
+	
+	# number of instances of a word
+	Occurences=$(grep -E -o $ ../dumps-text/$basename-$lineno.txt | wc -l)
+	
 
 	#aspiration
 	
