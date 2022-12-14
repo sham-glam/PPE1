@@ -39,7 +39,15 @@ echo "<html><body>" > $fichier_tableau
 echo "<h2>Tableau $basename :</h2>" >> $fichier_tableau
 echo "<br/>" >> $fichier_tableau
 echo "<table>" >> $fichier_tableau
-echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th><th>occurences</th><th>Contexte</th></tr>" >> $fichier_tableau
+echo "<tr><th>ligne</th>
+	<th>code</th>
+	<th>encodage</th>
+	<th>URL</th>
+	<th>Dumps</th>
+	<th>Aspirations</th>
+	<th>occurences</th>
+	<th>Contexte</th>
+	<th>concordances</th></tr>" >> $fichier_tableau
 
 lineno=1;
 while read -r URL; do
@@ -89,13 +97,23 @@ while read -r URL; do
 
 	# aspiration
 	charset=$(curl -Ls $URL -D - -o "./aspirations/$basename-$lineno.html" | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
+
+	
 	
 	# extraction des contextes
 	contexte=$(grep -E -A2 -B2 "$mot" ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt)
-	
+	echo "$contexte"
 
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>"$charset"</td>
-	<td>"$occurences"</td><td>"$contexte"</td></tr>" >> $fichier_tableau
+	echo "<tr><td>$lineno</td>
+	<td>$code</td>
+	<td>$charset</td>
+	<td><a href=\"$URL\">$URL</a></td>
+	<td><a href=\"./dumps-text/$basename-$lineno.txt\">en-$lineno</a></td>
+	<td><a href=\"./aspirations/$basename-$lineno.html\">en-$lineno</a></td>
+	<td>$occurences</td>
+	<td><a href=\"./contextes/$basename-$lineno.txt\">en-$lineno</a></td>
+	<td><a href=\"././concordances/$basename-$lineno.html\">en-$lineno</a></td>
+	</tr>" >> $fichier_tableau
 	
 	echo -e "\t--------------------------------"
 	lineno=$((lineno+1));
