@@ -1,0 +1,2661 @@
+
+
+
+
+
+<!DOCTYPE html>
+
+
+
+
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GS868');</script>
+<!-- End Google Tag Manager -->
+
+
+        <meta charset="utf-8">
+        <meta name="google-site-verification" content="9rAlI9iJGIPAG_ugM3bnJazwMR76T8ixyIgQVObAlJU" />
+        <meta name="msvalidate.01" content="550C043D1FD1BD056F55BE019EB61508" />
+        <meta name="facebook-domain-verification" content="3s7zp0zjw21gm39jdf8nn1p5zxag16" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"50399c90bf",applicationID:"40874519"};/*! For license information please see nr-loader-rum-1220.min.js.LICENSE.txt */
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.NRBA=e():t.NRBA=e()}(self,(function(){return function(){var t,e,n={9034:function(t,e,n){"use strict";var r=n(4168);e.Z=(0,r.ky)(16)},5973:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1])},4280:function(t,e,n){"use strict";n.d(e,{H:function(){return o}});var r=document.createElement("div");r.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e";var o,i=r.getElementsByTagName("div").length;o=4===i?6:3===i?7:2===i?8:1===i?9:0},5955:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=function(t,e){var n=this;return t&&"object"==typeof t?e&&"object"==typeof e?(Object.assign(this,e),void Object.entries(t).forEach((function(t){var e=t[0],r=t[1];n[e]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}},441:function(t,e,n){"use strict";n.d(e,{C:function(){return c},L:function(){return u}});var r=n(1424),o=n(5955),i={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function c(t){if(!t)throw new Error("All info objects require an agent identifier!");if(!a[t])throw new Error("Info for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All info objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"info")}},1476:function(t,e,n){"use strict";n.d(e,{Dg:function(){return c},Mt:function(){return u}});var r=n(1424),o=n(5955),i={privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},a={};function c(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"config")}function u(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");var n=function(t){if(!t)throw new Error("All configuration objects require an agent identifier!");if(!a[t])throw new Error("Configuration for "+t+" was never set");return a[t]}(t);if(n){for(var r=e.split("."),o=0;o<r.length-1;o++)if("object"!=typeof(n=n[r[o]]))return;n=n[r[r.length-1]]}return n}},2085:function(t,e,n){"use strict";n.d(e,{Y:function(){return r}});var r=(0,n(1424).mF)().o},1220:function(t,e,n){"use strict";n.d(e,{O:function(){return w},s:function(){return x}});var r={};n.r(r),n.d(r,{agent:function(){return a},match:function(){return f},version:function(){return c}});var o=n(4280),i=n(6959),a=null,c=null;if(navigator.userAgent){var u=navigator.userAgent,s=u.match(/Version\/(\S+)\s+Safari/);s&&-1===u.indexOf("Chrome")&&-1===u.indexOf("Chromium")&&(a="Safari",c=s[1])}function f(t,e){if(!a)return!1;if(t!==a)return!1;if(!e)return!0;if(!c)return!1;for(var n=c.split("."),r=e.split("."),o=0;o<r.length;o++)if(r[o]!==n[o])return!1;return!0}var d=n(5955),l=n(1424),v=n(4168),p=window.sessionStorage,h="NRBA_SESSION_ID";var g=n(1476),y=window.XMLHttpRequest,m=y&&y.prototype,b={};function w(t){if(!t)throw new Error("All runtime objects require an agent identifier!");if(!b[t])throw new Error("Runtime for "+t+" was never set");return b[t]}function x(t,e){if(!t)throw new Error("All runtime objects require an agent identifier!");var n,a;b[t]=new d.I(e,(n=t,{customTransaction:void 0,disabled:!1,features:{},maxBytes:6===o.H?2e3:3e4,offset:(0,i.yf)(),onerror:void 0,origin:""+window.location,ptid:void 0,releaseIds:{},sessionId:!0===(0,g.Mt)(n,"privacy.cookies_enabled")?(null===(a=p.getItem(h))&&(a=(0,v.ky)(16),p.setItem(h,a)),a):"0",xhrWrappable:y&&m&&m.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:r})),(0,l.Qy)(t,b[t],"runtime")}},158:function(t,e,n){"use strict";n.d(e,{q:function(){return r}});var r=["1220","PROD"].filter((function(t){return t})).join(".")},3707:function(t,e,n){"use strict";n.d(e,{w:function(){return o}});var r={agentIdentifier:""},o=function(t){var e=this;if("object"!=typeof t)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,r),Object.entries(t).forEach((function(t){var n=t[0],o=t[1];Object.keys(r).includes(n)&&(e.sharedContext[n]=o)}))}},1776:function(t,e,n){"use strict";n.d(e,{ee:function(){return r}});var r,o=n(1424),i=n(4217),a=n(357),c="nr@context",u=(0,o.fP)();function s(){}function f(){return new s}function d(){(r.backlog.api||r.backlog.feature)&&(r.aborted=!0,r.backlog={})}u.ee?r=u.ee:(r=function t(e,n){var o={},u={},l={},v={on:g,addEventListener:g,removeEventListener:y,emit:h,get:b,listeners:m,context:p,buffer:w,abort:d,aborted:!1,isBuffering:x,debugId:n,backlog:e&&e.backlog?e.backlog:{}};return v;function p(t){return t&&t instanceof s?t:t?(0,i.X)(t,c,f):f()}function h(t,n,o,i,a){if(!1!==a&&(a=!0),!r.aborted||i){e&&a&&e.emit(t,n,o);for(var c=p(o),s=m(t),f=s.length,d=0;d<f;d++)s[d].apply(c,n);var l=O()[u[t]];return l&&l.push([v,t,n,c]),c}}function g(t,e){o[t]=m(t).concat(e)}function y(t,e){var n=o[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return o[t]||[]}function b(e){return l[e]=l[e]||t(v,e)}function w(t,e){var n=O();v.aborted||(0,a.D)(t,(function(t,r){e=e||"feature",u[r]=e,e in n||(n[e]=[])}))}function x(t){return!!O()[u[t]]}function O(){return v.backlog}}(void 0,"globalEE"),u.ee=r)},7361:function(t,e,n){"use strict";n.d(e,{E:function(){return r},p:function(){return o}});var r=n(1776).ee.get("handle");function o(t,e,n,o,i){i?(i.buffer([t],o),i.emit(t,e,n)):(r.buffer([t],o),r.emit(t,e,n))}},3350:function(t,e,n){"use strict";n.d(e,{X:function(){return i}});var r=n(7361);i.on=a;var o=i.handlers={};function i(t,e,n,i){a(i||r.E,o,t,e,n)}function a(t,e,n,o,i){i||(i="feature"),t||(t=r.E);var a=e[i]=e[i]||{};(a[n]=a[n]||[]).push([t,o])}},4408:function(t,e,n){"use strict";n.d(e,{m:function(){return i}});var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(t){}function i(t){return r?{passive:!0,capture:!!t}:!!t}},4168:function(t,e,n){"use strict";function r(){var t=null,e=0,n=window.crypto||window.msCrypto;function r(){return t?15&t[e++]:16*Math.random()|0}n&&n.getRandomValues&&(t=n.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)a+="x"===(o=i[c])?r().toString(16):"y"===o?(o=3&r()|8).toString(16):o;return a}function o(t){var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<t;i++)o.push(a().toString(16));return o.join("");function a(){return e?15&e[n++]:16*Math.random()|0}}n.d(e,{Rl:function(){return r},ky:function(){return o}})},6959:function(t,e,n){"use strict";n.d(e,{nb:function(){return u},os:function(){return s},yf:function(){return c},zO:function(){return a}});var r=n(2364),o=(new Date).getTime(),i=o;function a(){return r.G&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-i}function c(){return o}function u(t){i=t}function s(){return i}},2364:function(t,e,n){"use strict";n.d(e,{G:function(){return r}});var r=void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart},1793:function(t,e,n){"use strict";function r(t){var e,n=0;for(e=0;e<t.length;e++)n+=(e+1)*t.charCodeAt(e);return Math.abs(n)}n.d(e,{v:function(){return s},s:function(){return u}});var o=n(6972),i=n(5973),a=n(6959),c=n(2364),u=!0;function s(t){var e=function(){if(i.I&&i.I<9)return;if(c.G)return u=!1,window.performance.timing.navigationStart}()||function(){for(var t=document.cookie.split(" "),e=0;e<t.length;e++)if(0===t[e].indexOf("NREUM=")){for(var n,o,i,a,c=t[e].substring("NREUM=".length).split("&"),u=0;u<c.length;u++)0===c[u].indexOf("s=")?i=c[u].substring(2):0===c[u].indexOf("p=")?";"===(o=c[u].substring(2)).charAt(o.length-1)&&(o=o.substr(0,o.length-1)):0===c[u].indexOf("r=")&&";"===(n=c[u].substring(2)).charAt(n.length-1)&&(n=n.substr(0,n.length-1));if(n){var s=r(document.referrer);(a=s==n)||(a=r(document.location.href)==n&&s==o)}if(a&&i){if((new Date).getTime()-i>6e4)return;return i}}}();e&&((0,o.B)(t,"starttime",e),(0,a.nb)(e))}},6972:function(t,e,n){"use strict";n.d(e,{B:function(){return i},L:function(){return a}});var r=n(6959),o={};function i(t,e,n){void 0===n&&(n=(0,r.zO)()+(0,r.os)()),o[t]=o[t]||{},o[t][e]=n}function a(t,e,n,r){var i,a,c=t.sharedContext.agentIdentifier,u=null==(i=o[c])?void 0:i[n],s=null==(a=o[c])?void 0:a[r];void 0!==u&&void 0!==s&&t.store("measures",e,{value:s-u})}},7299:function(t,e,n){"use strict";n.d(e,{T:function(){return a}});var r=window,o=r;function i(){return o}var a={isFileProtocol:function(){var t=i(),e=!(!t.location||!t.location.protocol||"file:"!==t.location.protocol);e&&(a.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},847:function(t,e,n){"use strict";n.d(e,{K:function(){return a}});var r=n(1220),o=n(1476),i=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function a(t){var e={};return i.forEach((function(n){e[n]=function(t,e){return!0!==(0,r.O)(e).disabled&&!1!==(0,o.Mt)(e,t+".enabled")}(n,t)})),e}},5023:function(t,e,n){"use strict";n.d(e,{W:function(){return o}});var r=n(1776),o=function(t,e,n){void 0===n&&(n=[]),this.agentIdentifier=t,this.aggregator=e,this.ee=r.ee.get(t),this.externalFeatures=n}},4217:function(t,e,n){"use strict";n.d(e,{X:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(t){}return t[e]=o,o}},357:function(t,e,n){"use strict";n.d(e,{D:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}},603:function(t,e,n){"use strict";n.d(e,{$c:function(){return s},Ng:function(){return f},RR:function(){return u}});var r=n(1476),o=n(3707),i=n(7299);function a(t,e){return a=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},a(t,e)}var c={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"},u=function(t){var e,n;function r(e){return t.call(this,e)||this}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,a(e,n);var o=r.prototype;return o.shouldObfuscate=function(){return s(this.sharedContext.agentIdentifier).length>0},o.obfuscateString=function(t){if(!t||"string"!=typeof t)return t;for(var e=s(this.sharedContext.agentIdentifier),n=t,r=0;r<e.length;r++){var o=e[r].regex,i=e[r].replacement||"*";n=n.replace(o,i)}return n},r}(o.w);function s(t){var e=[],n=(0,r.Mt)(t,"obfuscate")||[];return e=e.concat(n),i.T.isFileProtocol()&&e.push(c),e}function f(t){for(var e=!1,n=!1,r=0;r<t.length;r++){"regex"in t[r]?"string"!=typeof t[r].regex&&t[r].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),n=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),n=!0);var o=t[r].replacement;o&&"string"!=typeof o&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),e=!0)}return!e&&!n}},1424:function(t,e,n){"use strict";n.d(e,{EZ:function(){return u},Qy:function(){return c},ce:function(){return o},fP:function(){return i},gG:function(){return s},mF:function(){return a}});var r=n(6959),o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function i(){return window.NREUM||(window.NREUM={}),void 0===window.newrelic&&(window.newrelic=window.NREUM),window.NREUM}function a(){var t=i();if(!t.o){var e=window,n=e.XMLHttpRequest;t.o={ST:setTimeout,SI:e.setImmediate,CT:clearTimeout,XHR:n,REQ:e.Request,EV:e.Event,PR:e.Promise,MO:e.MutationObserver,FETCH:e.fetch}}return t}function c(t,e,n){var o,a,c=i(),u=c.initializedAgents||{},s=u[t]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.zO)(),date:new Date}),c.initializedAgents=Object.assign({},u,((a={})[t]=Object.assign({},s,((o={})[n]=e,o)),a)),c}function u(t,e){i()[t]=e}function s(){var t,e;return t=i(),e=t.info||{},t.info=Object.assign({beacon:o.beacon,errorBeacon:o.errorBeacon},e),function(){var t=i(),e=t.init||{};t.init=Object.assign({},e)}(),a(),function(){var t=i(),e=t.loader_config||{};t.loader_config=Object.assign({},e)}(),i()}},8539:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}}},r={};function o(t){var e=r[t];if(void 0!==e)return e.exports;var i=r[t]={exports:{}};return n[t](i,i.exports,o),i.exports}o.m=n,o.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return o.d(e,{a:e}),e},o.d=function(t,e){for(var n in e)o.o(e,n)&&!o.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},o.f={},o.e=function(t){return Promise.all(Object.keys(o.f).reduce((function(e,n){return o.f[n](t,e),e}),[]))},o.u=function(t){return t+"."+o.h().slice(0,8)+"-1220.js"},o.h=function(){return"2d6a2503b7f18a5b77dd"},o.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},t={},e="NRBA:",o.l=function(n,r,i,a){if(t[n])t[n].push(r);else{var c,u;if(void 0!==i)for(var s=document.getElementsByTagName("script"),f=0;f<s.length;f++){var d=s[f];if(d.getAttribute("src")==n||d.getAttribute("data-webpack")==e+i){c=d;break}}c||(u=!0,(c=document.createElement("script")).charset="utf-8",c.timeout=120,o.nc&&c.setAttribute("nonce",o.nc),c.setAttribute("data-webpack",e+i),c.src=n),t[n]=[r];var l=function(e,r){c.onerror=c.onload=null,clearTimeout(v);var o=t[n];if(delete t[n],c.parentNode&&c.parentNode.removeChild(c),o&&o.forEach((function(t){return t(r)})),e)return e(r)},v=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),u&&document.head.appendChild(c)}},o.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},o.p="https://js-agent.newrelic.com/",function(){var t={299:0,82:0};o.f.j=function(e,n){var r=o.o(t,e)?t[e]:void 0;if(0!==r)if(r)n.push(r[2]);else{var i=new Promise((function(n,o){r=t[e]=[n,o]}));n.push(r[2]=i);var a=o.p+o.u(e),c=new Error;o.l(a,(function(n){if(o.o(t,e)&&(0!==(r=t[e])&&(t[e]=void 0),r)){var i=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;c.message="Loading chunk "+e+" failed.\n("+i+": "+a+")",c.name="ChunkLoadError",c.type=i,c.request=a,r[1](c)}}),"chunk-"+e,e)}};var e=function(e,n){var r,i,a=n[0],c=n[1],u=n[2],s=0;if(a.some((function(e){return 0!==t[e]}))){for(r in c)o.o(c,r)&&(o.m[r]=c[r]);if(u)u(o)}for(e&&e(n);s<a.length;s++)i=a[s],o.o(t,i)&&t[i]&&t[i][0](),t[i]=0},n=self.webpackChunkNRBA=self.webpackChunkNRBA||[];n.forEach(e.bind(null,0)),n.push=e.bind(null,n.push.bind(n))}();var i={};return function(){"use strict";o.r(i);var t=o(9034),e=o(4408),n=window,r=n.document;function a(t){"complete"===r.readyState&&t()}function c(t){a(t),r.addEventListener?n.addEventListener("load",t,(0,e.m)(!1)):n.attachEvent("onload",t)}function u(t){a(t),r.addEventListener?r.addEventListener("DOMContentLoaded",t,(0,e.m)(!1)):r.attachEvent("onreadystatechange",a)}var s=o(1776);function f(){f=function(){return t};var t={},e=Object.prototype,n=e.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},o=r.iterator||"@@iterator",i=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,n){return t[e]=n}}function u(t,e,n,r){var o=e&&e.prototype instanceof l?e:l,i=Object.create(o.prototype),a=new j(r||[]);return i._invoke=function(t,e,n){var r="suspendedStart";return function(o,i){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===o)throw i;return P()}for(n.method=o,n.arg=i;;){var a=n.delegate;if(a){var c=x(a,n);if(c){if(c===d)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=s(t,e,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===d)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(t,n,a),i}function s(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var d={};function l(){}function v(){}function p(){}var h={};c(h,o,(function(){return this}));var g=Object.getPrototypeOf,y=g&&g(g(_([])));y&&y!==e&&n.call(y,o)&&(h=y);var m=p.prototype=l.prototype=Object.create(h);function b(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function r(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var f=u.arg,d=f.value;return d&&"object"==typeof d&&n.call(d,"__await")?e.resolve(d.__await).then((function(t){r("next",t,a,c)}),(function(t){r("throw",t,a,c)})):e.resolve(d).then((function(t){f.value=t,a(f)}),(function(t){return r("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,n){function i(){return new e((function(e,o){r(t,n,e,o)}))}return o=o?o.then(i,i):i()}}function x(t,e){var n=t.iterator[e.method];if(void 0===n){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,x(t,e),"throw"===e.method))return d;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return d}var r=s(n,t.iterator,e.arg);if("throw"===r.type)return e.method="throw",e.arg=r.arg,e.delegate=null,d;var o=r.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,d):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,d)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function j(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function _(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,i=function e(){for(;++r<t.length;)if(n.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:P}}function P(){return{value:void 0,done:!0}}return v.prototype=p,c(m,"constructor",p),c(p,"constructor",v),v.displayName=c(p,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===v||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,p):(t.__proto__=p,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},b(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,n,r,o,i){void 0===i&&(i=Promise);var a=new w(u(e,n,r,o),i);return t.isGeneratorFunction(n)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},b(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},t.values=_,j.prototype={constructor:j,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&n.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(n,r){return a.type="throw",a.arg=t,e.next=n,r&&(e.method="next",e.arg=void 0),!!r}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return r("end");if(i.tryLoc<=this.prev){var c=n.call(i,"catchLoc"),u=n.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return r(i.catchLoc,!0);if(this.prev<i.finallyLoc)return r(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return r(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return r(i.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var o=this.tryEntries[r];if(o.tryLoc<=this.prev&&n.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,d):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),d},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),E(n),d}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var o=r.arg;E(n)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:_(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=void 0),d}},t}function d(t,e,n,r,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void n(t)}c.done?e(u):Promise.resolve(u).then(r,o)}var l=0;function v(t){var e;(e=f().mark((function e(){var n,r;return f().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!l++){e.next=2;break}return e.abrupt("return");case 2:return e.prev=2,e.next=5,o.e(552).then(o.bind(o,5552));case 5:return n=e.sent,r=n.aggregator,e.next=9,r(t);case 9:e.next=15;break;case 11:e.prev=11,e.t0=e.catch(2),console.error("Failed to successfully load all aggregators. Aborting...\n",e.t0),s.ee.abort();case 15:case"end":return e.stop()}}),e,null,[[2,11]])})),function(){var t=this,n=arguments;return new Promise((function(r,o){var i=e.apply(t,n);function a(t){d(i,r,o,a,c,"next",t)}function c(t){d(i,r,o,a,c,"throw",t)}a(void 0)}))})()}var p=o(8539),h=o.n(p),g=o(1424),y=o(1220),m=o(441),b=o(7361),w=o(357),x=o(6959);var O=o(1476),E=o(5955),j={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},_={};var P=!1;var A=o(6972),k=o(1793),L=o(5023);function S(t,e){return S=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},S(t,e)}var T,C,I,R=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,k.v)(e),(0,A.B)(e,"firstbyte",(0,x.yf)()),c((function(){return n.measureWindowLoaded()})),u((function(){return n.measureDomContentLoaded()})),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,S(e,n);var o=r.prototype;return o.measureWindowLoaded=function(){var t=(0,x.zO)();(0,A.B)(this.agentIdentifier,"onload",t+(0,x.os)()),(0,b.p)("timing",["load",t],void 0,void 0,this.ee)},o.measureDomContentLoaded=function(){(0,A.B)(this.agentIdentifier,"domContent",(0,x.zO)()+(0,x.os)())},r}(L.W);void 0!==document.hidden?(T="hidden",C="visibilitychange",I="visibilityState"):void 0!==document.msHidden?(T="msHidden",C="msvisibilitychange"):void 0!==document.webkitHidden&&(T="webkitHidden",C="webkitvisibilitychange",I="webkitVisibilityState");var M=o(2085);function N(t,e){return N=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},N(t,e)}var D=function(t){var n,r;function o(n){var r,o;if((r=t.call(this,n)||this).pageHiddenTime="hidden"===document.visibilityState?-1:1/0,r.performanceObserver,r.lcpPerformanceObserver,r.clsPerformanceObserver,r.fiRecorded=!1,!r.isEnabled())return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){r.performanceObserver=new PerformanceObserver((function(){var t;return(t=r).perfObserver.apply(t,arguments)}));try{r.performanceObserver.observe({entryTypes:["paint"]})}catch(t){}r.lcpPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).lcpObserver.apply(t,arguments)}));try{r.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(t){}r.clsPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).clsObserver.apply(t,arguments)}));try{r.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(t){}}if("addEventListener"in document){r.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((function(t){document.addEventListener(t,(function(){var t;return(t=r).captureInteraction.apply(t,arguments)}),(0,e.m)(!1))}))}return o=function(){var t;return(t=r).captureVisibilityChange.apply(t,arguments)},"addEventListener"in document&&C&&document.addEventListener(C,(function(){I&&document[I]?o(document[I]):document[T]?o("hidden"):o("visible")}),(0,e.m)(!1)),r}r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,N(n,r);var i=o.prototype;return i.isEnabled=function(){return!1!==(0,O.Mt)(this.agentIdentifier,"page_view_timing.enabled")},i.perfObserver=function(t,e){var n=this;t.getEntries().forEach((function(t){"first-paint"===t.name?(0,b.p)("timing",["fp",Math.floor(t.startTime)],void 0,void 0,n.ee):"first-contentful-paint"===t.name&&(0,b.p)("timing",["fcp",Math.floor(t.startTime)],void 0,void 0,n.ee)}))},i.lcpObserver=function(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(this.pageHiddenTime<r.startTime)return;var o=[r],i=this.addConnectionAttributes({});i&&o.push(i),(0,b.p)("lcp",o,void 0,void 0,this.ee)}},i.clsObserver=function(t){var e=this;t.getEntries().forEach((function(t){t.hadRecentInput||(0,b.p)("cls",[t],void 0,void 0,e.ee)}))},i.addConnectionAttributes=function(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t},i.captureInteraction=function(t){if(t instanceof M.Y.EV&&!this.fiRecorded){var e=Math.round(t.timeStamp),n={type:t.type};this.addConnectionAttributes(n),e<=(0,x.zO)()?n.fid=(0,x.zO)()-e:e>(0,x.os)()&&e<=Date.now()?(e-=(0,x.os)(),n.fid=(0,x.zO)()-e):e=(0,x.zO)(),this.fiRecorded=!0,(0,b.p)("timing",["fi",e,n],void 0,void 0,this.ee)}},i.captureVisibilityChange=function(t){"hidden"===t&&(this.pageHiddenTime=(0,x.zO)(),(0,b.p)("pageHide",[this.pageHiddenTime],void 0,void 0,this.ee))},o}(L.W),q=o(3350),B="React",z="Angular",G="AngularJS",H="Backbone",F="Ember",V="Vue",Z="Meteor",U="Zepto",X="Jquery";function Q(){var t=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var t=document.querySelectorAll("body > div"),e=0;e<t.length;e++)if(Object.keys(t[e]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(t){return!1}})()&&t.push(B),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(t){return!1}}()&&t.push(G),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(t){return!1}}()&&t.push(z),window.Backbone&&t.push(H),window.Ember&&t.push(F),window.Vue&&t.push(V),window.Meteor&&t.push(Z),window.Zepto&&t.push(U),window.jQuery&&t.push(X)}catch(t){}return t}var W=o(7299),K=o(603),Y=o(158);function J(t,e){return J=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},J(t,e)}var $=function(t){var e,n;function r(e){var n;return(n=t.call(this,e)||this).singleChecks(),(0,q.X)("record-supportability",(function(){var t;return(t=n).recordSupportability.apply(t,arguments)}),void 0,n.ee),(0,q.X)("record-custom",(function(){var t;return(t=n).recordCustom.apply(t,arguments)}),void 0,n.ee),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,J(e,n);var o=r.prototype;return o.recordSupportability=function(t,e){var n=["sm",t,{name:t},e];return(0,b.p)("storeMetric",n,null,void 0,this.ee),n},o.recordCustom=function(t,e){var n=["cm",t,{name:t},e];return(0,b.p)("storeEventMetrics",n,null,void 0,this.ee),n},o.singleChecks=function(){var t=this;this.recordSupportability("Generic/Version/"+Y.q+"/Detected"),u((function(){Q().forEach((function(e){t.recordSupportability("Framework/"+e+"/Detected")}))})),W.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),W.T.supportabilityMetricSent=!0);var e=(0,K.$c)(this.agentIdentifier);e.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),e.length>0&&!(0,K.Ng)(e)&&this.recordSupportability("Generic/Obfuscate/Invalid")},r}(L.W),tt=o(847);new Promise((function(e,n){if(P)e(P);else{var r=(0,g.gG)();try{(0,m.L)(t.Z,r.info),(0,O.Dg)(t.Z,r.init),function(t,e){if(!t)throw new Error("All loader-config objects require an agent identifier!");_[t]=new E.I(e,j),(0,g.Qy)(t,_[t],"loader_config")}(t.Z,r.loader_config),(0,y.s)(t.Z,{}),function(t){var e=(0,g.fP)(),n=s.ee.get(t),r=n.get("tracer"),o="api-",i="api-ixn-";function a(){}(0,w.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(t,n){e[n]=u(o,n,!0,"api")})),e.addPageAction=u(o,"addPageAction",!0),e.setCurrentRouteName=u(o,"routeName",!0),e.setPageViewName=function(e,n){if("string"==typeof e)return"/"!==e.charAt(0)&&(e="/"+e),(0,y.O)(t).customTransaction=(n||"http://custom.transaction")+e,u(o,"setPageViewName",!0,"api")()},e.setCustomAttribute=function(e,n){var r,i=(0,m.C)(t);return(0,m.L)(t,Object.assign({},i,{jsAttributes:Object.assign({},i.jsAttributes,(r={},r[e]=n,r))})),u(o,"setCustomAttribute",!0,"api")()},e.interaction=function(){return(new a).get()};var c=a.prototype={createTracer:function(t,e){var o={},i=this,a="function"==typeof e;return(0,b.p)("api-ixn-tracer",[(0,x.zO)(),t,o],i,void 0,n),function(){if(r.emit((a?"":"no-")+"fn-start",[(0,x.zO)(),i,a],o),a)try{return e.apply(this,arguments)}catch(t){throw r.emit("fn-err",[arguments,this,"string"==typeof t?new Error(t):t],o),t}finally{r.emit("fn-end",[(0,x.zO)()],o)}}}};function u(t,e,r,o){return function(){return(0,b.p)("record-supportability",["API/"+e+"/called"],void 0,void 0,n),(0,b.p)(t+e,[(0,x.zO)()].concat(h()(arguments)),r?null:this,o,n),r?void 0:this}}(0,w.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(t,e){c[e]=u(i,e)})),e.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),(0,b.p)("record-supportability",["API/noticeError/called"],void 0,void 0,n),(0,b.p)("err",[t,(0,x.zO)(),!1,e],void 0,void 0,n)}}(t.Z),e(P=!0)}catch(t){n(t)}}})).then((function(){var e,n,r,o=(0,tt.K)(t.Z);o.page_view_event&&new R(t.Z),o.page_view_timing&&new D(t.Z),o.metrics&&new $(t.Z),e="lite",n?setTimeout((function(){return v(e)}),r||1e3):c((function(){return v(e)}))}))}(),i}()}));</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"50399c90bf","applicationID":"40874519","transactionName":"YFAHMBQACkcDBUAIXVkaIxEIAhBdDQgbAEJHRksFFBUNVw4DR09EXlASF1wPAUMROVAERlZcCQ==","queueTime":0,"applicationTime":143,"agent":""}</script>
+        <meta name="robots" content="NOODP">
+        <title> Global Eats: The Rise of Indian Street Food | News</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        
+
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        
+
+        <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+
+        <link rel="dns-prefetch" href="//code.jquery.com/">
+        <link rel="dns-prefetch" href="//google-analytics.com">
+
+        
+            <link rel="stylesheet" href="/static/CACHE/css/output.435016844d2a.css" type="text/css">
+            <link rel="stylesheet" href="/static/CACHE/css/output.30d6adcd3899.css" type="text/css">
+            <link rel="stylesheet" href="/static/CACHE/css/output.8787a416bfbc.css" type="text/css">
+        
+
+        
+
+
+
+        <!--<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.dev.js"></script>-->
+        <script src="/static/js/vendor/jquery/1.10.2/jquery.min.js"></script>
+        <script>$(function(){try{var page_url='/news/article/global-eats-rise-indian-street-food/';}catch(e){var page_url='';}
+$(document).data('page_url',page_url);$(document).data('csrftoken','RuGxVG2iGwd44bcLoErvqy4jiaC4HxzeEJkEnFbHxzheeVtNMZ8dkGC0TEFOOumF');});;</script>
+
+        <script src="/static/js/jquery.jscroll.min.js"></script>
+        <script src="/static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="/static/object-fit-images/dist/ofi.min.js"></script>
+
+        <!-- Google Analytics (used by event tracking) -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-6914246-1', 'auto');
+        </script>
+        <!-- End Google Analytics -->
+
+        
+        
+
+
+<script src="/static/CACHE/js/output.8797cfef2961.js"></script>
+
+<script>$(document).ready(function(){function size_product_ads(){var nav_row=$('.nav-panel .product-row');var nav_row_ads=nav_row.find('.adproduct');var content_row=$('.member-content-panel .product-row');var content_row_ads=content_row.find('.adproduct');var content_row_ad_width=parseInt(content_row_ads.first().outerWidth());var content_row_ad_count=content_row.find('.adproduct').length;nav_row.css('width',nav_row_ads.first().outerWidth()+8);if($(window).width()<768){content_row.css('width',content_row_ad_width+8);}
+else{if(content_row_ad_count>1&&content_row_ad_width>160&&$('.member-content-panel').outerWidth()<900){content_row.css('width',(content_row_ad_width*2)+12)}
+else{content_row.css('width','auto');}}}
+$(".promoted-product-add").each(function(i,val){var cat=$(this).data("categories");var size=$(this).data("size");var amount=$(this).data("amount");var centered=$(this).data("centered");var that=this;jQuery.ajaxQueue({url:"/ads/product_ad_ajax",type:'POST',data:{categories:cat,size:size,amount:amount,centered:centered}}).done(function(data){$(that).html(data);size_product_ads();})});$(window).resize(function(){size_product_ads();});});;</script>
+
+        
+
+<script type="text/javascript">
+$(document).ready(function(){
+    
+    $(document).on('click', '[data-tracker-unaliased=1]', function(e){
+        var category = $(e.currentTarget).data('tracker-category') || '';
+        var action = $(e.currentTarget).data('tracker-action') || '';
+        var label = $(e.currentTarget).data('tracker-label') || '';
+
+        ga('send', 'event', category, action, label);
+    });
+});
+</script>
+
+        
+
+
+    <script src="/static/CACHE/js/output.44a39a852963.js"></script>
+
+    <script>$(document).ready(function(){try{$('.adunit:visible').dfp({dfpID:'14176646',enableSingleRequest:false,collapseEmptyDivs:false,});var rtime=new Date(1,1,2000,12,00,00);var timeout=false;var delta=200;$(window).resize(function(){rtime=new Date();if(timeout===false){timeout=true;setTimeout(resizeend,delta);}});function resizeend(){if(new Date()-rtime<delta){setTimeout(resizeend,delta);}else{timeout=false;$('.adunit:visible:not(".display-block")').dfp({dfpID:'14176646',enableSingleRequest:false,collapseEmptyDivs:false,});}}}catch(e){if(console&&typeof console.warn==='function'){console.warn('DFP ad not initialized. This may be because ads are being '+'blocked. Disable ad blocker. and try again.');}}});;</script>
+
+    </head>
+
+    <body class="news news news-layout left-menu-layout thin-left-nav">
+        
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GS868"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+        
+        
+        
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a rel="nofollow" href="http://browsehappy.com/">upgrade your browser</a> or <a rel="nofollow" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container-fluid">
+            
+            
+            <header class="main-header">
+                
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Message Bar -->
+<div class="message-bar">
+    <span class="message-hdr">Message:</span>
+    <span class="message-text">Message Text</span>
+</div>
+<nav class="main-nav">
+    <ul class="top-bar">
+        <li class='top-bar-li'>
+            
+                <div class="content-container">
+                    <ul class="padding0margin0 top-bar-items">
+                        <li class="user">Welcome!</li>
+                        
+                            <li class="renew"><a title="Renew Membership" href="/payments/">Renew membership</a></li>
+                        
+                        <li class="account login"><a title="Login" href="/dashboard/">Login</a></li>
+                        <li class="logout"><a title="Register" data-tracker-category="Navigation" data-tracker-action="Social Links" data-tracker-label="YouTube"  data-tracker-unaliased=1
+ href="/accounts/register/">Register</a></li>
+                        <li class="search-box">
+                                <a rel="nofollow" data-tracker-category="Navigation" data-tracker-action="Social Links" data-tracker-label="Facebook"  data-tracker-unaliased=1
+ href="https://www.facebook.com/SpecialtyFoodAssociation/" target="_blank"><img src="/static/img/logo_fb_scoialicons-black.svg" alt=""></a>
+                                <a rel="nofollow" data-tracker-category="Navigation" data-tracker-action="Social Links" data-tracker-label="Twitter"  data-tracker-unaliased=1
+ href="https://twitter.com/Specialty_Food" target="_blank"><img src="/static/img/logo_twitter_scoialicons-black.svg" alt=""></a>
+                                <a rel="nofollow" data-tracker-category="Navigation" data-tracker-action="Social Links" data-tracker-label="Instagram"  data-tracker-unaliased=1
+ href="https://www.instagram.com/specialtyfoodassociation/" target="_blank"><img src="/static/img/logo_instagram_scoialicons-black.svg" alt=""></a>
+                                <a rel="nofollow" data-tracker-category="Navigation" data-tracker-action="Social Links" data-tracker-label="LinkedIn"  data-tracker-unaliased=1
+ href="https://www.linkedin.com/company/specialty-food-association?trk=company_name" target="_blank"><img src="/static/img/logo_linkedIn_scoialicons-black.svg" alt=""></a>
+                                <a rel="nofollow" data-tracker-category="Navigation" data-tracker-action="Social Links" data-tracker-label="Pinterest"  data-tracker-unaliased=1
+ href="http://www.pinterest.com/craftcarejoy/" target="_blank"><img src="/static/img/logo_pinterest_scoialicons-black.svg" alt=""></a>
+                                <a rel="nofollow" data-tracker-category="Navigation" data-tracker-action="Register" data-tracker-label="Submit"  data-tracker-unaliased=1
+ href="https://www.youtube.com/user/NASFT" target="_blank"><img src="/static/img/logo_youtube_scoialicons-black.svg" alt=""></a>
+                            
+
+    <div class="sitesearch-form__container">
+        <span class="sitesearch-form__foodle-title">foodle&reg; search</span>
+        <form action="/site-search/" method="get" class="search-member-form site-search" autocomplete="off">
+            <input type="text" name="insearch" class="insearch site-search" placeholder="Search the site">
+            <a class="search-button" href="#"></a>
+        </form>
+    </div>
+
+                        </li>
+                    </ul>
+                </div>
+            
+        </li>
+    </ul>
+
+    <div class="wrapped-img main-logo absolute">
+        <a title="Specialty Food Association" href="/"><img src="/static/img/SFA_Primary.svg" alt="Specialty Food Association"></a>
+    </div>
+
+    <!-- desktop mega nav start-->
+    
+        <ul class="bottom-bar hidden-xs">
+            <li>
+                <div class="content-container">
+                    <ul class="nav-bar">
+                        <li data-nav="nav-about-the-sfa" class="nav-sfa drawer">
+                            <a title="About the SFA" href="/specialty-food-association/about-us/"><span>About the SFA</span></a>
+                        </li>
+                        <li data-nav="nav-membership" class="nav-sfa drawer ">
+                            <a title="Membership" href="/specialty-food-association/membership/">
+                                <span>Membership</span>
+                            </a>
+                        </li>
+
+                        <li data-nav="nav-shows-events" class="nav-sfa drawer ">
+                            <a title="Shows &amp; Events" href="/shows-events/"><span>Shows &amp; Events</span></a>
+                        </li>
+
+                        <li data-nav="nav-awards" class="nav-sfa drawer ">
+                            <a title="Awards" href="/awards/"><span>Awards</span></a>
+                        </li>
+
+                        <li data-nav="nav-news" class="nav-sfa drawer ">
+                            <a data-tracker-category="Navigation" data-tracker-action="Go To Feed" data-tracker-label="Feed Web Reader"  data-tracker-unaliased=1
+ title="News" href="https://feed.specialtyfood.com" target="_blank" rel="noopener"><span>News</span></a>
+                        </li>
+
+                        <li data-nav="nav-products" class="nav-sfa no-drawer">
+                            
+                                <a title="Products" href="https://shopspecialtyfood.balluun.com/en-us" target=&quot;_blank&quot;><span>Products</span></a>
+                            
+                        </li>
+
+                        <li class="nav-sfa no-drawer">
+                            <a title="Learning Center" target="_blank" href="https://community.specialtyfood.com/store/"><span>Learning Center</span></a>
+                        </li>
+
+                        <li class="nav-sfa no-drawer">
+                            <a title="Community Hub" target="_blank" href="https://community.specialtyfood.com"><span>Community Hub</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    
+    <!-- desktop mega nav end-->
+
+    <!-- mobile nav (not mega)-->
+    
+        <ul class="bottom-bar visible-xs">
+
+            <li>
+
+                <div class="content-container">
+
+                    <ul>
+                        <li class="toggle-menu visible-xs"><span class="glyphicon glyphicon-align-justify"></span></li>
+                        <li class="search visible-xs"><span class="glyphicon glyphicon-search"></span></li>
+                    </ul>
+
+                    <ul class="nav-bar">
+                        
+
+
+
+
+
+
+<li class="child">
+    <a title="About the SFA" href="#" onclick="return false;">About the SFA</a> <img class="black-arrow" src="/static/img/black_arrow.png"/>
+</li>
+<ul class="mobile-sub-nav">
+    <li class="child">
+        <a title="About the SFA" href="/specialty-food-association/about-us/">About the SFA</a>
+    </li>
+    <li class="child">
+        <a title="Our Vision &amp; Mission" href="/specialty-food-association/about-us/our-vision/">Our Vision &amp; Mission</a>
+    </li>
+    <li class="child">
+        <a title="Advertising and Sponsorships" href="/specialty-food-association/advertising-and-sponsorships/">Advertising and Sponsorships</a>
+    </li>
+</ul>
+
+<li class="child">
+    <a title="Membership" href="#" onclick="return false;">
+        Membership
+    </a> <img class="black-arrow" src="/static/img/black_arrow.png"/>
+</li>
+<ul class="mobile-sub-nav">
+    <li class="child">
+        <a title="Become a Member" href="/specialty-food-association/membership/become-member/">Become a Member</a>
+    </li>
+    <li class="child">
+        <a title="Existing Member" href="/existing-member/">Existing Member</a>
+    </li>
+    <li class="child">
+        <a title="Community" href="/specialty-food-association/community/">Community</a>
+    </li>
+</ul>
+
+
+
+  
+
+  
+    
+        <li class="child sibling">
+            
+                <a title="Shows &amp; Events" href="#" onclick="return false;">Shows &amp; Events</a> <img class="black-arrow" src="/static/img/black_arrow.png"/>
+            
+        </li>
+
+        
+            <ul class="mobile-sub-nav">
+                
+                
+                <li class="child sibling">
+                    <a title="Shows &amp; Events" href="/shows-events/">Shows &amp; Events</a>
+                </li>
+                
+                
+                    <li class="child">
+                    <a title="Winter Fancy Food Show"
+                        
+
+
+
+
+
+                            href="/shows-events/winter-fancy-food-show/">
+                        Winter Fancy Food Show
+                    </a>
+                </li>
+                
+                    <li class="child">
+                    <a title="Summer Fancy Food Show"
+                        
+
+
+
+
+
+                            href="/shows-events/summer-fancy-food-show/">
+                        Summer Fancy Food Show
+                    </a>
+                </li>
+                
+                    <li class="child">
+                    <a title="SFA Calendar"
+                        
+
+
+
+
+
+                            href="https://community.specialtyfood.com/calendar/" target="_blank" rel="noopener noreferrer">
+                        SFA Calendar
+                    </a>
+                </li>
+                
+            </ul>
+        
+    
+  
+
+  
+    
+        <li class="child sibling">
+            
+                <a title="Awards" href="#" onclick="return false;">Awards</a> <img class="black-arrow" src="/static/img/black_arrow.png"/>
+            
+        </li>
+
+        
+            <ul class="mobile-sub-nav">
+                
+                
+                <li class="child sibling">
+                    <a title="Awards" href="/awards/">Awards</a>
+                </li>
+                
+                
+                    <li class="child">
+                    <a title="sofi™ Awards"
+                        
+
+
+
+
+
+                            href="/awards/sofi/">
+                        sofi™ Awards
+                    </a>
+                </li>
+                
+                    <li class="child">
+                    <a title="Leadership Awards"
+                        
+
+
+
+
+
+                            href="/awards/leadership/">
+                        Leadership Awards
+                    </a>
+                </li>
+                
+                    <li class="child">
+                    <a title="Lifetime Achievement Awards"
+                        
+
+
+
+
+
+                            href="/awards/lifetime-achievement/">
+                        Lifetime Achievement Awards
+                    </a>
+                </li>
+                
+                    <li class="child">
+                    <a title="Hall of Fame"
+                        
+
+
+
+
+
+                            href="/awards/hall-fame/">
+                        Hall of Fame
+                    </a>
+                </li>
+                
+            </ul>
+        
+    
+  
+
+  
+    
+        <li class="child sibling">
+            
+                <a title="News" href="#" onclick="return false;">News</a> <img class="black-arrow" src="/static/img/black_arrow.png"/>
+            
+        </li>
+
+        
+            <ul class="mobile-sub-nav">
+                
+                
+                
+                    <li class="child">
+                    <a title="Top News"
+                        target="_blank" 
+data-tracker-category="Navigation"
+data-tracker-action="Go To Feed"
+data-tracker-label="Feed Web Reader"
+data-tracker-unaliased="1"
+
+                            href="https://feed.specialtyfood.com" target="_blank" rel="noopener noreferrer">
+                        Top News
+                    </a>
+                </li>
+                
+                    <li class="child">
+                    <a title="Magazine"
+                        
+
+
+
+
+
+                            href="/digital-edition/">
+                        Magazine
+                    </a>
+                </li>
+                
+                    <li class="child">
+                    <a title="Member Press Releases"
+                        
+
+
+
+
+
+                            href="/news/section/member-press-releases/">
+                        Member Press Releases
+                    </a>
+                </li>
+                
+                    <li class="child">
+                    <a title="Subscription Center"
+                        target="_blank" 
+
+
+
+
+
+                            href="https://go.specialtyfood.com/subscription-center/?epc_hash=a-TCDHxzFDUvNA1R7p9NgMzmmfi061fj7qaP2GtrdMY" target="_blank" rel="noopener noreferrer">
+                        Subscription Center
+                    </a>
+                </li>
+                
+                    <li class="child">
+                    <a title="Daily Newsletter Sign Up"
+                        
+
+
+
+
+
+                            href="/specialty-food-association/membership/member-services-benefits/sfa-news-daily-sign/">
+                        Daily Newsletter Sign Up
+                    </a>
+                </li>
+                
+            </ul>
+        
+    
+  
+
+  
+    
+        <li class="child sibling">
+            
+                <a title="My Fancy Food Show" href="https://sff2021.mapyourshow.com/8_0/#/" target="_blank" rel="noopener noreferrer">My Fancy Food Show</a>
+            
+        </li>
+
+        
+    
+  
+
+
+<li class="child">
+    
+        <a title="Products" href="https://shopspecialtyfood.balluun.com/en-us" target=&quot;_blank&quot;>Products</a>
+    
+</li>
+
+<li class="child">
+    <a title="Learning Center" target="_blank" href="https://community.specialtyfood.com/store/">Learning Center</a>
+</li>
+
+<li class="child">
+    <a title="Community Hub" target="_blank" href="https://community.specialtyfood.com">Community Hub</a>
+</li>
+
+                    </ul>
+
+                    <ul class="nav-bar-search">
+                        <li class="nav-sfa drawer" data-nav="nav-sfa">
+                            
+
+    <div class="sitesearch-form__container">
+        <span class="sitesearch-form__foodle-title">foodle&reg; search</span>
+        <form action="/site-search/" method="get" class="search-member-form site-search" autocomplete="off">
+            <input type="text" name="insearch" class="insearch site-search" placeholder="Search the site">
+            <a class="search-button" href="#"></a>
+        </form>
+    </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul><!-- end mobile nav-->
+    
+
+</nav>
+<div id="meganav-drawer">
+    
+        <div id="nav-about-the-sfa" class="drawer-content meganav-drawer-b">
+            <div class="content-container">
+                    <div class="section">
+                        <p class="header-link"><a title="Our Vision &amp; Mission" href="/specialty-food-association/about-us/our-vision/">Our Vision &amp; Mission</a></p>
+                        <ul>
+                            
+
+
+
+    <li class="child">
+        <a class="link" title="Culture" href="/specialty-food-association/about-us/culture/">Culture</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Association Representatives" href="/specialty-food-association/about-us/association-reps/">Association Representatives</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Volunteer Opportunities" href="/specialty-food-association/about-us/volunteer-opportunities/">Volunteer Opportunities</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="New Brand" href="/specialty-food-association/about-us/new-brand/">New Brand</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Contact Us" href="/specialty-food-association/about-us/contact-us/">Contact Us</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Reach Out With An Idea" href="/specialty-food-association/about-us/reach-out-idea/">Reach Out With An Idea</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Sustainability Efforts" href="/specialty-food-association/about-us/sustainability/">Sustainability Efforts</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Virtual Press Office" href="/specialty-food-association/about-us/press-office/">Virtual Press Office</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="SFA Careers" href="/specialty-food-association/about-us/sfa-careers/">SFA Careers</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="By-Laws" href="/specialty-food-association/about-us/by-laws/">By-Laws</a>
+        
+    </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <p class="header-link"><a title="Advertising and Sponsorships" href="/specialty-food-association/advertising-and-sponsorships/">Advertising and Sponsorships</a></p>
+                        <ul>
+                            
+
+
+
+    <li class="child">
+        <a class="link" title="SFA Media Kit" href="/specialty-food-association/advertising-and-sponsorships/sfa-media-kit/">SFA Media Kit</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="specialtyfood.com" href="/specialty-food-association/advertising-and-sponsorships/specialtyfoodcom/">specialtyfood.com</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="SFA News Daily" href="/specialty-food-association/advertising-and-sponsorships/specialty-food-news/">SFA News Daily</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Email Opportunities" href="/specialty-food-association/advertising-and-sponsorships/email-opportunities/">Email Opportunities</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="SFA Feed" href="/specialty-food-association/advertising-and-sponsorships/sfa-feed/">SFA Feed</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Specialty Food Magazine" href="/specialty-food-association/advertising-and-sponsorships/specialty-food-magazine/">Specialty Food Magazine</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Fancy Food Shows" href="/specialty-food-association/advertising-and-sponsorships/fancy-food-shows/">Fancy Food Shows</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Spotlight Showcases" href="/specialty-food-association/advertising-and-sponsorships/spotlight-showcases-print/">Spotlight Showcases</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Order Forms with Rates" href="/specialty-food-association/advertising-and-sponsorships/order-forms/">Order Forms with Rates</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Specifications" href="/specialty-food-association/advertising-and-sponsorships/specifications/">Specifications</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Contacts" href="/specialty-food-association/advertising-and-sponsorships/contacts/">Contacts</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Terms and Conditions" href="/specialty-food-association/advertising-and-sponsorships/terms-and-conditions/">Terms and Conditions</a>
+        
+    </li>
+
+
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div id="nav-membership" class="drawer-content meganav-drawer-b">
+            <div class="content-container">
+                <div class="section">
+                    <p class="header-link"><a title="Become a Member" href="/specialty-food-association/membership/become-member/">Become a Member</a></p>
+                    <ul>
+                        
+
+
+
+    <li class="child">
+        <a class="link" title="Apply" href="/specialty-food-association/membership/membership-apply/">Apply</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Member Benefits" href="/specialty-food-association/membership/member-services-benefits/">Member Benefits</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Application FAQs" href="/specialty-food-association/membership/faqs/">Application FAQs</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Product Qualification FAQs" href="/specialty-food-association/membership/product-qualification-faqs/">Product Qualification FAQs</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Product Qualification Checklist" href="/specialty-food-association/membership/product-qualification-checklist/">Product Qualification Checklist</a>
+        
+    </li>
+
+
+                    </ul>
+                </div>
+                <div class="section">
+                    <p class="header-link">
+                        <a title="Existing Member" href="/existing-member/">
+                            Existing Member
+                        </a>
+                    </p>
+                    <ul>
+                        
+
+
+
+    <li class="child">
+        <a class="link" title="Account Dashboard" href="/dashboard/">Account Dashboard</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Renew membership" href="/payments/">Renew membership</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Pay Dues &amp; Invoices" href="/dashboard/pay-invoices/">Pay Dues &amp; Invoices</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Submit Press Releases" href="/dashboard/submit-press-releases/">Submit Press Releases</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Manage Exhibits" href="/dashboard/manage-food-show-exhibit/">Manage Exhibits</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Edit Products" href="https://shopspecialtyfood.balluun.com/en-us" target="_blank" rel="noopener noreferrer">Edit Products</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Contact Representative" href="/specialty-food-association/about-us/contact-us/">Contact Representative</a>
+        
+    </li>
+
+    <li class="child">
+        <a class="link" title="Member Job Board" href="/specialty-food-association/community/job-board/">Member Job Board</a>
+        
+    </li>
+
+
+                    </ul>
+                </div>
+                <div class="section">
+                    <p class="header-link">
+                        <a title="Community" href="/specialty-food-association/community/">
+                            Community
+                        </a>
+                    </p>
+                    <ul>
+                        <li class="child">
+                            <a title="Community Hub" target="_blank" href="https://community.specialtyfood.com">Community Hub</a>
+                        </li> 
+                        
+
+      
+        <li class="child">
+            <a class="link" title="Member Directory" href="/specialty-food-association/community/member-directory/">Member Directory</a>
+        </li>
+    
+
+      
+        <li class="child">
+            <a class="link" title="Calendar" href="https://community.specialtyfood.com/calendar/" target="_blank" rel="noopener noreferrer">Calendar</a>
+        </li>
+    
+
+    
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+
+    
+        <div id="nav-shows-events" class="drawer-content meganav-drawer-a">
+            <div class="content-container">
+                <div class="section-right">
+                    <div class="tabs">
+                        <ul>
+                            
+
+<li class="active" data-tab="tab1">
+    <a title="Winter Fancy Food Show" href="/shows-events/winter-fancy-food-show/">
+        <span class="random-thin-saffron-underline-link">Winter Fancy Food Show</span>
+    </a>
+</li>
+
+<li class="" data-tab="tab2">
+    <a title="Summer Fancy Food Show" href="/shows-events/summer-fancy-food-show/">
+        <span class="random-thin-saffron-underline-link">Summer Fancy Food Show</span>
+    </a>
+</li>
+
+<li class="" data-tab="tab3">
+    <a title="SFA Calendar" href="https://community.specialtyfood.com/calendar/" target="_blank" rel="noopener noreferrer">
+        <span class="random-thin-saffron-underline-link">SFA Calendar</span>
+    </a>
+</li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        
+
+<div class="tab tab1 active">
+    <div class="tab-left">
+        
+
+<div class="section">
+    <p class="header-link">
+        <a title="Registration" href="/shows-events/winter-fancy-food-show/badge-registration/">Registration</a>
+    </p>
+    
+    <ul>
+        
+        <li>
+            <a title="Attendee" href="https://registration.experientevent.com/ShowFFS231/Flow/ATT?#!/registrant//Instruction/" target="_blank" rel="noopener noreferrer">
+                Attendee
+            </a>
+        </li>
+        
+        <li>
+            <a title="Press" href="https://registration.experientevent.com/ShowFFS231/Flow/PRESS#!/registrant//Instruction/" target="_blank" rel="noopener noreferrer">
+                Press
+            </a>
+        </li>
+        
+        <li>
+            <a title="Broker/Retailer/Distributor Member" href="https://registration.experientevent.com/ShowFFS231/Flow/BRKRTL#!/registrant//Instruction/" target="_blank" rel="noopener noreferrer">
+                Broker/Retailer/Distributor Member
+            </a>
+        </li>
+        
+        <li>
+            <a title="Exhibitor" href="https://wff2023.exh.mapyourshow.com/" target="_blank" rel="noopener noreferrer">
+                Exhibitor
+            </a>
+        </li>
+        
+        <li>
+            <a title="Official Show Policies" href="/shows-events/winter-fancy-food-show/badge-registration/official-show-policies/">
+                Official Show Policies
+            </a>
+        </li>
+        
+    </ul>
+    
+</div>
+
+<div class="section">
+    <p class="header-link">
+        <a title="Attending" href="/shows-events/winter-fancy-food-show/attend/">Attending</a>
+    </p>
+    
+    <ul>
+        
+        <li>
+            <a title="Plan Your Show" href="/shows-events/winter-fancy-food-show/attend/plan-your-show/">
+                Plan Your Show
+            </a>
+        </li>
+        
+        <li>
+            <a title="Fancy Food Show Mobile App" href="/shows-events/winter-fancy-food-show/attend/showapp/">
+                Fancy Food Show Mobile App
+            </a>
+        </li>
+        
+        <li>
+            <a title="Attendee Tips &amp; FAQs" href="/shows-events/winter-fancy-food-show/attend/faqs-winter/">
+                Attendee Tips &amp; FAQs
+            </a>
+        </li>
+        
+        <li>
+            <a title="Attendee Marketing Toolkit" href="/shows-events/winter-fancy-food-show/attend/attendee-marketing-toolkit/">
+                Attendee Marketing Toolkit
+            </a>
+        </li>
+        
+        <li>
+            <a title="Key Buyer Benefits" href="/shows-events/winter-fancy-food-show/attend/key-buyers/">
+                Key Buyer Benefits
+            </a>
+        </li>
+        
+    </ul>
+    
+</div>
+
+<div class="section">
+    <p class="header-link">
+        <a title="Exhibiting" href="/shows-events/winter-fancy-food-show/exhibiting/">Exhibiting</a>
+    </p>
+    
+    <ul>
+        
+        <li>
+            <a title="Reasons To Exhibit" href="/shows-events/winter-fancy-food-show/exhibiting/reasons-exhibit/">
+                Reasons To Exhibit
+            </a>
+        </li>
+        
+        <li>
+            <a title="Booking your Exhibit" href="/shows-events/winter-fancy-food-show/exhibiting/booking-exhibit/">
+                Booking your Exhibit
+            </a>
+        </li>
+        
+        <li>
+            <a title="Manage Your 2023 Exhibit" href="https://wff2023.exh.mapyourshow.com/" target="_blank" rel="noopener noreferrer">
+                Manage Your 2023 Exhibit
+            </a>
+        </li>
+        
+        <li>
+            <a title="Advertise at the Fancy Food Show" href="https://www.specialtyfood.com/specialty-food-association/advertising-and-sponsorships/fancy-food-shows/" target="_blank" rel="noopener noreferrer">
+                Advertise at the Fancy Food Show
+            </a>
+        </li>
+        
+        <li>
+            <a title="Booth Contest" href="/shows-events/winter-fancy-food-show/exhibiting/booth-contest/">
+                Booth Contest
+            </a>
+        </li>
+        
+        <li>
+            <a title="Exhibitor Tips &amp; FAQs" href="/shows-events/winter-fancy-food-show/exhibiting/exhibitor-tips-faqs/">
+                Exhibitor Tips &amp; FAQs
+            </a>
+        </li>
+        
+        <li>
+            <a title="Exhibitor Marketing Toolkit" href="/shows-events/winter-fancy-food-show/exhibiting/exhibitor-marketing/">
+                Exhibitor Marketing Toolkit
+            </a>
+        </li>
+        
+        <li>
+            <a title="Exhibitor Services Hub" href="/shows-events/winter-fancy-food-show/exhibiting/exhibitor-services-hub/">
+                Exhibitor Services Hub
+            </a>
+        </li>
+        
+    </ul>
+    
+</div>
+
+<div class="section">
+    <p class="header-link">
+        <a title="Education &amp; Show Features" href="/shows-events/winter-fancy-food-show/education/">Education &amp; Show Features</a>
+    </p>
+    
+    <ul>
+        
+        <li>
+            <a title="Education Program" href="/shows-events/winter-fancy-food-show/education/education-program-winter/">
+                Education Program
+            </a>
+        </li>
+        
+        <li>
+            <a title="Fancy Food Show Lip Smacking Foodie Tour" href="/shows-events/winter-fancy-food-show/education/vegas-food-tours/">
+                Fancy Food Show Lip Smacking Foodie Tour
+            </a>
+        </li>
+        
+        <li>
+            <a title="Schedule of Events" href="/shows-events/winter-fancy-food-show/education/schedule-events/">
+                Schedule of Events
+            </a>
+        </li>
+        
+        <li>
+            <a title="Our Show Floor" href="/shows-events/winter-fancy-food-show/education/our-show-floor/">
+                Our Show Floor
+            </a>
+        </li>
+        
+        <li>
+            <a title="Diversity, Equity &amp; Inclusion (DEI)" href="/shows-events/winter-fancy-food-show/education/dei/">
+                Diversity, Equity &amp; Inclusion (DEI)
+            </a>
+        </li>
+        
+    </ul>
+    
+</div>
+
+<div class="section">
+    <p class="header-link">
+        <a title="Directory &amp; Floor Plan" href="https://wff2023.mapyourshow.com/8_0/floorplan/index.cfm?hallID=&selectedBooth=" target="_blank" rel="noopener noreferrer">Directory &amp; Floor Plan</a>
+    </p>
+    
+</div>
+
+<div class="section">
+    <p class="header-link">
+        <a title="Travel Center" href="/shows-events/winter-fancy-food-show/travel-winter/">Travel Center</a>
+    </p>
+    
+    <ul>
+        
+        <li>
+            <a title="Hotel Reservations" href="/shows-events/winter-fancy-food-show/travel-winter/hotel-winter/">
+                Hotel Reservations
+            </a>
+        </li>
+        
+        <li>
+            <a title="Getting Around Las Vegas" href="/shows-events/winter-fancy-food-show/travel-winter/getting-around-las-vegas/">
+                Getting Around Las Vegas
+            </a>
+        </li>
+        
+    </ul>
+    
+</div>
+
+<div class="section">
+    <p class="header-link">
+        <a title="Press Resources" href="/shows-events/winter-fancy-food-show/press-resources/">Press Resources</a>
+    </p>
+    
+    <ul>
+        
+        <li>
+            <a title="Show Overview" href="/shows-events/winter-fancy-food-show/press-resources/show-overview/">
+                Show Overview
+            </a>
+        </li>
+        
+        <li>
+            <a title="Press Registration Requirements" href="/shows-events/winter-fancy-food-show/press-resources/press-requirements/">
+                Press Registration Requirements
+            </a>
+        </li>
+        
+        <li>
+            <a title="Press FAQs" href="/shows-events/winter-fancy-food-show/press-resources/press-faqs/">
+                Press FAQs
+            </a>
+        </li>
+        
+    </ul>
+    
+</div>
+
+
+    </div>
+</div>
+
+<div class="tab tab2">
+    <div class="tab-left">
+        
+
+<div class="section">
+    <p class="header-link">
+        <a title="Exhibiting" href="/shows-events/summer-fancy-food-show/exhibiting/">Exhibiting</a>
+    </p>
+    
+    <ul>
+        
+        <li>
+            <a title="Booking your Exhibit" href="/shows-events/summer-fancy-food-show/exhibiting/booking-your-exhibit-summer/">
+                Booking your Exhibit
+            </a>
+        </li>
+        
+        <li>
+            <a title="Exhibitor Services Hub" href="/shows-events/summer-fancy-food-show/exhibiting/exhibitor-services-hub/">
+                Exhibitor Services Hub
+            </a>
+        </li>
+        
+    </ul>
+    
+</div>
+
+<div class="section">
+    <p class="header-link">
+        <a title="Directory &amp; Floor Plan" href="https://sff2023.mapyourshow.com/8_0/exhview/index.cfm" target="_blank" rel="noopener noreferrer">Directory &amp; Floor Plan</a>
+    </p>
+    
+</div>
+
+<div class="section">
+    <p class="header-link">
+        <a title="Travel Center" href="/shows-events/summer-fancy-food-show/travel-summer/">Travel Center</a>
+    </p>
+    
+    <ul>
+        
+        <li>
+            <a title="New York City Guide" href="/shows-events/summer-fancy-food-show/travel-summer/city-services/">
+                New York City Guide
+            </a>
+        </li>
+        
+        <li>
+            <a title="Javits Center Map &amp; Location" href="/shows-events/summer-fancy-food-show/travel-summer/javits-summer/">
+                Javits Center Map &amp; Location
+            </a>
+        </li>
+        
+    </ul>
+    
+</div>
+
+<div class="section">
+    <p class="header-link">
+        <a title="Press Resources" href="/shows-events/summer-fancy-food-show/press-resources/">Press Resources</a>
+    </p>
+    
+    <ul>
+        
+        <li>
+            <a title="Association/Show Press Releases" href="https://www.specialtyfood.com/news/section/association-press-releases/" target="_blank" rel="noopener noreferrer">
+                Association/Show Press Releases
+            </a>
+        </li>
+        
+        <li>
+            <a title="Member/Exhibitor Press Releases" href="https://www.specialtyfood.com/news/section/member-press-releases/" target="_blank" rel="noopener noreferrer">
+                Member/Exhibitor Press Releases
+            </a>
+        </li>
+        
+    </ul>
+    
+</div>
+
+
+    </div>
+</div>
+
+<div class="tab tab3">
+    <div class="tab-left">
+        
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    
+        <div id="nav-awards" class="drawer-content meganav-drawer-b">
+
+            <div class="content-container">
+                
+
+<div class="section">
+
+    <p class="header-link"><a title="sofi™ Awards" href="/awards/sofi/">sofi™ Awards</a></p>
+
+    <ul>
+        
+            <li class="child descendant">
+                <a title="2022 sofi™ Winners" target="blank" href="https://shopspecialtyfood.balluun.com/en-us/custom/sofi-winners-22/">2022 sofi™ Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Past sofi™ Winners" href="/awards/sofi/winners/">Past sofi™ Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Official Rules" target="blank" href="https://www.specialtyfood.com/media/filer_public/28/89/28896643-53ea-4633-891e-4d6e0a3b1b20/official_rules_2022_sofi_awards_final_1_12_22.pdf">Official Rules</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Timeline" target="blank" href="https://specialtyfood.secure-platform.com/a/organizations/main/home#timeline">Timeline</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Categories" target="blank" href="https://specialtyfood.secure-platform.com/a/page/sofi-awards/categories">Categories</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Judging" target="blank" href="https://specialtyfood.secure-platform.com/a/page/sofi-awards/judging">Judging</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Benefits of Winning" target="blank" href="https://specialtyfood.secure-platform.com/a/page/benefits">Benefits of Winning</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Frequently Asked Questions" target="blank" href="https://specialtyfood.secure-platform.com/a/page/how-to-enter/faqs">Frequently Asked Questions</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="History of the Specialty Food Association’s sofi™ Awards" href="/awards/sofi/history-sofi/">History of the Specialty Food Association’s sofi™ Awards</a>
+            </li>
+        
+    </ul>
+
+</div>
+
+<div class="section">
+
+    <p class="header-link"><a title="Leadership Awards" href="/awards/leadership/">Leadership Awards</a></p>
+
+    <ul>
+        
+            <li class="child descendant">
+                <a title="Leadership Awards Entry Information" href="/awards/leadership/leadership-entry-information/">Leadership Awards Entry Information</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2023 Leadership Award Winners" href="/awards/leadership/2023-leadership-award-winners/">2023 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2022 Leadership Award Winners" href="/awards/leadership/2022-leadership-award-winners/">2022 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2021 Leadership Award Winners" href="/awards/leadership/2021-leadership-award-winners/">2021 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2020 Leadership Award Winners" href="/awards/leadership/2020-leadership-award-winners/">2020 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2019 Leadership Award Winners" href="/awards/leadership/2019-winners/">2019 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2018 Leadership Award Winners" href="/awards/leadership/2017-winners/">2018 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2017 Leadership Award Winners" href="/awards/leadership/2017winners/">2017 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2016 Leadership Award Winners" href="/awards/leadership/2016-winners/">2016 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2015 Leadership Award Winners" href="/awards/leadership/2015-winners/">2015 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2014 Leadership Award Winners" href="/awards/leadership/2014-winners/">2014 Leadership Award Winners</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2013 Leadership Award Winners" href="/awards/leadership/2013-winners/">2013 Leadership Award Winners</a>
+            </li>
+        
+    </ul>
+
+</div>
+
+<div class="section">
+
+    <p class="header-link"><a title="Lifetime Achievement Awards" href="/awards/lifetime-achievement/">Lifetime Achievement Awards</a></p>
+
+    <ul>
+        
+            <li class="child descendant">
+                <a title="Award Recipients 2022" href="/awards/lifetime-achievement/award-recipients-2022/">Award Recipients 2022</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Award Recipients 2021" href="/awards/lifetime-achievement/award-recipients-2021/">Award Recipients 2021</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Award Recipients 2020" href="/awards/lifetime-achievement/award-recipients-2020/">Award Recipients 2020</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Award Recipients 2019" href="/awards/lifetime-achievement/award-recipients-2019/">Award Recipients 2019</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Award Recipients 2018" href="/awards/lifetime-achievement/award-recipients-2018/">Award Recipients 2018</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Award Recipients 2017" href="/awards/lifetime-achievement/recipients-2017/">Award Recipients 2017</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Award Recipients 2016" href="/awards/lifetime-achievement/award-recipients-2016/">Award Recipients 2016</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Award Recipients 2015" href="/awards/lifetime-achievement/award-recipients-2015/">Award Recipients 2015</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="Award Recipients 2014" href="/awards/lifetime-achievement/recipients/">Award Recipients 2014</a>
+            </li>
+        
+    </ul>
+
+</div>
+
+<div class="section">
+
+    <p class="header-link"><a title="Hall of Fame" href="/awards/hall-fame/">Hall of Fame</a></p>
+
+    <ul>
+        
+            <li class="child descendant">
+                <a title="Hall of Fame Entry Information" href="/awards/hall-fame/hall-of-fame-entry-information/">Hall of Fame Entry Information</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2022 Hall of Fame Recipients" href="/awards/hall-fame/2022-hall-fame-recipients/">2022 Hall of Fame Recipients</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2021 Hall of Fame Recipients" href="/awards/hall-fame/2021-hall-fame-recipients/">2021 Hall of Fame Recipients</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2020 Hall of Fame Recipients" href="/awards/hall-fame/2020-hall-fame-recipients/">2020 Hall of Fame Recipients</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2019 Hall of Fame Recipients" href="/awards/hall-fame/2019-hall-fame-recipients/">2019 Hall of Fame Recipients</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2018 Hall of Fame Recipients" href="/awards/hall-fame/2018-hall-fame-recipients/">2018 Hall of Fame Recipients</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2017 Hall of Fame Recipients" href="/awards/hall-fame/2017-hall-fame-recipients/">2017 Hall of Fame Recipients</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2016 Hall of Fame Recipients Summer" href="/awards/hall-fame/2016-hall-fame-summer/">2016 Hall of Fame Recipients Summer</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2016 Hall of Fame Recipients Winter" href="/awards/hall-fame/2016-hall-fame/">2016 Hall of Fame Recipients Winter</a>
+            </li>
+        
+            <li class="child descendant">
+                <a title="2015 Hall of Fame Recipients" href="/awards/hall-fame/hall-fame/">2015 Hall of Fame Recipients</a>
+            </li>
+        
+    </ul>
+
+</div>
+
+
+            </div>
+
+        </div>
+    
+
+
+    
+        <div id="nav-news" class="drawer-content meganav-drawer-b">
+
+            <div class="content-container">
+
+                    <div class="section news-nav">
+    <p class="header-link" >
+        <a title="Top News"
+            target="_blank"
+            rel="noopener"
+            href="https://feed.specialtyfood.com"
+            data-tracker-category="Navigation"
+            data-tracker-action="Go To Feed"
+            data-tracker-label="Feed Web Reader"
+            data-tracker-unaliased="1">
+            Top News
+        </a>
+    </p>
+</div>
+
+<div class="section news-nav">
+    <p class="header-link" >
+        <a title="Magazine"
+            target="_blank"
+            href="/digital-edition/">
+            Magazine
+        </a>
+    </p>
+</div>
+
+<div class="section news-nav">
+    <p class="header-link" >
+        <a title="Member Press Releases" href="/news/section/member-press-releases/">Member Press Releases</a>
+    </p>
+</div>
+
+<div class="section news-nav">
+    <p class="header-link" >
+        <a title="Subscription Center"
+            target="_blank"
+            href="https://go.specialtyfood.com/subscription-center/?epc_hash=a-TCDHxzFDUvNA1R7p9NgMzmmfi061fj7qaP2GtrdMY">
+            Subscription Center
+        </a>
+    </p>
+</div>
+
+<div class="section news-nav">
+    <p class="header-link" >
+        <a title="Daily Newsletter Sign Up"
+            href="/specialty-food-association/membership/member-services-benefits/sfa-news-daily-sign/">
+            Daily Newsletter Sign Up
+        </a>
+    </p>
+</div>
+
+
+            </div>
+
+        </div>
+    
+
+</div>
+
+<script>
+    $(function() {
+        if($(window).width() < 768) {
+            $('.member-info').hide();
+        }
+    });
+</script>
+
+                
+            </header>
+            <div class="main">
+                
+                    
+                        
+    
+    <header class="secondary">
+        <div class="wrapped-img vignette">
+            
+
+<img class="filer_image " alt="News Coffee etc.jpg" src="/media/filer_public_thumbnails/filer_public/d4/b4/d4b4731a-4b44-42c8-99f0-97ee99147956/news_coffee_etc.jpg__1500x200_q85_crop_subsampling-2_upscale.jpg" />
+
+        </div>
+        <div class="content-container">
+            <div class="wrapped-img page-logo">
+                <a title="Specialty Food Association"
+                   href="/"><img
+                    src="/static/img/SFA_Primary.svg"
+                    alt="Specialty Food Association"></a>
+            </div>
+        </div>
+    </header>
+    
+
+                    
+                    <div class="page-content">
+                        <div class="content-container">
+
+                            
+                                
+                                    <div class="breadcrumbs">
+                                        You are here:
+                                        <ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                            
+                                                
+    
+
+<li class="simple-link" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a itemprop="url" href="/"><span itemprop="title">Home</span></a> &raquo;
+</li>
+
+<li class="simple-link" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a itemprop="url" href="/news/"><span itemprop="title">News</span></a> &raquo;
+</li>
+
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <span itemprop="title">Article</span>
+</li>
+
+
+                                            
+                                        </ul>
+                                    </div>
+                                
+                            
+                            
+    
+        <section class="nav-panel ">
+            
+
+
+
+
+
+    <nav class="member-nav">
+        <!--start mobile nav-->
+        <div class="member-mobile-nav">
+
+            <ul class="member-mobile-nav-bar">
+                
+                    
+                        
+                             <li class="drawer" style="display: none;">
+                                <span>
+                                    <a title="Top News"
+                                        target="_blank" 
+data-tracker-category="Navigation"
+data-tracker-action="Go To Feed"
+data-tracker-label="Feed Web Reader"
+data-tracker-unaliased="1"
+
+                                        href="https://feed.specialtyfood.com" target="_blank" rel="noopener noreferrer">
+
+                                        Top News
+                                    </a>
+                                </span>
+                                
+                            </li>
+                        
+                    
+                
+                    
+                        
+                             <li class="drawer" style="display: none;">
+                                <span>
+                                    <a title="Magazine"
+                                        
+
+
+
+
+
+                                        href="/digital-edition/">
+
+                                        Magazine
+                                    </a>
+                                </span>
+                                
+                            </li>
+                        
+                    
+                
+                    
+                        
+                             <li class="drawer" style="display: none;">
+                                <span>
+                                    <a title="Member Press Releases"
+                                        
+
+
+
+
+
+                                        href="/news/section/member-press-releases/">
+
+                                        Member Press Releases
+                                    </a>
+                                </span>
+                                
+                            </li>
+                        
+                    
+                
+                    
+                        
+                             <li class="drawer" style="display: none;">
+                                <span>
+                                    <a title="Subscription Center"
+                                        target="_blank" 
+
+
+
+
+
+                                        href="https://go.specialtyfood.com/subscription-center/?epc_hash=a-TCDHxzFDUvNA1R7p9NgMzmmfi061fj7qaP2GtrdMY" target="_blank" rel="noopener noreferrer">
+
+                                        Subscription Center
+                                    </a>
+                                </span>
+                                
+                            </li>
+                        
+                    
+                
+                    
+                        
+                             <li class="drawer" style="display: none;">
+                                <span>
+                                    <a title="Daily Newsletter Sign Up"
+                                        
+
+
+
+
+
+                                        href="/specialty-food-association/membership/member-services-benefits/sfa-news-daily-sign/">
+
+                                        Daily Newsletter Sign Up
+                                    </a>
+                                </span>
+                                
+                            </li>
+                        
+                    
+                
+            </ul>
+
+        </div>
+        <!--end mobile nav-->
+
+        <!--desktop nav below-->
+        <ul class="member-links">
+
+            
+                <li class="thin-panel-search">
+                    NEWS SEARCH
+                    <form action="/news/search/" method="GET" id="searchform" style="position: relative;" autocomplete="off">
+                        <input type="text" class="insearch" name="insearch" placeholder="Search News" >
+                        <a class="search-button" href="#"></a>
+                    </form>
+                </li>
+            
+
+            
+                <li class="     descendant ">
+                    <span class="nav-categories-title">
+                        
+                            <a class="medium-link" title="Top News"
+                                target="_blank" 
+data-tracker-category="Navigation"
+data-tracker-action="Go To Feed"
+data-tracker-label="Feed Web Reader"
+data-tracker-unaliased="1"
+
+                                href="https://feed.specialtyfood.com" target="_blank" rel="noopener noreferrer">
+
+                                Top News
+                            </a>
+                        
+                        
+                    </span>
+                </li>
+                
+            
+                <li class="     descendant ">
+                    <span class="nav-categories-title">
+                        
+                            <a class="medium-link" title="Magazine"
+                                
+
+
+
+
+
+                                href="/digital-edition/">
+
+                                Magazine
+                            </a>
+                        
+                        
+                    </span>
+                </li>
+                
+            
+                <li class="     descendant ">
+                    <span class="nav-categories-title">
+                        
+                            <a class="medium-link" title="Member Press Releases"
+                                
+
+
+
+
+
+                                href="/news/section/member-press-releases/">
+
+                                Member Press Releases
+                            </a>
+                        
+                        
+                    </span>
+                </li>
+                
+            
+                <li class="     descendant ">
+                    <span class="nav-categories-title">
+                        
+                            <a class="medium-link" title="Subscription Center"
+                                target="_blank" 
+
+
+
+
+
+                                href="https://go.specialtyfood.com/subscription-center/?epc_hash=a-TCDHxzFDUvNA1R7p9NgMzmmfi061fj7qaP2GtrdMY" target="_blank" rel="noopener noreferrer">
+
+                                Subscription Center
+                            </a>
+                        
+                        
+                    </span>
+                </li>
+                
+            
+                <li class="     descendant ">
+                    <span class="nav-categories-title">
+                        
+                            <a class="medium-link" title="Daily Newsletter Sign Up"
+                                
+
+
+
+
+
+                                href="/specialty-food-association/membership/member-services-benefits/sfa-news-daily-sign/">
+
+                                Daily Newsletter Sign Up
+                            </a>
+                        
+                        
+                    </span>
+                </li>
+                
+            
+        </ul>
+
+        <!--end desktop nav-->
+    </nav>
+
+
+            
+
+<!-- gonzalotest -->
+
+
+
+    <p class="ad-header">ADVERTISEMENT</p>
+    
+        <div class="adunit plugin-full" data-adunit="sf_left_nav_160x600" data-dimensions="160x600"></div>
+        <div class="adunit plugin-tablet" data-adunit="Show_Pages_728x90" data-dimensions="728x90"></div>
+        
+            <div class="adunit plugin-mobile" data-adunit="SFA_Mobile" data-dimensions="300x50"></div>
+        
+    
+
+
+
+        </section>
+    
+
+                            <div class="member-content-panel">
+                                
+
+    <div class="news-content-area">
+        <div class="article-date-share">
+            <div class="article-date">12/12/2019</div>
+            <div class="actionbtns">
+                
+
+
+<div 
+        
+            data-tracker-category="News Center" data-tracker-action="Article" data-tracker-label="Save"  data-tracker-unaliased=1
+
+        
+     class="action-user action-save active save-article"
+    data-url-save="/news/article_follow/35000"
+    data-url-unsave="/news/article_unfollow/35000"
+    data-action="save"
+    data-login-text="Please log in to follow/unfollow the article 'Global Eats: The Rise of Indian Street Food'."></div>
+
+
+                
+<div class="action-user action-share active article" data-action="share" data-title="Global%20Eats%3A%20The%20Rise%20of%20Indian%20Street%20Food" data-description="The%20flavors%20and%20ingredients%20of%20the%20street-food%20stalls%20found%20throughout%20India%20are%20making%20their%20way%20onto%20U.S.%20restaurant%20menus.%0A%0AThe%20vast%20culinary%20landscape%20of%28...%29" data-img="https%3A//www.specialtyfood.com/media/uploads/articles/Thali_platter.jpg" data-url="https%3A//www.specialtyfood.com/news/article/global-eats-rise-indian-street-food/" data-twitter-desc="Global Eats: The Rise of Indian Street Food - https%3A//www.specialtyfood.com/news/article/global-eats-rise-indian-street-food/ - @Specialty_Food" data-track="1" data-track-category="News Center" data-track-action="Article"></div>
+
+                <div class="action-user action-print"></div>
+            </div>
+        </div>
+
+        
+
+            
+                <div class="article_header">
+                    <h1>Global Eats: The Rise of Indian Street Food</h1>
+                </div>
+
+                <div class="article-detail-area">
+                    
+                        <div class="left-area">
+                            <ul class="subtitles">
+                                
+                                    <li class="author">
+                                        <div>
+                                            Author:
+                                        </div>
+                                        <div>
+                                            
+    Mark Hamstra
+
+
+                                        </div>
+                                    </li>
+                                
+
+                            
+                                <div class="wrapped-img articleimg">
+                                    
+                                        <img src="/media/uploads/articles/Thali_platter.jpg.370x370_q85.jpg" alt="Global Eats: The Rise of Indian Street Food">
+                                </div>
+                            
+
+                            <div class="article-body">
+                                <h2>The flavors and ingredients of the street-food stalls found throughout India are making their way onto U.S. restaurant menus.</h2>
+
+<p>The vast culinary landscape of Indian street food is expanding throughout the United States in a variety of forms, from kati rolls and dosas to various spicy, flavorful snacks known as chaat.</p>
+
+<p>Americans have been building up an appetite for these foods, says Akash Kapoor, founder and CEO of Curry Up Now, the San Francisco restaurant chain that is adapting Indian foods in familiar forms such as burritos and also is offering traditional Indian street-food snacks. “What was once described as exotic is now a commonplace food, and overall there’s been a greater acceptance of ethnic food,” he says. “There is a homey, comfort factor with Indian food, and it intrigues many people because it’s different from other cuisines.”</p>
+
+<p><img alt="" src="https://www.specialtyfood.com/media/filer_public/5c/6a/5c6a48d7-b09f-4ecc-97f4-9e264e4d67d3/curryupnow_foodtruck2.jpg" style="width: 840px; height: 560px;">Indian street food varies widely from region to region, and even from vendor to vendor within regions. It can incorporate fried dough with or without fillings, is often made with a medley of vegetables, spices, and sauces, and can include a range of flavorful, seasoned meats. It can take the form of dumpling-like creations such as momos served with spicy chili paste, kebabs on or off the skewer, and a variety of sandwiches filled with flavors that are likely unfamiliar to most U.S. consumers.</p>
+
+<p>Chaat refers to the Indian street “snacks” that are usually built upon a crunchy base and topped with chickpeas, potatoes, onions and/or various other ingredients, often served with chutneys or an umami sauce called chaat masala.</p>
+
+<p>Research firm Datassential reports that chaat is listed on only 1.8 percent of restaurant menus, up 3 percent since 2015 and up 30 percent since 2009. Only 12 percent of consumers are familiar with it, and only 6 percent of consumers report having tried it.</p>
+
+<p>Chaat has its strongest presence on fine-dining menus, but has potential to grow, according to Cassandra Kaul, digital strategist at Datassential. “There’s an inherent flexibility to chaat that allows for creative takes and safe experimentation,” she says.</p>
+
+<p><strong>Emerging Concepts</strong><br>
+Restaurant operators seeking to experiment with chaat or other Indian street foods will find no shortage of ideas emerging from the concepts dedicated to these foods that are appearing around the country. One such concept is Chaatable, a Memphis, Tenn., restaurant opened last year by acclaimed chef Maneet Chauhan under her Morph Hospitality operating company.</p>
+
+<p>Chauhan, who is also known as a judge on the culinary TV show Chopped, says Chaatable strives to offer authentic Indian street foods in a vibrant environment that recalls the colorful street stalls of her home country. “The U.S. dining market as a whole is becoming very sophisticated and global,” she says. “Our guests at our other Nashville concepts let us know they were ready to try something beyond chicken tikka masala.”</p>
+
+<p><img alt="" src="https://www.specialtyfood.com/media/filer_public/ab/88/ab8899ca-301f-4fac-85f3-fff76aa408b5/maneetchauhan_ameliajmoorephotographyjpeg_1.jpg" style="width: 682px; height: 1024px;"></p>
+
+<p>In developing the menu, Chauhan says she sought to “cover the major [protein] categories,” while giving customers an authentic Indian street-food experience. “At the end of the day we stayed authentic and true to traditional Indian street food because we knew it’s what customers wanted,” she says.</p>
+
+<p>The menu pulls flavors and ingredients from various Indian regions and is as fun and whimsical as the decor. Dishes include O.M. Ghee (ghee toasted cashews, curry leaves, and chaat masala) and Frankie Goes to Bollywood—a malai chicken or paneer parantha frankie (a type of wrap common in Mumbai), served with onion, tomato, and mint chutney. The best sellers on the menu have been the Build-a-Bhel (a puffed rice dish with choice of ingredients), Butter Chicken, and Samosas, says Chauhan.</p>
+
+<p>Some Indian street foods were deemed a little too eccentric for U.S. palates, however. Chauhan opted not to include bheja fry, for example, which is made with sautéed goat’s brain. “We thought that would be pushing the envelope a bit too much,” she says.</p>
+
+<p><strong>Saucy and Spicy</strong><br>
+At Curry Up Now, which operates three food trucks and six company-owned restaurants (and recently began franchising as well), Kapoor seeks to infuse the menu with spice in more ways than one. “We didn’t want to do it the way it’s always been done,” he says. “We wanted to be sexy, naughty, and risqué while keeping the food authentic.”</p>
+
+<p>Menu items include Sexy Fries, which feature Curry Up Now’s own Indian-inspired poutine with cross-cut sweet potato fries, cheese, and paneer or chicken tikka masala; and The Naughty Naan, which is similar to a flatbread pizza, topped with caramelized onions, jalapeño, cheese, and paneer or chicken tikka masala.</p>
+
+<p>The company, which launched as a food truck in 2009, wanted to create its own variety of hand-held Indian street foods. It takes the relatively unfamiliar flavors of Indian cuisine and introduces them in more familiar hand-held forms such as burritos, tacos, quesadillas, pizza, and fries “to make it approachable for the everyday American consumer,” says Kapoor.</p>
+
+<p>The food is spicy, but not so much that it overpowers the dishes, he explains. “It’s spice-forward, but not ‘kick you in your gut’ spicy. Spice doesn’t have to mean red chili powder that burns. Coriander, cumin, asafetida, turmeric, fennel, allspice, cloves, chili powder, etc., are all spices that we use in our food.”</p>
+
+<p>In addition to the burritos and bowls, the street-snack portion of the menu also generates a lot of consumer interest. These include a giant samosa known as ‘The Dude,” which is filled with chicken biryani and a sous-vide egg. Other items include Vada Pav, which is a slider-style sandwich common on the streets of Mumbai, and Pav Bhaji, a vegetable mash served with pav bread (an Indian bread roll).</p>
+
+<p>Curry Up Now’s burritos are made with a layer of rice on the tortilla, topped with chana garbanzo masala and a choice of protein, such as chicken tikka masala, ghee makhni butter paneer, or lamb. Kapoor says his personal favorite is the Hella Vegan burrito, which is a samosa inside a tortilla, and made like samosa chaat.</p>
+
+<p>The company’s Deconstructed Samosa is another popular item, made using the crispy skin of a traditional samosa, topped with layers of chana garbanzo masala, pico kachumber (an Indian salad made with cucumber and tomato), chutneys, mini samosas, and a choice of protein. “It’s a reimagined version of a traditional Indian street food, but with added layers and deeper flavor from the toppings,” says Kapoor, who describes it as a “party in your mouth experience.”</p>
+
+<p><strong>Bridging the Gap</strong><br>
+In New York City, Deep Foods is bridging the gap between traditional Indian foods and consumer interest in Indian street foods at its restaurants. The company operates five Deep Indian Kitchen restaurant locations, all in Manhattan.</p>
+
+<p><img alt="" src="https://www.specialtyfood.com/media/filer_public/6d/9d/6d9d6026-e226-4ab3-95b6-7e865e5fc933/deepindiankitchenjpg.jpg" style="width: 1200px; height: 1600px;">“We are having tremendous success with the concept we are offering,” says Deepak Amin, president and CEO of Deep Foods, which is based in Union, N.J., and also operates a large CPG business supplying retail stores with Indian foods (see sidebar, p. 57). He says consumers are seeking flavorful foods in grab-and-go forms, whether it’s from food trucks or restaurants.</p>
+
+<p>The menu at Deep Indian Kitchen is divided into two parts, with the traditional Indian foods making up one portion of the offerings and the grab-and-go items the other. Both sides have been equally popular, Amin says.</p>
+
+<p>Among the grab-and-go items are kati rolls—which many people are already familiar with from Indian street cars in New York, along with dosa, which is a rice-based crepe that also happens to be gluten-free. Samosas, which often appear as an appetizer on Indian restaurant menus in the U.S., are also a popular grab-and-go food at the Deep Indian Kitchen restaurants, Amin says.</p>
+
+<p>The restaurants drive a strong lunch business, and aim to target “adventurous eaters,” generally in the 45-and-under age group, he adds.</p>
+
+<p>Deep Indian Kitchen is currently exploring the idea of adding a breakfast menu. “The cuisine has a lot of different [breakfast] options,” says Amin. “We are looking at what we can do with grab and go for breakfast.”</p>
+
+<p>Deep is also exploring opportunities to add more locations in New York City, and has a flagship restaurant under construction on its headquarters campus in New Jersey.</p>
+
+<hr>
+<p><strong>Retail Products Target Grab-and-Go Snackers</strong><br>
+Anshu Dua, co-founder and CEO of The Chaat Co., New York, is seeking to create the Sabra of Indian street foods.</p>
+
+<p>The startup is launching its products, a line of fresh Indian snack packs, into a limited number of retail stores, including some Whole Foods Market locations in the Northeast, and into some college and corporate foodservice grab-and-go retail displays. “When you look at what Sabra did with Middle Eastern and Mediterranean foods like hummus, babaganoush, etc., they basically took very ethnic foods and flavors and snack-ified them,” Dua says. “Twelve years ago, Americans had no clue what hummus was.”</p>
+
+<p>The Chaat Co.’s new snack-pack line includes popped chickpea chips with chaat masala, along with a variety of different Indian chutneys—tamarind, mango, coconut, and tomato. “These are inspired by flavors from different parts of India,” Dua says, noting that mango and tamarind are flavors typically used in northern India, while tomato reflects southern Indian cuisine.</p>
+
+<p>“You will find these chutneys as condiments for a variety of different types of street food in India,” says Dua. “We tried to capture many of the ingredients and the flavors from that, and created a snacking experience for Americans so they can experience Indian food like they never had before and in a whole new way versus the typical buffet line experience that most Americans have today.”</p>
+
+<p>Dua says the Indian foods many Americans have become familiar with through traditional, sit-down Indian restaurants were developed by an older generation of Indian entrepreneurs who were seeking to create menus that appealed to Indian-Americans with the comfort foods of their homeland.</p>
+
+<p>Now, he says, Indian food producers like himself are targeting a younger generation of consumers who enjoy experimenting with new flavors, and also enjoy snacking and sharing foods.</p>
+
+<p>Likewise, Deepak Amin, president and CEO of Union, N.J.-based Deep Foods, parent of the Tandoor Chef line of frozen Indian foods and the Deep Indian Kitchen restaurant chain in New York, says Deep Foods is looking to bring back more hand-held Indian street foods into its product line. “It’s all about grab-and-go items, and items that are full of flavor,” he says.</p>
+
+<p>The company is in the process of transitioning all its products to the Deep Indian Kitchen brand, which it has previously used for authentic foods targeting the Indian consumer market. “We are going back to our roots and offering all the different products we have under one umbrella,” says Amin. “As awareness is growing, we are seeing that all of the other [traditional Indian] offerings we have are becoming more relevant.” -<em>- M.H.</em></p>
+
+<hr>
+<p>Mark Hamstra is a regular contributor to <em>Specialty Food</em> and Specialty Food News.</p>
+                            </div>
+
+                            
+                        </div>
+                    
+
+                    
+                        <div class="right-area">
+                            
+                                <div class="side-bar-feed cream-box">
+                                    <h2>Download SFA Feed News App</h2>
+
+                                    <a data-tracker-category="Sidebar Button" data-tracker-action="Download Android App" data-tracker-label="Google Play"  data-tracker-unaliased=1
+
+                                       href="https://play.google.com/store/apps/details?id=com.specialtyfood.sfafeed&hl=en_US" target="_blank" rel="noopener">
+                                        <img src="/static/img/get_on_google_play.png" alt="Get it on Google Play">
+                                    </a>
+
+                                    <a data-tracker-category="Sidebar Button" data-tracker-action="Download iOS App" data-tracker-label="Apple App Store"  data-tracker-unaliased=1
+
+                                       href="https://apps.apple.com/us/app/sfa-feed/id1506667219" target="_blank" rel="noopener">
+                                        <img src="/static/img/download_apple_store.png" alt="Download on the App Store">
+                                    </a>
+
+                                    <p></p>
+<h3 style="text-align:center;"><strong>Sign Up for</strong></h3> 
+<h3 style="text-align:center;"><strong>News Daily</strong></h3>
+<p style="text-align:center;">Please enter your details below</p>
+<iframe src="https://go.specialtyfood.com/l/577391/2021-06-01/7mfmxb" width="100%" height="290" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+
+                                    <a data-tracker-category="Sidebar Button" data-tracker-action="Read Latest News" data-tracker-label="Feed Web Reader"  data-tracker-unaliased=1
+
+                                       href="https://feed.specialtyfood.com" target="_blank" rel="noopener">
+                                            <div class="btn-positive">Read Latest News</div>
+                                    </a>
+                                </div>
+                            
+
+                            <div class="adspace">
+                                
+                                    <!-- gonzalotest -->
+
+
+
+    <p class="ad-header">ADVERTISEMENT</p>
+    
+        <div class="adunit plugin-full" data-adunit="sf_left_nav_160x600" data-dimensions="160x600"></div>
+        <div class="adunit plugin-tablet" data-adunit="sf_left_nav_160x600" data-dimensions="300x250"></div>
+        
+            <div class="adunit plugin-mobile" data-adunit="sf_left_nav_160x600" data-dimensions="300x50"></div>
+        
+    
+
+
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+            
+        
+    </div>
+
+        
+            
+<div class="promoted-product-add" data-size="160x300" data-centered="False" data-amount="4" data-categories="">
+</div>
+
+        
+
+    
+
+
+                             </div> <!--/member-content-->
+                        </div> <!--/content-container-->
+                    </div><!--/page-content -->
+                
+            </div> <!--/main-->
+
+            
+                <footer class="main-footer">
+                    
+
+
+
+
+
+<div class='footer_content'>
+    <div class="sitemap_container">
+        
+            <div class='footer_box'>
+                
+
+
+
+
+<div class='footer_block'>
+        <div class='footer_section_title child sibling'>
+            <a title="Specialty Food Association" href="/specialty-food-association/">
+                Specialty Food Association
+            </a>
+        </div>
+        
+            <ul class="footer_nav_links">
+               
+                    <li class='child'>
+                        <a title="About The SFA"
+                            
+
+
+
+
+
+                            href="/specialty-food-association/about-us/">
+
+                            <span>
+                                 About The SFA
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child'>
+                        <a title="Advertising and Sponsorships"
+                            
+
+
+
+
+
+                            href="/specialty-food-association/advertising-and-sponsorships/">
+
+                            <span>
+                                 Advertising and Sponsorships
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child'>
+                        <a title="Membership"
+                            
+
+
+
+
+
+                            href="/specialty-food-association/membership/">
+
+                            <span>
+                                 Membership
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child'>
+                        <a title="Community"
+                            
+
+
+
+
+
+                            href="/specialty-food-association/community/">
+
+                            <span>
+                                 Community
+                            </span>
+                        </a>
+                    </li>
+                
+            </ul>
+        
+</div>
+
+<div class='footer_block'>
+        <div class='footer_section_title child sibling'>
+            <a title="Shows &amp; Events" href="/shows-events/">
+                Shows &amp; Events
+            </a>
+        </div>
+        
+            <ul class="footer_nav_links">
+               
+                    <li class='child'>
+                        <a title="Winter Fancy Food Show"
+                            
+
+
+
+
+
+                            href="/shows-events/winter-fancy-food-show/">
+
+                            <span>
+                                 Winter Fancy Food Show
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child'>
+                        <a title="Summer Fancy Food Show"
+                            
+
+
+
+
+
+                            href="/shows-events/summer-fancy-food-show/">
+
+                            <span>
+                                 Summer Fancy Food Show
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child'>
+                        <a title="SFA Calendar"
+                            
+
+
+
+
+
+                            href="https://community.specialtyfood.com/calendar/" target="_blank" rel="noopener noreferrer">
+
+                            <span>
+                                 SFA Calendar
+                            </span>
+                        </a>
+                    </li>
+                
+            </ul>
+        
+</div>
+
+<div class='footer_block'>
+        <div class='footer_section_title child sibling'>
+            <a title="Awards" href="/awards/">
+                Awards
+            </a>
+        </div>
+        
+            <ul class="footer_nav_links">
+               
+                    <li class='child'>
+                        <a title="sofi™ Awards"
+                            
+
+
+
+
+
+                            href="/awards/sofi/">
+
+                            <span>
+                                 sofi™ Awards
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child'>
+                        <a title="Leadership Awards"
+                            
+
+
+
+
+
+                            href="/awards/leadership/">
+
+                            <span>
+                                 Leadership Awards
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child'>
+                        <a title="Lifetime Achievement Awards"
+                            
+
+
+
+
+
+                            href="/awards/lifetime-achievement/">
+
+                            <span>
+                                 Lifetime Achievement Awards
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child'>
+                        <a title="Hall of Fame"
+                            
+
+
+
+
+
+                            href="/awards/hall-fame/">
+
+                            <span>
+                                 Hall of Fame
+                            </span>
+                        </a>
+                    </li>
+                
+            </ul>
+        
+</div>
+
+<div class='footer_block'>
+        <div class='footer_section_title child'>
+            <a title="News" href="/news/">
+                News
+            </a>
+        </div>
+        
+            <ul class="footer_nav_links">
+               
+                    <li class='child descendant'>
+                        <a title="Top News"
+                            target="_blank" 
+data-tracker-category="Navigation"
+data-tracker-action="Go To Feed"
+data-tracker-label="Feed Web Reader"
+data-tracker-unaliased="1"
+
+                            href="https://feed.specialtyfood.com" target="_blank" rel="noopener noreferrer">
+
+                            <span>
+                                 Top News
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child descendant'>
+                        <a title="Magazine"
+                            
+
+
+
+
+
+                            href="/digital-edition/">
+
+                            <span>
+                                 Magazine
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child descendant'>
+                        <a title="Member Press Releases"
+                            
+
+
+
+
+
+                            href="/news/section/member-press-releases/">
+
+                            <span>
+                                 Member Press Releases
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child descendant'>
+                        <a title="Subscription Center"
+                            target="_blank" 
+
+
+
+
+
+                            href="https://go.specialtyfood.com/subscription-center/?epc_hash=a-TCDHxzFDUvNA1R7p9NgMzmmfi061fj7qaP2GtrdMY" target="_blank" rel="noopener noreferrer">
+
+                            <span>
+                                 Subscription Center
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class='child descendant'>
+                        <a title="Daily Newsletter Sign Up"
+                            
+
+
+
+
+
+                            href="/specialty-food-association/membership/member-services-benefits/sfa-news-daily-sign/">
+
+                            <span>
+                                 Daily Newsletter Sign Up
+                            </span>
+                        </a>
+                    </li>
+                
+            </ul>
+        
+</div>
+
+<div class='footer_block'>
+        <div class='footer_section_title child sibling'>
+            <a title="My Fancy Food Show" href="https://sff2021.mapyourshow.com/8_0/#/" target="_blank" rel="noopener noreferrer">
+                My Fancy Food Show
+            </a>
+        </div>
+        
+</div>
+
+
+<div class="footer_block">
+    <div class="footer_section_title child sibling">
+        
+            <a title="Products" href="https://shopspecialtyfood.balluun.com/en-us" target=&quot;_blank&quot;>Products</a>
+        
+    </div>
+</div>
+
+<div class="footer_block">
+    <div class="footer_section_title child sibling">
+        <a href="https://community.specialtyfood.com/store/" title="Learning Center" class="footer_section_title" target="_blank">Learning Center</a>
+    </div>
+</div>
+
+<div class="footer_block">
+    <div class="footer_section_title child sibling">
+        <a href="https://community.specialtyfood.com" title="Community Hub" class="footer_section_title" target="_blank">Community Hub</a>
+    </div>
+</div>
+
+            </div>
+        
+        <!-- gonzalotest -->
+
+
+
+<div class='footer_big_box'>
+    
+    <div class='footer_big_box_image wrapped-img'>
+        
+        
+            <img src="/media/uploads_sf/magazine/Fall_SF_Magazine_SFA_2022.png.137x187_q85.jpg">
+        
+    </div>
+    <div class='footer_big_box_description'>
+            <h2 class='mag_title'>Specialty Food Magazine</h2>
+            <a class='mag_link' href="https://www.specialtyfood.com/digital-edition/">Read the current
+                digital edition</a>
+            <p class='mag_content'>
+                The fall issue of Specialty Food features profiles of members of SFA’s 12 Under 35: Breakout Talent to Watch list and highlights from SFA’s Today’s Specialty Food Consumer research.
+This holiday-themed edition also includes Buyers’ Picks for holiday confections, a look at festive appetizers in “Category Spotlight: Home for the Holidays,” and pairing ideas in “Cheers to Cheese and Beer.”
+It also features Specialty Food Maker, a section that includes topics and business news to help producers and suppliers build their operations to stay prepared for challenges.
+            </p>
+    </div>
+    <p class="footer_mediakit">
+        Media kit: <a href="https://www.specialtyfood.com/specialty-food-association/advertising-and-sponsorships/">Advertise with us</a>
+    </p>
+    
+</div>
+
+    </div>
+    <div class='footer_copyright'>
+        <div class='copyright'>
+            Copyright &copy; 2023 Specialty Food Association, Inc. | Contact us at: (212) 482-6440
+        </div>
+        
+            <div class='legal'>
+                <a title="Contact Us" href="/specialty-food-association/about-us/contact-us/">Contact Us</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a title="SFA Careers"
+                   href="https://www.linkedin.com/jobs/search/?f_C=75856&locationId=OTHERS.worldwide"
+                   target="_blank" rel="noopener noreferrer">
+                    SFA Careers
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a title="Terms &amp; Conditions" href="/specialty-food-association/about-us/terms-conditions/">Terms &amp; Conditions</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                
+                <a title="Privacy Notice"
+                    href="/specialty-food-association/about-us/privacy-policy/">
+                    Privacy Notice
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                
+                <a title="Cookie Policy"
+                    href="/specialty-food-association/about-us/cookie-policy/">Cookie Policy</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                
+                <a title="Accessibility Disclosure"
+                    href="/specialty-food-association/about-us/accessibility-disclosure/">Accessibility Disclosure</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a title="Site Map" href="/sitemap/">Site Map</a>
+            </div>
+        
+    </div>
+</div>
+
+                </footer>
+            
+
+            <div id="messages-status-modal" class="modal fade">
+
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="close-text">Close</span></button>
+                        </div>
+
+                        <div class="modal-body">
+
+                        </div>
+
+                        <div class="modal-footer"></div>
+
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+             <div id="messages-modal" class="modal fade">
+
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="close-text">Close</span></button>
+                            <h4 class="modal-title">Message</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            
+
+                        </div>
+
+                        <div class="modal-footer"></div>
+
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+
+            <!-- login modal -->
+            <div id="login-modal" class="modal fade">
+
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="close-text">Close</span></button>
+                            <h4 class="modal-title">Login</h4>
+                        </div>
+
+                        <div class="modal-body">
+                        </div>
+
+                        <div class="modal-footer"></div>
+
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+
+            <div id="share-modal" class="modal fade">
+
+                <!-- Share Dialog Modal -->
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="close-text">Close</span></button>
+                            <h4 class="modal-title">Share</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="social-media-profile-item">
+                                <div class="wrapped-img social-media-profile-item-image">
+                                    <a rel="nofollow" target="_blank" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.specialtyfood.com/news/article/global-eats-rise-indian-street-food/">
+                                        <img src="/static/img/logo-activity-fb.gif" alt="Facebook">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="social-media-profile-item">
+                                <div class="wrapped-img social-media-profile-item-image">
+                                    <a rel="nofollow" id="twitter-share-button" target="_blank" class="twitter" href="http://twitter.com/intent/tweet?text=&amp;url=https%3A//www.specialtyfood.com/news/article/global-eats-rise-indian-street-food/">
+                                        <img src="/static/img/logo-activity-tw.gif" alt="Twitter">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="social-media-profile-item">
+                                <div class="wrapped-img social-media-profile-item-image">
+                                    <a rel="nofollow" target="_blank" class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.specialtyfood.com/news/article/global-eats-rise-indian-street-food/&amp;summary=&amp;title=">
+                                        <img src="/static/img/logo-activity-linked-in.gif" alt="Linked In">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="social-media-profile-item">
+                                <div class="wrapped-img social-media-profile-item-image">
+                                    <a href="mailto:" class="email">
+                                        <img src="/static/img/logo-activity-mail.jpg" alt="Email">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="social-media-profile-item">
+                                <div class="wrapped-img social-media-profile-item-image">
+                                    <a rel="nofollow" target="_blank" class="pinterest" href="http://www.pinterest.com/pin/create/button/?url=https%3A//www.specialtyfood.com/news/article/global-eats-rise-indian-street-food/&amp;media=&amp;description=">
+                                        <img src="/static/img/logo-activity-pinterest.gif" alt="Pinterest">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer"></div>
+
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+        
+
+
+        </div><!--/container-fluid-->
+
+        <script src="//code.jquery.com/ui/1.10.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="/static/js/vendor/bootstrap.min.js"></script>
+
+        <script src="/static/CACHE/js/output.6ad4d6cd924a.js"></script>
+
+        <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==document.location.protocol?'https://':'http://')+'stats.g.doubleclick.net/dc.js';s.parentNode.insertBefore(g,s)}(document,'script'));$(function(){$(document).ajaxError(function(evt,xhr){if(xhr.status==403){ajaxLogin("/accounts/login-ajax/?next=/news/article/global-eats-rise-indian-street-food/");}
+if(xhr.status==400&&xhr.responseText.indexOf('There was a problem changing your active company.')!==-1){ajaxLogin("/accounts/login-ajax/?next=/news/article/global-eats-rise-indian-street-food/",xhr.responseText);}});});;</script>
+        <!-- Google Code for Remarketing Tag -->
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var google_conversion_id = 942912440;
+            var google_custom_params = window.google_tag_params;
+            var google_remarketing_only = true;
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+        <noscript>
+            <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/942912440/?value=0&amp;guid=ON&amp;script=0"/>
+            </div>
+        </noscript>
+        <!-- Feathr integration -->
+        <script>
+            !function(f,e,a,t,h,r){if(!f[h]){r=f[h]=function(){r.invoke?
+            r.invoke.apply(r,arguments):r.queue.push(arguments)},
+            r.queue=[],r.loaded=1*new Date,r.version="1.0.0",
+            f.FeathrBoomerang=r;var g=e.createElement(a),
+            h=e.getElementsByTagName("head")[0]||e.getElementsByTagName("script")[0].parentNode;
+            g.async=!0,g.src=t,h.appendChild(g)}
+            }(window,document,"script","https://cdn.feathr.co/js/boomerang.min.js","feathr")
+
+            feathr("fly", "59a824a2c9c1be1e2ead5a02");
+            feathr("sprinkle", "page_view");
+        </script>
+        <script type="text/javascript">
+            $(function () {if (typeof objectFitImages === 'function') {objectFitImages();}});
+        </script>
+        
+        <script>document.write("<scr"+"ipt src='https://mpp.vindicosuite.com/mpp/?y=2&t=j&tp=1&clid=23018&pixid=99124202&rnd=<timestamp_here>&u="+escape(parent.document.location)+"&r="+escape(parent.document.referrer)+"'></scri"+"pt>");</script><NOSCRIPT><IMG SRC="https://mpp.vindicosuite.com/mpp/?y=2&t=i&tp=1&clid=23018&pixid=99124202&rnd=<timestamp_here>" style="display: none"></NOSCRIPT>
+
+        
+        
+        
+
+
+
+        
+    <script>$(function(){function updateQueryStringParameter(uri,key,value){var re=new RegExp("([?&])"+key+"=.*?(&|$)","i");var separator=uri.indexOf('?')!==-1?"&":"?";if(uri.match(re)){return uri.replace(re,'$1'+key+"="+value+'$2');}
+else{return uri+separator+key+"="+value;}}
+function getParameterByName(name,url){if(!url)url=window.location.href;name=name.replace(/[\[\]]/g,"\\$&");var regex=new RegExp("[?&]"+name+"(=([^&#]*)|&|#|$)"),results=regex.exec(url);if(!results)return null;if(!results[2])return'';return decodeURIComponent(results[2].replace(/\+/g," "));}
+$('.action-share').on('click',function(e){var params=$.param({url:'https://www.specialtyfood.com/news/article/global-eats-rise-indian-street-food/'});$.get('/util/shorten-url/',params,function(response){var elements=$('#share-modal a');for(var i=0;i<elements.length;i++){var url=$(elements[i]).attr('href');url=getParameterByName('url',url)?updateQueryStringParameter(url,'url',response.shortened_url):url;url=getParameterByName('u',url)?updateQueryStringParameter(url,'u',response.shortened_url):url;url=getParameterByName('body',url)?updateQueryStringParameter(url,'body',response.shortened_url):url;$(elements[i]).attr('href',url);}})});});;$(function(){$('#share-modal a').on('click',function(){$.post('/news/share/35000',{});});$('.article-body img').attr({'width':'','height':'',}).css({'maxWidth':'100%','width':'auto','height':'auto',});$('.action-print').on('click',function(){window.print();});});;</script>
+
+
+        
+
+        <script>
+            // Perform full browser page refresh after saving CMS content (SF-1194)
+            if ('CMS' in window && CMS) {
+                CMS.$(window).on('cms-content-refresh', function () {
+                    location.reload();
+                });
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<title>简单为「洋快餐」正名 | LanternD's Castle</title>
+<meta name="author" content="LanternD" />
+<meta name="renderer" content="webkit">
+<meta name="description" content="－ Survive Technically －" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<meta name="google-site-verification" content="llr24tRM0DLZEvzkhyXfxmpLJF3RrA5w3qGR-KddOd8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/syntax.css" type="text/css">
+<link rel="stylesheet" href="/css/default.css" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="shortcut icon" href="/img/favicon2.ico" type="image/x-icon">
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/rss.xml">
+
+<script type="09939a6b4bd8da3ffe9c126e-text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js">
+</script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" type="09939a6b4bd8da3ffe9c126e-text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="09939a6b4bd8da3ffe9c126e-text/javascript"></script>
+
+<script type="09939a6b4bd8da3ffe9c126e-text/javascript">
+  // Add anchors on DOMContentLoaded
+	document.addEventListener("DOMContentLoaded", function(event) {
+	  anchors.add('h2.page-h2');
+	  anchors.add('h3.page-h3');
+	  console.log(anchors.elements);
+	});
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default affix" style="display: none;">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<h3><a class="navbar-brand active" style="margin-left: -7px; color: #333;" href="/">LanternD</a></h3>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#toc-modal" data-toggle="modal" onclick="if (!window.__cfRLUnblockHandlers) return false; tocGenerator('#toc-container')" data-cf-modified-09939a6b4bd8da3ffe9c126e-=""><i class="fa fa-list-ul fa-lg"></i> 目录</a></li>
+<li><a href="https://dlyang.tk" target="_blank" title="DY-Talk"><i class="fab fa-mastodon fa-lg"></i> DY-TK</a></li>
+<li><a href="https://instagram.com/lantern_d" target="_blank" title="My Instagram"><i class="fab fa-instagram fa-lg"></i> INS</a></li>
+<li><a href="/about/" title="关于我"><i class="fa fa-user fa-lg"></i> 关于</a></li>
+<li><a href="/archive/" title="时间线"><i class="fa fa-archive fa-lg"></i> 归档</a></li>
+<li><a href="/tags/" title="标签云"><i class="fa fa-tags fa-lg"></i> 标签</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div id="toc-modal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h3 class="modal-title"> 文章目录 - 引以为流觞曲水，列坐其次</h3>
+</div>
+<div class="modal-body" id="toc-container">
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" title="关闭导航栏">云开月明</button>
+</div>
+</div>
+</div>
+</div>
+<script src="/js/topnav-toc-gen.js" type="09939a6b4bd8da3ffe9c126e-text/javascript"></script>
+<script type="09939a6b4bd8da3ffe9c126e-text/javascript">
+    $(window).scroll(function() {
+        var narrow_screen = $(this).width() < 1025 ? true : false;
+        if ($(this).scrollTop() > 200 && narrow_screen) {
+            $('nav').fadeIn();
+        } else {
+            $('nav').fadeOut();
+        }
+    });
+</script>
+<div class="home-menu">
+<div class="home-icon-con">
+<a class="home-menu-icon" href="/">LanternD</a>
+<a class="home-follow" href="#" title="More of this site">+</a>
+</div>
+<div class="home-contact">
+<a href="/guestbook/" style="margin-left:5px" title="留言板"><i class="fas fa-pencil-alt fa-lg" style="color:#FFFFF"></i> </a>
+<a href="/about/" title="关于我"><i class="fa fa-user fa-lg" style="color:#FFFFF"></i> </a>
+<a href="https://instagram.com/lantern_d" target="_blank" title="My Instagram"><i class="fab fa-instagram fa-lg" style="color:#FFFFF"></i> </a>
+<a href="https://dlyang.tk" target="_blank" title="DY-Talk（我的自建微博）"><i class="fab fa-mastodon fa-lg" style="color:#FFFFF"></i></a>
+<a href="https://telegram.me/lanternd" target="_blank" title="My Telegram"><i class="fab fa-telegram fa-lg" style="color:#FFFFF"></i></a>
+</div>
+</div>
+<script type="09939a6b4bd8da3ffe9c126e-text/javascript">
+    (function($) {
+        $('.home-follow').click(function(e) {
+            e.preventDefault();
+
+            if ($('.home-contact').is(':visible')) {
+                $('.home-contact').slideUp(100);
+            } else {
+                $('.home-contact').slideDown(100);
+            }
+        });
+    })(jQuery);
+</script>
+<link rel="stylesheet" href="/js/prettify/prettify.css" />
+<style type="text/css">
+  body { background:#e8e8e8; }
+  @media screen and (max-width: 750px){
+    body { background:#fff; }
+  }
+  @media screen and (max-width: 1025px){
+    body { background:#fff; }
+  }
+</style>
+<div id="content">
+<div class="entry">
+<h1 class="entry-title"><a href="/fast-food-justification/" title="简单为「洋快餐」正名">简单为「洋快餐」正名</a></h1>
+<p class="entry-date">2015-07-30</p>
+<pre>从KFC和MacDonald's进入中国以来，它们立刻被冠以「垃圾食品」之名，我觉得有必要部分纠正这个观点。</pre>
+<p><img src="https://img-cdn.dlyang.me/Pic4Post/fast-food-justification/fast-food.jpg" alt="Fast food" title="洋快餐" /></p>
+<p>（图片来源：<a href="http://www.studyabroadcorner.com/recommended-fast-food-restaurants-in-southern-california/">Study Abroad Corner</a>）</p>
+<p>　这里的任务很明确，只是纠正那些过度认为洋快餐不好的认识，把一些问题厘清，至于没正名的部分，要么确实有负面影响，要么我自己不清楚。</p>
+<p>　洋快餐是什么可能大家都比较清楚了，汉堡，薯条，可乐（碳酸饮料），薯片，炸鸡等等。</p>
+<h2 id="高热量">高热量</h2>
+<p>　我最想正名的部分是它们的<strong>高热量，高脂肪</strong>的说法。</p>
+<p>　最开始注意到这个问题是很久以前听了一个Podcast叫「<a href="http://www.kexuetuokouxiu.com/aboutus">科学脱口秀</a>」，由果壳的数名大牛们自己自发做的，每期还会请到不同的嘉宾分享他们的经历和关于某话题的经验。而该节目也会收录主要的几位大牛平时在其他电台节目的录音。</p>
+<p>　有一期说的是植物学博士<a href="http://www.guokr.com/i/0167236805/">史军</a>在北京一个电台里做嘉宾的讨论。里面提到了「十大健康食物」，上面列举的尽是<strong>低糖低卡路里低脂肪的蔬菜</strong>，比如欧芹等等。史军非常明确地反驳了这份列表——这些东西从一个角度说有好处，但是要把它们归为健康的食物，则是非常片面的。他提到这些食物对于运动量极少的白领和一些脑力工作者而言是不错的，但是对于那些每天能量消耗极高的人群而言则是<strong>非常不适用且不健康</strong>的，把肚子全部塞满芹菜仍不足以填平能量需求的空缺。</p>
+<p>　相同的观点一样可以用于今天要说的洋快餐上。高热量真的不好吗？对于在户外、在工地的体力劳动者，奔走在各个网点和家门之间的快递小哥们，这样一顿洋快餐简直是不能再好的福利。一天吃两次都不为过。</p>
+<p>　所谓低卡路里低脂肪的饮食方面的建议，更适合给那些长时间身体不动的职业人群以及肥胖患者使用。而与此同时请别忘了，对卡路里要求较高的人群才是<strong>大多数</strong>。体力劳动者们才是这个庞大的现代化社会的坚固基石。</p>
+<p>　所以洋快餐由于高热量就被一棍子打死那真的是太冤枉了。<strong>是否应该食用，食用的频率高低则应该根据自己的体质、健康目标和外部客观条件等等共同决定</strong>。如果一个体型正常的人平时不怎么动，每天都吃低卡食品，突然有一天消耗了特别多能量，如果仍旧吃低卡的食品则会导致机体受损。而反过来一个每天都消耗大量能量的人要是天天都吃低卡食品，久而久之就是不可逆转的身体损伤了。</p>
+<p>　就我个人而言，我可能周会吃一到两次洋快餐。在美国的快餐店里，每个套餐上面都会标注上卡路里含量。对于我这种正常偏瘦的，我几乎每次都挑卡路里最高的套餐。就最高的而言，卡路里也就在500左右，可见对于每天需要的2000卡而言仍然是杯水车薪。我中午12点吃，到下午4点就饿了。我甚至觉得，每天只吃三顿饭连2000卡都不够，零食简直是必须的。我倒不是没试过每天吃比较少热量的东西，毫无疑问结果是体重下降了好多。对于我这样脂肪不多的，体重都下降，可想而知肌肉中的蛋白质都已经被分解拿去供能了。</p>
+<p>　所以再重申一次我的结论，高热量食品如洋快餐，该不该吃，吃多少应该根据自己情况决定。直接把洋快餐判定为「垃圾食品」敬而远之，则是完全不合理的。对于一直把低卡路里饮食建议奉为圭臬的朋友们我觉得也该了解清楚自己是否合适这样的饮食方案。自己的身体应该自己心里有数。</p>
+<p>　但我支持，儿童应该少吃洋快餐，因为他们的能量消耗实在是太少。</p>
+<p>　对我而言，健康的饮食应该首先要吃饱，接着是低盐，稍微低糖、低脂，外加高蛋白。这个以后再展开。</p>
+<h2 id="关于洋快餐的其他罪名">关于洋快餐的其他罪名</h2>
+<p>　为了写这篇日志，我还去Google了「洋快餐的危害」，点开了第一篇《<a href="http://baobao.sohu.com/20130930/n387530595.shtml">警惕！洋快餐的七大危害-搜狐母婴</a>》。</p>
+<p><strong>看完以后我深刻为搜狐编辑的科学素养忧虑。</strong>下面我来具体说说。</p>
+<blockquote>
+<p>有数据显示自从1987年麦当劳、肯德基等洋快餐进入中国以来，我们的肥胖孩子就与日俱增，特别是北京的儿童肥胖率已高达40%。</p>
+</blockquote>
+<p>　开头就来个因果谬误，直接把时间先后当成因果。怎么不说改革开放导致了儿童肥胖率升高？</p>
+<blockquote>
+<p>一、损害少年儿童智力
+“胖”老鼠的表现远不如吃普通饲料的”瘦”老鼠，后者学习能力更强。研究人员由此得出结论高脂肪的”洋快餐”会损害儿童正在发育的神经系统，并对其大脑和思维素质造成永久性的伤害。</p>
+</blockquote>
+<p>　这里我相信研究人员绝对是无辜躺枪，就做个胖瘦的对照组小鼠实验，竟然下结论的时候竟然把洋快餐拉进来了，伤害还是「永久性」的，这是真的<strong>伤不起</strong>。再说人又不是天天都要吃洋快餐，弄个这么强的因果联系真的没关系吗。</p>
+<blockquote>
+<p>一顿 “ 洋快餐 ” 能提供每个人约一天需要的热量和脂肪。
+……
+如果一日三餐都吃快餐，粗略估算一下，总热量摄入可达 3005 千卡，远高于中年男性 2700 千卡和中年女性 2000 千卡的热量每日需要值。</p>
+</blockquote>
+<p>　「一顿」能满足一天的热量，而「一日三餐都吃快餐」，只比需要值高一点？咱就不要自相矛盾了好吗，还是小学算术没有过关？事实上洋快餐吃一顿就腻得不要不要的了，如果一个人一天吃三顿，那我真的佩服不已。<del>而且根据我所见所闻，卡路里到达600的套餐在美国基本是见不着的，每份套餐基本也是和国内一样的可乐+汉堡+薯条，难不成国内的卡路里算法不一样，或者是国内的汉堡能量密度能翻一倍？</del>（见文末Update）</p>
+<blockquote>
+<p>四、导致肥胖和性早熟
+汉堡包、炸薯条等美式快餐可引起人体内激素的变化，易使食用者特别是少年儿童上瘾，难以控制进食量。因为人体内的激素–“瘦素”控制着人体的饮食行为，为什么小孩吃了一次”洋快餐”就想吃第二次，就是因为”洋快餐”干扰影响了”瘦素”在体内的正常水平。</p>
+</blockquote>
+<p>　不知谁来给我普及一下什么是「瘦素」？人的饮食行为能被激素控制（完全控制）我是第一次听说。难我一天吃一堆水果蔬菜难道瘦素就暴增，以后我就天天自动吃水果蔬菜？「吃了一次就想吃第二次」完全是因为好吃而已嘛。此外，标题放了个「性早熟」，后面正文则一点也没有提及，敢情扯到激素就能把「性早熟」放上来？</p>
+<blockquote>
+<p>五、氢化油导致慢性病
+……“ 洋快餐 ” 大都是油炸和烤制食品，普遍使用氢化脂肪。流行病学研究表明，氢化脂肪的摄入量与心脏病和糖尿病的发病有直接的关系，氢化脂肪摄入量还影响血液中胆固醇的含量。</p>
+</blockquote>
+<p>　这段主要描述了反式脂肪酸的危害。但据我所知，无论中国和美国，对食物中的反式脂肪酸都有着非常严格的标准，想要合法经营洋快餐店，这个标准还是需要达到的。而且反式脂肪几乎天然存在于我们的饮食之中，如牛羊肉，奶等等，更多的信息可以参考<a href="http://www.guokr.com/article/436810/">要对反式脂肪酸“赶尽杀绝”吗？</a>。如果想减少反式脂肪酸的摄入，还是从不吃烧烤不撸串不吃路边摊开始吧。</p>
+<blockquote>
+<p>六、 致癌物质含量很高
+汉堡包、炸薯条、炸鸡等食物中含有大量的”丙烯酰胺”，这种物质可导致基因突变，损害中枢和周围神经系统，诱发良性或恶性肿瘤。</p>
+</blockquote>
+<p>　这个看起来该是洋快餐又一大罪名了吧。然而到维基百科搜一下，事实完全不是这回事。</p>
+<p>　<a href="https://zh.wikipedia.org/wiki/%E4%B8%99%E7%83%AF%E9%85%B0%E8%83%BA">丙烯酰胺</a>词条中表示：</p>
+<blockquote>
+<p>目前要做出是否丙烯酰胺会致癌的结论，仍需其他更多的研究数据来协助判定，例如日常饮食摄取丙烯酰胺对脑及神经系统的影响。 目前将丙烯酰胺归为致癌物，是因为动物实验的结果。但此实验用于动物的丙烯酰胺是高剂量纯化过的，而非由食物中正常摄取的，必须谨慎解读此结果。 目前，仍未有充分证据显示丙烯酰胺对人类为致癌物。</p>
+</blockquote>
+<p>　对应的英文页面<a href="https://en.wikipedia.org/wiki/Acrylamide">Acrylamide</a>中则表示：</p>
+<blockquote>
+<p>As of 2014 it is still not clear whether dietary acrylamide consumption affects people’s risk of developing cancer.</p>
+<p>（引用来源为<a href="https://www.ncbi.nlm.nih.gov/pubmed/24713263">Risk assessment, formation, and mitigation of dietary acrylamide</a>）</p>
+</blockquote>
+<p>　所以「洋快餐含有丙烯酰胺」+「丙烯酰胺致癌」-&gt;「洋快餐致癌」这样的逻辑链条是完全靠不住的。</p>
+<blockquote>
+<p>世界卫生组织规定 , 每千克食品中丙烯酰胺不得超过 1 毫克 。而据测定 , 美式快餐的炸薯条中丙烯酰胺高出规定标准约 100 倍 , 一包普通炸薯片超标 500 倍 。</p>
+</blockquote>
+<p>　如果参考了<a href="https://baike.baidu.com/view/168841.htm#5">丙烯酰胺含量</a>这个条目，我觉得薯条根本已经是人畜无害了好嘛？均值和谷物是一样的。如果再仔细研究里面的数据单位和标准，才知道上面说的「美式快餐的炸薯条中丙烯酰胺高出规定标准约 100 倍 , 一包普通炸薯片超标 500 倍」是有多扯淡，偷换概念的能力不知高到哪里去了。</p>
+<p>　还是那句话，没有几个国家的标准会比WHO设定的低，要少摄入丙烯酰胺依然从不吃路边摊开始吧。甚至蛋糕这些经过高温烹饪的食品都应该被「连诛」了。</p>
+<p>　再来看最后一条：</p>
+<blockquote>
+<p>七、“三高”、“三低”营养失衡
+由于”洋快餐”具有”三高”和”三低”的特点，即”高热量、高脂肪、高蛋白质”和”低矿物质、低维生素、低膳食纤维”，因此，国际营养学界称之为”垃圾食品”!长期食用美式快餐等”垃圾食品”，可能会对健康造成永久性的伤害!</p>
+</blockquote>
+<p>　这条其实是结论性质的，把直接大部分充满缺陷的分论点总结了一次。怎么看都像各类养生谣言的口吻好吗…</p>
+<p>　所以这篇文章最后能勉强站得住脚的有洋快餐中含有对人有一定影响的激素。但我对此表示存疑，暂时也没时间考证。如果有人知道任何支持或者反对该观点的信息欢迎提供。</p>
+<p>　另外，洋快餐营养结构不平衡这点我是支持的，也算是我不经常吃的原因之一。但每种营养成分的日摄入量都有具体的标准，吃了一顿洋快餐导致矿物质、维生素、膳食纤维摄入不足可以在其他的正餐或者靠水果蔬菜补全嘛，又没说要在一棵树上吊死。</p>
+<h2 id="最后的陈辞">最后的陈辞</h2>
+<p>　综合这篇博文的观点就是，热量高的食物，如本文中的洋快餐，绝对不是「垃圾食品」，因为对很多人来说这是很好的能量补充方式。如果非要拿卡路里衡量的话，一碗大米饭也有250卡，加上几个菜，吃几块肉，卡路里不也是轻松到500的吗。</p>
+<p>　第二个我要说明的是，说一个东西「没这么坏」并不等于我说这个东西一定「好」。很明显我是不支持一天三餐都吃洋快餐的，像我一样一周吃个两三次应该还是过得去的。一切都取决于自己能量消耗的多少，天天重体力劳动的，每天都大量运动的，还是对身体好点，多吃点高热量的食物吧。</p>
+<p>　关于「洋快餐吃多了不好」，我的想法是啥吃多了都不好，什么都要讲究均衡。物极必反是比较普适的规律。</p>
+<p>　我在国内已经目睹了太多了不健康饮食生活方式了，天天重油重盐的大有人在，路边烧烤摊更是络绎不绝，洋快餐对他们来说已经是比较健康的食物了。</p>
+<p>　还是那句话，<strong>自己的身体自己应该清楚</strong>。另外每天运动真的真的非常有必要，信一条养生建议不如多跑一公里，多游几百米。</p>
+<p>　好像开始跑题了，就在这打住吧，如果有任何关于洋快餐的「罪状」，可以拉出来讨论讨论。</p>
+<h2 id="2018-10-02-重新读这篇blog后的update">2018-10-02 重新读这篇Blog后的Update</h2>
+<p>　到了现在我吃薯条汉堡的次数似乎不超过一周一次，久不吃了还是有些想念，然后吃一顿。</p>
+<p>　文章中的卡路里数量基本需要乘以2。Wendy’s的鸡肉汉堡卡路里在500-700之间。但是其他地方，比如Burger King，最多的套餐会有1600卡之多，大部分也在600起步。米饭卡路里一碗应该有450-550卡。</p>
+<p>　我的基本观点还是没变：如果需要热量，吃洋快餐是个好选择。如果天天运动量不大，那就少吃，管住嘴。不赞成天天吃，需要补充其他营养保持饮食结构平衡。</p>
+<blockquote style="margin-bottom:1%">
+<p>
+<strong>LanternD</strong> <br>
+<img align="left" src="/img/LanternD_Logo.png" width="217px" height="60px" alt="LanternD_Logo" title="LanternD's Signature"><br></p><br><br><br>
+</blockquote>
+<hr>
+<div class="footer-navi">
+<a href="/archive/"><i class="fa fa-archive"></i> 时间线</a>　
+<a href="/tags/"><i class="fa fa-tags"></i> 标签云</a>
+</div>
+<div class="post-tag">
+<i class="fa fa-tags"></i> 标签：
+<span class="label"><a href="/tags/#快餐">快餐</a></span>
+<span class="label"><a href="/tags/#炸鸡">炸鸡</a></span>
+<span class="label"><a href="/tags/#汉堡">汉堡</a></span>
+<span class="label"><a href="/tags/#可乐">可乐</a></span>
+<span class="label"><a href="/tags/#健康">健康</a></span>
+</div>
+<hr>
+<div class="pagination">
+<ul>
+<li class="prev"><a href="/hakuna-matata-2/" title="上一篇：Hakuna Matata - Chapter II">&larr; 后顾-Hakuna Matata - Chapter II</a></li><br><br>
+<li class="next"><a href="/global-g-2-unboxing/" title="下一篇：切菜的享受——Global G-2开箱">切菜的享受——Global G-2开箱-前瞻 &rarr;</a></li><br><br>
+</ul>
+<hr style="margin-top: 10px;">
+</div>
+<script type="09939a6b4bd8da3ffe9c126e-text/javascript">
+
+ /* All the code for the comment section */
+
+ // Disqus js code START
+ var disqus_config = function() {
+   this.page.url = 'https://dlyang.me/fast-food-justification/';
+   this.page.identifier = 'fast-food-justification';
+ };
+
+ function toggleDisqusComments(container) {
+   if ($(container).has("iframe").length > 0) {
+     var iframe_id = $(container + " iframe").attr("id");
+     $(container + " iframe#" + iframe_id).toggle("fast", "linear");
+     return;
+   }
+
+   (function() {
+     var d = document,
+         s = d.createElement('script');
+     s.src = 'https://lanternd.disqus.com/embed.js';
+     s.setAttribute('data-timestamp', +new Date());
+     (d.head || d.body).appendChild(s);
+   })();
+
+ }
+ // Disqus code END
+
+
+ //  Commento js code START
+
+ function toggleCommentoComments(container) {
+   if ($(container).has(" #commento-main-area").length > 0) {
+     // Subsequent clicks
+     $(container + " #commento").toggle("fast", "linear");
+     return;
+   } else {
+     // First click
+     window.commento.main();
+   }
+ }
+ //  Commento js code END
+
+ // Enable bootstrap CSS tooltip option.
+ $(function() {
+   $('[data-toggle="tooltip"]').tooltip()
+ })
+</script>
+<script defer src="https://commento.dlyang.me/js/commento.js" data-auto-init="false" data-css-override="https://dlyang.me//css/commento-css-override.css" type="09939a6b4bd8da3ffe9c126e-text/javascript"></script>
+<noscript>Please enable JavaScript to load the comments.</noscript>
+
+<div class="post-footer">
+<div class="ld-comment-container">
+<div id="disqus_container">
+<div style="margin-bottom:20px" class="right"></div>
+<a href="#comment-disqus" class="comment" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleDisqusComments('#disqus_container');" data-cf-modified-09939a6b4bd8da3ffe9c126e-="">
+查看 <strong>Disqus</strong> 评论
+</a>
+<div id="comment-tips-tooltip">
+<a href="#comment-tips" class="comment-tips" data-html="true" data-toggle="tooltip" title="请优先使用 Disqus，但需要翻墙。<br><br>如果👆 Disqus 加载不出来可以用👇 Commento。<br>支持 Markdown 语法。匿名评论无需注册但要审核，欢迎在评论后留下称呼方式。">Tips</a>
+</div>
+
+<div id="disqus_thread"></div>
+</div>
+<div id="commento_container">
+<div id="cmt_container">
+<a href="#comment-commento" class="comment" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleCommentoComments('#commento_container');" data-cf-modified-09939a6b4bd8da3ffe9c126e-="">
+查看<strong>Commento</strong>评论
+</a>
+</div>
+<div id="commento"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sidenav">
+<h2>订阅</h2>
+<a href="/rss.xml" class="rss"><i class="fa fa-rss"></i> <strong>RSS订阅</strong></a>
+<a href="#wechat-modal" class="rss" data-toggle="modal" style="margin-top: 10px; margin-bottom: 5px;"><i class="fab fa-weixin"></i> <strong>微信公众号</strong></a>
+</div>
+<div id="wechat-modal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h3 class="modal-title">微信公众号</h3>
+</div>
+<div class="modal-body">
+<figure>
+<img src="/img/wx-QRCode.jpg" alt="WeChat QR Code" align="middle" />
+<figcaption align="middle">扫描二维码即可关注。</figcaption>
+</figure>
+<p>　公众号只推送摘要和链接，仅用于提醒新文章发表，不会全文转发。在文章中点击「阅读原文」即可跳转到Blog主页面。</p>
+<p>　相关文章：《<a href="/wechat-mp-reincarnation/">微信公众平台的重新启用和感想</a>》</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" title="关闭导航栏">云开月明</button>
+</div>
+</div>
+</div>
+</div>
+<div class="sidenav">
+<h2>图书馆分类法</h2>
+<ul class="artical-list">
+<li><a href="/event-horizon">事件视界</a></li>
+<li><a href="/hitech">HiTech</a></li>
+<li><a href="/viewfinder">取景器</a></li>
+<li><a href="/cuisine">料理时</a></li>
+<hr>
+<li><a href="/archive">
+<h3><i class="fa fa-archive"></i> <strong>时间线</strong></h3>
+</a></li>
+<li><a href="/tags">
+<h3><i class="fa fa-tags"></i> <strong>标签云</strong></h3>
+</a></li>
+</ul>
+</div>
+<div class="sidenav">
+<h2>更多关于『blog』的文章</h2>
+<ul class="artical-list">
+<li><a href="/tesla-model-y-delivery/">Tesla 效率</a></li>
+<li><a href="/blogging-for-8-years/">博客写作八年的心得体会</a></li>
+<li><a href="/santa-clara-dmv-real-id-drivers-license-renewal/">记一次在 Santa Clara DMV 办 Real ID 的经历【内附精心绘制地图】</a></li>
+<li><a href="/experiencing-ipad-air-5-and-magic-keyboard/">iPad Air 5 和 Magic Keyboard 的使用体验</a></li>
+<li><a href="/2022-01-to-04-hiking-recollections/">2022 年 1 - 4 月 Hiking 合集</a></li>
+<li><a href="/monterey-seascapes-travel-log-chapter-2/">海景摄影 Workshop 之旅·行路篇·其二</a></li>
+<li><a href="/monterey-seascapes-travel-log-chapter-1/">海景摄影 Workshop 之旅·行路篇·其一</a></li>
+<li><a href="/succulent-exhibition/">多肉礼赞</a></li>
+<li><a href="/travel-by-train-in-the-usa/">在美国坐火车</a></li>
+<li><a href="/2021-12-hiking-recollections/">2021 年 12 月 Hiking 合集</a></li>
+<li><a href="/2021-11-hiking-recollections/">2021 年 11 月 Hiking 合集</a></li>
+<li><a href="/2021-10-hiking-recollections/">2021 年 10 月 Hiking 合集</a></li>
+<li><a href="/let-there-be-wildfire/">「来一场山火吧」</a></li>
+<li><a href="/2021-09-hiking-recollections/">2021 年 9 月 Hiking 合集</a></li>
+<li><a href="/what-would-they-think/">他们会怎么想？</a></li>
+</ul>
+</div>
+</div>
+<script type="09939a6b4bd8da3ffe9c126e-text/javascript">
+(function(){
+  var narrow_screen = $(this).width() < 1025 ? true : false;
+  console.log("Is it narrow_screen?" + narrow_screen);
+  if (!narrow_screen){
+
+    (function(){
+
+      function initHeading(){
+        var h2 = [];
+        var h3 = [];
+        var h2index = 0;
+
+        $.each($('.entry h2, .entry h3'),function(index,item){
+          if(item.tagName.toLowerCase() == 'h2'){
+            var h2item = {};
+            h2item.name = $(item).text();
+            h2item.id = 'menuIndex'+index;
+            item.setAttribute("class", "page-h2");
+            h2.push(h2item);
+            h2index++;
+          }else{
+            var h3item = {};
+            h3item.name = $(item).text();
+            h3item.id = 'menuIndex'+index;
+            item.setAttribute("class", "page-h3");
+            if(!h3[h2index-1]){
+              h3[h2index-1] = [];
+            }
+            h3[h2index-1].push(h3item);
+          }
+          item.id = 'menuIndex' + index;
+        });
+
+        return {h2:h2,h3:h3};
+      }
+
+      function genTmpl(){
+        var h1txt = $('h1').text();
+        var tmpl = '<ul><li class="h1" id="toc-title"><a href="#' + h1txt + '">' + h1txt + '</a></li>';
+
+        var heading = initHeading();
+        var h2 = heading.h2;
+        var h3 = heading.h3;
+        // console.log(heading);
+        for(var i=0;i<h2.length;i++){
+          tmpl += '<li><a href="#" data-id="'+h2[i].id+'">⌬ '+h2[i].name+'</a></li>';
+
+          if(h3[i]){
+            for(var j=0;j<h3[i].length;j++){
+              tmpl += '<li class="side h3"><a href="#" data-id="'+h3[i][j].id+'">↪ '+h3[i][j].name+'</a></li>';
+            }
+          }
+        }
+        tmpl += '</ul>';
+
+        return tmpl;
+      }
+
+      function genIndex(){
+        var tmpl = genTmpl();
+        var indexCon = '<div id="menuIndex" class="sidenav"></div>';
+
+        $('#content').append(indexCon);
+
+        $('#menuIndex')
+        .append($(tmpl))
+        .delegate('a','click',function(e){
+          e.preventDefault();
+
+          var selector = $(this).attr('data-id') ? '#'+$(this).attr('data-id') : 'h1'
+          var scrollNum = $(selector).offset().top;
+
+          $('body, html').animate({ scrollTop: scrollNum-30 }, 400, 'swing');
+        });
+      }
+
+      var waitForFinalEvent = (function () {
+        var timers = {};
+        return function (callback, ms, uniqueId) {
+          if (!uniqueId) {
+            uniqueId = "Don't call this twice without a uniqueId";
+          }
+          if (timers[uniqueId]) {
+            clearTimeout (timers[uniqueId]);
+          }
+          timers[uniqueId] = setTimeout(callback, ms);
+        };
+      })();
+
+      if($('.entry h2').length > 2){//&& !ie6
+
+        genIndex();
+
+        $(window).load(function(){
+          var scrollTop = [];
+          $.each($('#menuIndex li a'),function(index,item){
+            var selector = $(item).attr('data-id') ? '#'+$(item).attr('data-id') : 'h1'
+            var top = $(selector).offset().top;
+            scrollTop.push(top);
+          });
+
+          var menuIndexTop = $('#menuIndex').offset().top;
+          var menuIndexLeft = $('#menuIndex').offset().left;
+
+          $(window).scroll(function(){
+            waitForFinalEvent(function(){
+              var nowTop = $(window).scrollTop();
+              var length = scrollTop.length;
+              var index;
+
+              if(nowTop+20 > menuIndexTop){
+                $('#menuIndex').css({
+                  position:'fixed'
+                  ,top:'20px'
+                  ,left:menuIndexLeft
+                });
+              }else{
+                $('#menuIndex').css({
+                  position:'static'
+                  ,top:0
+                  ,left:0
+                });
+              }
+
+              if(nowTop+60 > scrollTop[length-1]){
+                index = length;
+              }else{
+                for(var i=0;i<length;i++){
+                  if(nowTop+60 <= scrollTop[i]){
+                    index = i;
+                    break;
+                  }
+                }
+              }
+              $('#menuIndex li').removeClass('on');
+              $('#menuIndex li').eq(index-1).addClass('on');
+            });
+          });
+
+          $(window).resize(function(){
+            $('#menuIndex').css({
+              position:'static'
+              ,top:0
+              ,left:0
+            });
+
+            menuIndexTop = $('#menuIndex').offset().top;
+            menuIndexLeft = $('#menuIndex').offset().left;
+
+            $(window).trigger('scroll')
+            $('#menuIndex').css('max-height',$(window).height()-80);
+          });
+        })
+
+            //用js计算屏幕的高度
+          $('#menuIndex').css('max-height',$(window).height()-80);
+      }
+    })();
+  }
+})();
+</script>
+<script type="09939a6b4bd8da3ffe9c126e-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-54601036-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+<div class="back-top" style="display: none;" title="返回顶部">
+<button class="btn btn-primary" style="color:#0e0e0e">
+<i class="fa fa-lg fa-chevron-up" style="color:#0e0e0e"></i>
+</button>
+</div>
+<script type="09939a6b4bd8da3ffe9c126e-text/javascript">
+  $(window).bind("scroll", function(){
+
+    var scrollTopNum = $(document).scrollTop(),
+        winHeight = $(window).height(),
+        returnTop = $("div.back-top"),
+        topNav = $("nav");//Navibar on the top
+
+    (scrollTopNum > 300) ? returnTop.fadeIn("fast") : returnTop.fadeOut("fast");
+
+    if (!-[1,]&&!window.XMLHttpRequest) {
+      returnTop.css("top", scrollTopNum + winHeight - 500);
+    }
+  });
+
+  $('div.back-top').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 500);
+  });
+</script>
+
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="09939a6b4bd8da3ffe9c126e-|49" defer=""></script></body>
+</html>

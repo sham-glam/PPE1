@@ -1,0 +1,299 @@
+   #alternate alternate alternate
+
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-5Q2GQZ4
+
+   (BUTTON)
+   Acrelec
+
+     * Drive-Thru
+          + ODMB
+          + Qtimer
+          + OrderMatic
+     * Self-Checkout
+          + S15
+          + S22 Lite
+     * Kiosk
+     * Etudes de cas
+          + Commerces & loisirs
+          + Alimentation et boissons
+     * Société
+
+   (BUTTON) Search button Contact
+
+   Tendances - 22 avril 2021
+
+L’ascension du marché de la restauration rapide en France
+
+     * Facebook
+     * Twitter
+     * Mail
+     __________________________________________________________________
+
+   La restauration rapide, communément appelé “fast-food” est un type de
+   restauration à un prix souvent raisonnable, avec des horaires
+   flexibles. Ces fast-foods proposent des produits dont la préparation
+   est globalement automatisée, pouvant être consommés sur place ou à
+   emporter. En France, l’offre de restauration rapide est très variée, en
+   passant par des hamburgers, des kebabs ou encore des sushis ! Les
+   français consomment de plus en plus de fast-foods. Un rapport de
+   l’Anses (Agence nationale de sécurité de l’alimentation, de
+   l’environnement et du travail) de 2020 révèle qu’en 2005, plus d’un
+   tiers des adultes actifs et étudiants déclaraient ne jamais manger de
+   produits issus de la restauration rapide. En 2015, c’est désormais une
+   personne sur 10 qui affirmait ne jamais manger de fast-foods. D’après
+   une étude de Gira Conseil en 2018, la restauration rapide représentait
+   un chiffre d’affaires de 54 milliards d’euros, ce qui équivaut à plus
+   de la moitié du chiffre d’affaires total de la restauration, qui était
+   de 88 milliards d’euros à cette période.
+
+
+   Retour sur l’histoire du fast-food en France
+
+
+   La restauration rapide a vu le jour en France, en 1972, avec le premier
+   restaurant Mcdonald’s implanté à Créteil. Puis, c’est à partir des
+   années 80 que la France connaît un véritable essor des fast-foods, avec
+   l’implantation de Quick, de Free Time, et encore de Burger King. Cette
+   nouvelle façon de déjeuner n’a pas laissé indifférents les français et
+   a parfois suscité certaines polémiques, par exemple quant à l’équilibre
+   nutritionnel des produits. Dans l’objectif de se pérenniser, les
+   fast-foods ont souhaité étendre leurs offres avec l’arrivée des
+   premières bornes de commande en libre service (inventées par Acrelec,
+   et déployées depuis 2008 dans les restaurants McDonald’s français) ou
+   encore des premiers drive, notamment avec le McDrive en 1986. Afin de
+   rester compétitives, ces enseignes de la restauration rapide ont dû
+   s’adapter et répondre aux nouvelles attentes de leurs consommateurs.
+   Dès lors, les fast-foods ont élargi leur gamme avec des produits :
+     * Bio : il existe notamment O’Burger, une chaîne de restauration
+       rapide proposant des produits certifiés bio, avec des emballages en
+       matières recyclables et biodégradables. Les français sont de plus
+       en plus sensibles aux produits frais, issus de l’agriculture
+       biologique et du terroir local.
+     * Ou encore des produits halal : C’est le cas pour Quick, qui propose
+       dans certains de ces établissements de la nourriture certifiée
+       halal. Cependant, nous n’en retrouvons que très peu puisque ces
+       restaurants ne représentent que 6% du réseau Quick en France. La
+       consommation des produits halal est en hausse en France, d’après un
+       rapport de l’Ifop de 2020. Par exemple, en 2010, l’achat de
+       desserts, chocolats ou bonbons halal était de 40% et elle est
+       passée à 68% en 2020. Selon le politologue Jérôme Fourquet : “cette
+       tendance se renforce chez les jeunes générations”.
+
+   De ce fait, il est essentiel de prendre en compte les envies et
+   comportements de sa cible, afin de leur proposer des produits en
+   adéquation avec leurs attentes, et par conséquent les fidéliser.
+
+
+   Bien plus qu’une restauration rapide, des fast-foods de plus en plus
+   qualitatifs
+
+
+   En effet, le consommateur souhaite des produits répondant à ses
+   attentes, mais désire également que l’on lui garantisse rapidité et
+   praticité. Pour ce faire, digitaliser son restaurant apparaît comme la
+   solution incontournable. Le fait de proposer des kiosques en libre
+   service ou encore un parcours drive, permet à vos clients de leur
+   offrir un gain de temps, de leur apporter de l’autonomie, ainsi que
+   d’améliorer leur expérience client. Pour les restaurateurs, ils peuvent
+   ainsi réguler les flux, augmenter le panier moyen des clients, ainsi
+   que maîtriser le parcours client, afin qu’il soit optimal.
+     * Afin d’en savoir davantage sur les kiosques, vous pouvez consulter
+       cette page : https://acrelec.com/fr/kiosk/
+
+     * Concernant la solution Drive, nous vous invitons à lire cet article
+       : “Le Smart Dive, le canal incontournable pour booster les
+       performances des restaurateurs”.
+
+
+   La restauration rapide, un secteur qui a su tirer son épingle du jeu
+   durant la pandémie mondiale
+
+
+   En comparaison au service à table, les fast-foods ont été peu impactés
+   par la Covid-19. Effectivement, la restauration rapide était déjà
+   formée à la vente à emporter, au drive, ou encore à la livraison.
+   D’après Bernard Boutboul, Président de Gira, ce secteur a connu un
+   retrait de seulement 5 à 10% de son chiffre d’affaires sur l’année
+   2020. En revanche, le service à table, qui n’avait que très peu recours
+   à la vente à emporter ou au drive, a été contraint de s’y mettre, afin
+   de maintenir son activité et d’écouler ses stocks. C’est pour cela que
+   la vente à emporter a doublé ses parts de marché, puisqu’elle
+   représentait 15% de la restauration à table en 2019, puis 30% en 2020,
+   d’après Maria Bertoch (experte du secteur chez The NPD Group).
+   Cependant, dès la réouverture des restaurants, de nombreux experts, tel
+   que Bernard Boutboul, prédisent une émeute, des terrasses prises
+   d’assaut… Dès lors, les consommateurs n’ont qu’une hâte : retrouver
+   l’expérience qu’offre la restauration à table. Ainsi, afin d’être
+   attractifs et compétitifs, les fast-foods ont tout intérêt à préparer
+   la réouverture de leurs restaurants, en respectant les mesures
+   sanitaires imposées par le gouvernement.
+
+
+   L’hygiène, un enjeu de taille qui perdurera dans la restauration rapide
+   post-Covid
+
+
+   Les bornes de commande en libre service ont de nombreux avantages
+   clients et consommateurs finaux. En revanche, la pandémie mondiale aura
+   fait naître un problème, déjà existant auparavant, mais de plus en plus
+   préoccupant : garantir la sécurité de tous, en termes d’hygiène. Depuis
+   quelques années, Acrelec travaille sur une innovation permettant de
+   limiter la propagation des bactéries proliférant sur ces kiosques. En
+   effet, le fait de devoir nettoyer les écrans avant chaque utilisation
+   apparaît comme du temps perdu, qui aurait pu servir à favoriser la
+   productivité des salariés d’une enseigne. Dès lors, Acrelec a trouvé la
+   solution : la borne sans contact, appelée : Touchless. Selon Bernard
+   Boutboul, il s’agit d’une “idée de génie”, qui n’est pas seulement
+   utile pour la pandémie mais qui est surtout une innovation pérenne dans
+   le secteur de la restauration rapide, en constante évolution.
+
+
+   Pour en savoir davantage sur l’innovation Touchless, vous pouvez lire
+   l’article : “Touchless, la solution pour limiter la propagation des
+   virus dans les restaurants”.
+
+   +33 (0)1 72 03 24 10
+
+   info@acrelec.com
+
+
+   Dans ce secteur de plus en plus concurrentiel, il apparaît comme
+   évident de devoir se différencier, en proposant de nouvelles offres, de
+   nouveaux modes de distributions et pourquoi pas de nouvelles
+   innovations, permettant d’attirer des clients potentiels et de se
+   pérenniser.
+     __________________________________________________________________
+
+Partagez l'article
+
+     * Facebook
+     * Twitter
+     * Mail
+
+Articles connexes
+
+     Tendances
+
+Top 10 des actualités FOOD de Juillet 2021
+
+   29 juillet 2021
+
+     Tendances
+
+Les 10 comptes Food & FoodTech à suivre sur Twitter et LinkedIn
+
+   26 juillet 2021
+
+     Produit
+
+Comment collecter de la Data en restauration afin de booster ses performances
+?
+
+   22 juillet 2021
+
+     Tendances
+
+Tout ce que vous devez savoir sur le Pass Sanitaire obligatoire dans les
+restaurants dès août 2021
+
+   19 juillet 2021
+
+
+
+   Tendances
+
+Partie 4 : Faire appel à des influenceurs Food pour accroître la notoriété de
+votre restaurant ?
+
+   13 juillet 2021
+
+
+
+   Tendances
+
+Restauration : Contre le gaspillage alimentaire, le doggy bag désormais
+obligatoire ?
+
+   8 juillet 2021
+
+
+
+   Produit
+
+Interview : Benoit Dupuit partage les enjeux des Self CheckOut dans le
+retail…
+
+   6 juillet 2021
+
+
+
+   Tendances
+
+Top 8 des actualités FOOD de Juin 2021
+
+   1 juillet 2021
+
+
+
+   Produit
+
+Les caisses automatiques, devenues incontournables dans le retail ?
+
+   29 juin 2021
+
+
+
+   Produit
+
+Le Drive : pourquoi le mettre en place et quels sont les critères à prendre
+en compte ?
+
+   24 juin 2021
+
+   Sign up to learn about our latest innovations
+   Email Address * ____________________
+   ____________________
+   Subscribe
+
+   Acrelec Logo White
+     * Drive-Thru
+          + ODMB
+          + Qtimer
+          + OrderMatic
+     * Kiosk
+     * Self-Checkout
+          + S15
+          + S22 Lite
+     * Etudes de cas
+          + Commerces
+            & loisirs
+          + Alimentation
+            & boissons
+     * Société
+          + A propos
+          + Implantations
+          + Actualités
+          + Udvise
+          + Carrières
+
+     * en |
+     * English
+
+     * External Link to : LinkedIn
+     * External Link to : Youtube
+     * External Link to : Instagram
+     * External Link to : Podcast
+     * External Link to : Spotify
+
+   scocotec
+     * Cookies
+     * Mentions Légales
+     * Politique de Confidentialité
+     * CGV
+     * Politique QSE
+     * Contact
+
+   Copyright 2021 Acrelec. Tous droits réservés.
+
+   (BUTTON) Close modal
+   ____________________

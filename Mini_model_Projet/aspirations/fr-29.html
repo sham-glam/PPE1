@@ -1,0 +1,3230 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr"
+      class="">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        AjaxContainer: 'div.dmBody',
+        WrappingContainer: 'div.dmOuter',
+        HomeUrl: 'https://franchise.chutys.com/',
+        AccountUUID: '6a68d7139190429f8d221e8404bf600c',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '9f999b83',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Mon Dec 12 11:10:27 UTC 2022',
+        ExternalUid: null,
+        IsSiteMultilingual: true,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        InitialPageAlias: 'fr',
+        InitialPageUuid: '60713d1f987241769829fb598b573a41',
+        InitialEncodedPageAlias: 'ZnI=',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '8150',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'franchise-chutys',
+        HasCustomDomain: true,
+        showCookieNotification: true,
+        cookiesNotificationMarkup: ' <div>Nous utilisons des cookies pour optimiser votre exp&eacute;rience sur notre site web. Pour en savoir plus, veuillez acc&eacute;der &agrave; la page Confidentialit&eacute;.<\/div> \n',
+        translatedPageUrl: '/fr',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'fr',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://franchise.chutys.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        
+
+        siteInfo: null,
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://www.franchise.chutys.com/fr">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Franchise de cuisine de rue tha&iuml;landaise
+</title>
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://irp.cdn-website.com/9f999b83/dms3rep/multi/logo_chutys.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/9f999b83/site_favicon_16_1624796370561.ico"/>
+
+<!-- End favorite icons -->
+
+<link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin />
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if(!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function() {
+            },
+            getCurrentDeviceType: function() {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+<!-- loadCSS function -->
+<script>
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+
+  function checkCss() {
+    if (cssLinks && cssLinks.runtime && cssLinks.global) {
+      loadCssLink(cssLinks.runtime);
+      loadCssLink(cssLinks.global);
+      cssLinks = null;
+    }
+  }
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      /* Never fail - this is just a tool for measurements */
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+    const defs={};
+    window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+    window.waitForDeferred = function (b, a, c) {
+      let d = window?.getDeferred?.(b);
+      d
+        ? d.promise.then(a)
+        : c && ["complete", "interactive"].includes(document.readyState)
+        ? setTimeout(a, 1)
+        : c
+        ? document.addEventListener("DOMContentLoaded", a)
+        : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function -->
+<script>
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+
+  function checkCss() {
+    if (cssLinks && cssLinks.runtime && cssLinks.global) {
+      loadCssLink(cssLinks.runtime);
+      loadCssLink(cssLinks.global);
+      cssLinks = null;
+    }
+  }
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      /* Never fail - this is just a tool for measurements */
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css?family=Roboto:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Poppins:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Be+Vietnam:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Open+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-new-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/3111/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-new.min.css" />
+
+<!-- End of RT CSS Include -->
+
+
+
+    
+       <link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/production_3111/004b5bdd245110b6c6336267aa0e53b8.css" id="widgetCSS" />
+    
+
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {height: auto;}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+    body[data-page-alias="fr"] #dm [data-show-on-page-only="fr"]{
+        display: block !important;
+    }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/9f999b83/files/9f999b83_fr_header_1.min.css?v=69" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+<style id="additionalGlobalCss" type="text/css">
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody a.span.textonly{
+color:rgb(255,255,255) !important}
+*#dm *.dmBody div.dmform-error{
+font-style:normal !important}
+*#dm *.dmBody div.dmforminput textarea{
+font-style:italic !important}
+*#dm *.dmBody div.dmforminput *.fileUploadLink{
+font-style:italic !important}
+*#dm *.dmBody div.checkboxwrapper span{
+font-style:italic !important}
+*#dm *.dmBody div.radiowrapper span{
+font-style:italic !important}
+*#dm *.dmBody div.u_1780639595{
+line-height:normal !important;
+background-color:rgba(0,0,0,0) !important}
+*#dm *.dmBody div.u_1006691027{
+background-color:rgba(0,0,0,0) !important;
+background-image:none !important}
+.u_1006691027{
+}
+.u_1158597168{
+}
+.u_1113743457{
+}
+.u_1651399597{
+}
+*#dm *.dmBody div.u_1651399597{
+background-image:url(https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/europark-nasa-zgodba-min-2880w.jpeg) !important;
+background-repeat:no-repeat !important;
+background-position:center center !important;
+background-origin:border-box !important;
+background-size:cover !important}
+*#dm *.dmBody div.u_1722123997{
+background-color:rgba(13,13,13,1) !important}
+*#dm *.dmBody div.u_1818500695 hr{
+color:rgba(235,181,69,1) !important}
+*#dm *.dmBody div.u_1431939422 hr{
+color:rgba(235,181,69,1) !important}
+*#dm *.dmBody div.u_1728284182 hr{
+color:rgba(235,181,69,1) !important}
+*#dm *.dmBody div.u_1716275779{
+background-color:rgba(0,0,0,0) !important;
+background-image:none !important}
+.u_1716275779{
+}
+.u_1650696822{
+}
+*#dm *.dmBody div.u_1702828103{
+background-color:rgba(0,0,0,0) !important;
+background-image:none !important}
+.u_1702828103{
+}
+.u_1186719413{
+}
+*#dm *.dmBody div.u_1267288427{
+background-color:rgba(235,181,69,1) !important}
+*#dm *.dmBody div.u_1638755498{
+background-repeat:no-repeat !important;
+background-image:url(https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/btc-street-food-nasa-zgodba-min-2880w.jpeg) !important}
+*#dm *.dmBody *.u_1638755498:before{
+opacity:0.5 !important;
+background-color:rgb(255,255,255) !important}
+*#dm *.dmBody *.u_1638755498.before{
+opacity:0.5 !important;
+background-color:rgb(255,255,255) !important}
+*#dm *.dmBody *.u_1638755498>.bgExtraLayerOverlay{
+opacity:0.5 !important;
+background-color:rgb(255,255,255) !important}
+*#dm *.dmBody div.u_1638755498:before{
+background-color:rgba(0,0,0,1) !important}
+*#dm *.dmBody div.u_1638755498.before{
+background-color:rgba(0,0,0,1) !important}
+*#dm *.dmBody div.u_1638755498>.bgExtraLayerOverlay{
+background-color:rgba(0,0,0,1) !important}
+*#dm *.dmBody div.u_1788793927{
+background-color:rgba(13,13,13,1) !important}
+*#dm *.dmBody div.u_1071633116{
+background-color:rgba(235,181,69,1) !important}
+*#dm *.dmBody a.u_1066125857 span.text{
+font-weight:bold !important}
+*#dm *.dmBody a.u_1066125857:hover{
+background-color:rgba(235,181,69,1) !important;
+background-image:none !important;
+border-color:rgba(255,255,255,1) !important}
+*#dm *.dmBody a.u_1066125857.hover{
+background-color:rgba(235,181,69,1) !important;
+background-image:none !important;
+border-color:rgba(255,255,255,1) !important}
+*#dm *.dmBody a.u_1066125857{
+border-style:solid !important;
+border-width:3px !important;
+border-radius:50px !important;
+-moz-border-radius:50px !important;
+-webkit-border-radius:50px !important;
+background-color:rgba(13,13,13,1) !important}
+*#dm *.dmBody div.u_1326330385{
+background-color:rgba(0,0,0,0) !important;
+background-image:none !important}
+.u_1326330385{
+}
+.u_1413287823{
+}
+*#dm *.dmBody div.u_1497763899{
+background-color:rgba(13,13,13,1) !important}
+*#dm *.dmBody div.u_1277471063 hr{
+color:rgba(235,181,69,1) !important}
+*#dm *.dmBody div.u_1736861099{
+background-color:rgba(0,0,0,0) !important;
+background-image:none !important}
+.u_1736861099{
+}
+.u_1520631316{
+}
+*#dm *.dmBody div.u_1830087357{
+background-color:rgba(235,181,69,1) !important}
+div.u_1311545864 img[dm_changed]{
+border-radius:0 !important;
+-moz-border-radius:0 !important;
+-webkit-border-radius:0 !important}
+div.u_1311545864 img{
+border-radius:0 !important;
+-moz-border-radius:0 !important;
+-webkit-border-radius:0 !important}
+div.u_1949826649{
+line-height:2.0 !important}
+.u_1395724849{
+}
+.u_1198306658{
+}
+.u_1463842237{
+}
+.u_1482299587{
+}
+div.u_1463842237{
+background-color:rgba(0,0,0,0) !important}
+*#dm *.dmBody div.u_1463842237{
+background-color:rgba(13,13,13,1) !important}
+*.dmFooterContainer{
+display:none !important}
+*#dm *.dmBody div.u_REQUEST{
+background-color:rgba(0,0,0,0) !important;
+background-image:none !important}
+.u_REQUEST{
+}
+*#dm *.dmBody nav.u_1144820115{
+color:black !important}
+*#dm *.dmBody a.u_1049131216 span.text{
+font-weight:bold !important}
+*#dm *.dmBody a.u_1049131216:hover{
+background-color:rgba(235,181,69,1) !important;
+background-image:none !important;
+border-color:rgba(255,255,255,1) !important}
+*#dm *.dmBody a.u_1049131216.hover{
+background-color:rgba(235,181,69,1) !important;
+background-image:none !important;
+border-color:rgba(255,255,255,1) !important}
+*#dm *.dmBody a.u_1049131216{
+border-style:solid !important;
+border-width:3px !important;
+border-radius:50px !important;
+-moz-border-radius:50px !important;
+-webkit-border-radius:50px !important;
+background-color:rgba(13,13,13,1) !important}
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.d-page-1716942098 DIV.dmInner
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1006691027
+{
+	padding-top:100px !important;
+	padding-left:70px !important;
+	padding-bottom:100px !important;
+	float:none !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	top:auto !important;
+	max-width:none !important;
+	left:0 !important;
+	width:auto !important;
+	margin-top:0 !important;
+	position:relative !important;
+	margin-bottom:0 !important;
+	padding-right:70px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1651399597
+{
+	background-attachment:fixed !important;
+	position:relative !important;
+	padding-top:220px !important;
+	padding-left:0 !important;
+	padding-bottom:220px !important;
+	float:none !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	top:auto !important;
+	max-width:none !important;
+	left:0 !important;
+	width:auto !important;
+	margin-top:-100px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1086188027
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0.015625px !important;
+	margin-left:-0.171875px !important;
+	max-width:238px !important;
+	margin-top:8px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1424806549
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 82px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:171px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1780639595
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	float:none !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	top:0 !important;
+	max-width:739px !important;
+	left:0 !important;
+	width:calc(100% - 216px) !important;
+	margin-top:0 !important;
+	position:relative !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	height:auto !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1083059462
+{
+	margin-left:0 !important;
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	margin-top:37px !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1764588312
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1794124966
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1719317853
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:131px !important;
+	position:relative !important;
+	height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1206060708
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1823002437
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1620168096
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1483305595
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1312663908
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:36px !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1223003032
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1769635704
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:32px !important;
+	margin-bottom:8px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1210519306
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 71px) !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:131px !important;
+	margin-top:17px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1970663081
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:31.5938px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1914537079
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 71px) !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:131px !important;
+	margin-top:11px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1520311010
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:32px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1344643987
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 71px) !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:131px !important;
+	margin-top:11px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1336356586
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:273px !important;
+	min-width:25px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:39.0938px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1843416127
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1975402717
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1818500695
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:43px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1424872768
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:1173px !important;
+	margin-top:26px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1159689484
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:142px !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+	height:auto !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1865306010
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:200px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1274153773
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:213px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1954026232
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:51px !important;
+	margin-bottom:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1530224343
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1681504207
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1728284182
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:39px !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1255475345
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:40px !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1722123997
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:48.5px !important;
+	padding-left:40px !important;
+	padding-bottom:48.5px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1172750981
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:640px !important;
+	margin-top:84px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1702828103
+{
+	padding-top:58px !important;
+	padding-left:70px !important;
+	padding-bottom:58px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:70px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1716275779
+{
+	padding-top:59px !important;
+	padding-left:70px !important;
+	padding-bottom:59px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:70px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1267288427
+{
+	margin-left:0 !important;
+	padding-top:30px !important;
+	padding-left:40px !important;
+	padding-bottom:30px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1638755498
+{
+	margin-left:0 !important;
+	padding-top:150px !important;
+	padding-left:40px !important;
+	padding-bottom:150px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1592722429
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1815109346
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:74px !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+	height:auto !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1712414829
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:74px !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+	height:auto !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1412630793
+{
+	margin-left:0 !important;
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	margin-top:50px !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1481625900
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:357.984px !important;
+	margin-left:0 !important;
+	max-width:43.8281px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1008520599
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:40px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1976791815
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:43.375px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1783063141
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:42.25px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1269490398
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1788793927
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:73.5px !important;
+	padding-left:40px !important;
+	padding-bottom:73.5px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1702091253
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1880110956
+{
+	width:calc(100% - 0px) !important;
+	height:auto !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:518px !important;
+	margin-top:11px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1004534949
+{
+	width:calc(100% - 0px) !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:601px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1522973452
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:783px !important;
+	margin-top:55px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1092534225
+{
+	width:calc(100% - 0px) !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:548px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1644672052
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:53px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1071633116
+{
+	padding-top:30px !important;
+	padding-left:40px !important;
+	padding-bottom:30px !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1277741394
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:640px !important;
+	margin-top:84px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1326330385
+{
+	padding-top:59px !important;
+	padding-left:70px !important;
+	padding-bottom:59px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:70px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1596258841
+{
+	width:calc(100% - 0px) !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:548px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1728077114
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1548914681
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1915702282
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1249262740
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1028350018
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:36px !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1735685166
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:32px !important;
+	margin-bottom:8px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1204784923
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1073482480
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1497763899
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:48.5px !important;
+	padding-left:40px !important;
+	padding-bottom:48.5px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1736861099
+{
+	padding-top:59px !important;
+	padding-left:70px !important;
+	padding-bottom:59px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:70px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1707956282
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:131px !important;
+	position:relative !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1141510406
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 71px) !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:131px !important;
+	margin-top:17px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1730551742
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 71px) !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:131px !important;
+	margin-top:11px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1485627142
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 71px) !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:131px !important;
+	margin-top:11px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1101563850
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1317993609
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1830087357
+{
+	padding-top:30px !important;
+	padding-left:40px !important;
+	padding-bottom:30px !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1391775618
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 60px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:183px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1440662350
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:101.75px !important;
+	margin-left:0 !important;
+	max-width:579px !important;
+	margin-top:80px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1595255587
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 31px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:258px !important;
+	margin-top:24.2187px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1613432827
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 197px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:746px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody a.u_1066125857
+{
+	width:490px !important;
+	height:60px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:595px !important;
+	margin-top:21px !important;
+	margin-bottom:10px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1422088683
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 124px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:892px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1676367436
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1413869367
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 181px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:778px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+div.u_1514204962
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+div.u_1228904399
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:510px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+}
+div.u_1144009043
+{
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+div.u_1949826649
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:275px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+div.u_1463842237
+{
+	padding-top:70px !important;
+	padding-left:10px !important;
+	padding-bottom:0 !important;
+	padding-right:10px !important;
+	width:auto !important;
+}
+div.u_1311545864
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:147px !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:8px !important;
+	margin-bottom:0 !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1311545864
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:193px !important;
+	margin-left:0 !important;
+	max-width:263px !important;
+	margin-top:8px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1228904399
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:510px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+}
+*#dm *.dmBody div.u_1905677967
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_1297585024
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+*#dm *.dmBody div.u_REQUEST
+{
+	padding-top:59px !important;
+	padding-left:70px !important;
+	padding-bottom:59px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:70px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+}
+*#dm *.dmBody a.u_1049131216
+{
+	width:490px !important;
+	height:60px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:537px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1144009043
+{
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1463842237
+{
+	padding-top:70px !important;
+	padding-left:10px !important;
+	padding-bottom:40px !important;
+	padding-right:10px !important;
+	width:auto !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+    <style id="globalFontSizeStyle" type="text/css">
+        .font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-12, .size-12, .size-12 > font { font-size: 12px !important; }.font-size-12, .size-12, .size-12 > font { font-size: 12px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-12, .size-12, .size-12 > font { font-size: 12px !important; }.font-size-12, .size-12, .size-12 > font { font-size: 12px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-12, .size-12, .size-12 > font { font-size: 12px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-12, .size-12, .size-12 > font { font-size: 12px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-12, .size-12, .size-12 > font { font-size: 12px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-12, .size-12, .size-12 > font { font-size: 12px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-13, .size-13, .size-13 > font { font-size: 13px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-13, .size-13, .size-13 > font { font-size: 13px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-13, .size-13, .size-13 > font { font-size: 13px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-13, .size-13, .size-13 > font { font-size: 13px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-13, .size-13, .size-13 > font { font-size: 13px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }.font-size-13, .size-13, .size-13 > font { font-size: 13px !important; }
+    </style>
+    <style id="pageFontSizeStyle" type="text/css">
+    </style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+</style>
+
+
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<link rel="alternate" hreflang="ar" href="https://www.franchise.chutys.com/ar" />
+<link rel="alternate" hreflang="sl" href="https://www.franchise.chutys.com/sl" />
+<link rel="alternate" hreflang="it" href="https://www.franchise.chutys.com/it" />
+<link rel="alternate" hreflang="de" href="https://www.franchise.chutys.com/de" />
+<link rel="alternate" hreflang="en" href="https://www.franchise.chutys.com/" />
+<link rel="alternate" hreflang="fr" href="https://www.franchise.chutys.com/fr" />
+
+
+
+  <!-- Facebook Pixel Code -->  <script>
+
+
+
+
+
+
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '862101590920323');
+fbq('track', 'PageView');
+
+
+  
+
+  
+
+  </script>
+  <noscript>
+  </noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=862101590920323&amp;ev=PageView&amp;noscript=1"/>
+  <!-- End Facebook Pixel Code -->
+  <meta name="twitter:card" content="summary"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="fr"  class="supportsFontIcons supportsFontIcons dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet " style="padding:0;margin:0;"
+            
+      >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-home hasAnimations hasStickyHeader inMiniHeaderMode rows-1200 hamburger-reverse dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-buttonstyle="ROUND_SIDES" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="side-reverse" data-auto-height="true"> <div class="u_1826294544 dmRespRow" style="text-align: center;" id="1826294544"> <div class="dmRespColsWrapper" id="1337204992"> <div class="u_1183846399 dmRespCol small-12 medium-12 large-12 empty-column" id="1183846399"></div> 
+</div> 
+</div> 
+ <div class="u_1021493186 dmRespRow middleDrawerRow" style="text-align: center;" id="1021493186"> <div class="dmRespColsWrapper" id="1170137577"> <div class="dmRespCol small-12 u_1808057136 medium-12 large-12" id="1808057136"> <nav class="u_1144820115 effect-bottom2 main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HIDE" id="1144820115" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/fr" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_00  " target="" data-target-page-alias="fr" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Franchise de cuisine de rue thaïlandaise
+        " data-auto="page-text-style">Franchise de cuisine de rue tha&iuml;landaise<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1676049285" style="text-align: center;" id="1676049285"> <div class="dmRespColsWrapper" id="1888750820"> <div class="u_1916182198 dmRespCol small-12 medium-12 large-12 empty-column" id="1916182198"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header"> <div class="dmRespRow defaultMultilingualExtensionRow fullBleedChanged fullBleedMode" id="1861371607"> <div class="dmRespColsWrapper" id="1512432040"> <div class="dmRespCol defaultMultilingualExtensionColumn small-12 large-123 medium-12" id="1115380005"> <div id="1172476363" class="multilingualWidget dropdown flag-only" dmle_extension="multilingual" data-element-type="multilingual" data-display="dropdown" icon="false" surround="false"> <div class="desktopMultilingual"> <div class="language current-language"> <a href="/fr" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/fr.png" alt="Français" data-code="" onerror="handleImageLoadError(this)"/> <span class="name">Fran&ccedil;ais</span> 
+ <span class="short-label">fr</span> 
+ <div class="dm-icon dm-icon-chevron-down"></div> 
+</a> 
+</div> 
+ <div class="language other-languages"> <a href="/it" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/it.png" alt="Italiano" onerror="handleImageLoadError(this)"/> <span class="name">Italiano</span> 
+ <span class="short-label">it</span> 
+</a> 
+ <a href="/sl" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/si.png" alt="slovenščina" onerror="handleImageLoadError(this)"/> <span class="name">sloven&scaron;čina</span> 
+ <span class="short-label">sl</span> 
+</a> 
+ <a href="/" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/us.png" alt="English" onerror="handleImageLoadError(this)"/> <span class="name">English</span> 
+ <span class="short-label">en</span> 
+</a> 
+ <a href="/ar" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/sa.png" alt="العربية‎" onerror="handleImageLoadError(this)"/> <span class="name">العربية&lrm;</span> 
+ <span class="short-label">ar</span> 
+</a> 
+ <a href="/de" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/de.png" alt="Deutsch" onerror="handleImageLoadError(this)"/> <span class="name">Deutsch</span> 
+ <span class="short-label">de</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow defaultMultilingualExtensionRow fullBleedChanged fullBleedMode u_1251473046" id="1251473046"> <div class="dmRespColsWrapper" id="1332640647"> <div class="dmRespCol defaultMultilingualExtensionColumn small-12 large-123 medium-12 empty-column" id="1624925922"></div> 
+</div> 
+</div> 
+ <div class="u_1705692124 dmRespRow" style="text-align: center;" id="1705692124"> <div class="dmRespColsWrapper" id="1469942216"> <div class="dmRespCol small-12 u_1655486006 large-6 medium-6" id="1655486006"> <div class="u_1923160809 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1923160809"> <a href="/fr/" id="1573522578" file="false"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/logo_chutys-1920w.png" id="1761992403" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/logo_chutys.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="dmRespCol empty-column large-6 medium-6 small-12" id="1437024771"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" preserve-sticky-header="true" logo-size-target="100%" layout="3e258119881349f1b0afec8887fc1e4b===header" mini-header-show-only-navigation-row="true"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1941823518 dmRespRow defaultMultilingualExtensionRow fullBleedChanged fullBleedMode hide-for-small hide-for-medium hide-for-large" id="1941823518"> <div class="dmRespColsWrapper" id="1860715434"> <div class="dmRespCol defaultMultilingualExtensionColumn small-12 large-123 medium-12 empty-column" id="1494616137"></div> 
+</div> 
+</div> 
+ <div class="u_1967219522 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode" style="text-align:center" id="1967219522"> <div class="dmRespColsWrapper" id="1388439170"> <div class="u_1493099590 dmRespCol small-12 large-9 medium-9" id="1493099590"> <span id="1337421728"></span> 
+ <div class="u_1682530836 imageWidget align-center" data-widget-type="image" id="1682530836" data-element-type="image"> <a href="/fr/" id="1015332595"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/logo_chutys-1920w.png" id="1907183777" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/logo_chutys.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1811325292 dmRespCol small-12 large-3 medium-3" id="1811325292"> <span id="1175052137"></span> 
+ <div class="u_1231835717 dmRespRow" id="1231835717"> <div class="dmRespColsWrapper" id="1529577691"> <div class="u_1103342480 dmRespCol small-12 medium-12 large-12" id="1103342480"> <div id="1733242131" class="u_1733242131 multilingualWidget dropdown flag-only" dmle_extension="multilingual" data-element-type="multilingual" data-display="dropdown" icon="false" surround="false"> <div class="desktopMultilingual"> <div class="language current-language"> <a href="/fr" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/fr.png" alt="Français" data-code="" onerror="handleImageLoadError(this)"/> <span class="name">Fran&ccedil;ais</span> 
+ <span class="short-label">fr</span> 
+ <div class="dm-icon dm-icon-chevron-down"></div> 
+</a> 
+</div> 
+ <div class="language other-languages"> <a href="/it" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/it.png" alt="Italiano" onerror="handleImageLoadError(this)"/> <span class="name">Italiano</span> 
+ <span class="short-label">it</span> 
+</a> 
+ <a href="/sl" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/si.png" alt="slovenščina" onerror="handleImageLoadError(this)"/> <span class="name">sloven&scaron;čina</span> 
+ <span class="short-label">sl</span> 
+</a> 
+ <a href="/" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/us.png" alt="English" onerror="handleImageLoadError(this)"/> <span class="name">English</span> 
+ <span class="short-label">en</span> 
+</a> 
+ <a href="/ar" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/sa.png" alt="العربية‎" onerror="handleImageLoadError(this)"/> <span class="name">العربية&lrm;</span> 
+ <span class="short-label">ar</span> 
+</a> 
+ <a href="/de" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/de.png" alt="Deutsch" onerror="handleImageLoadError(this)"/> <span class="name">Deutsch</span> 
+ <span class="short-label">de</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1497144653 align-center text-align-center dmSocialHub" id="1497144653" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://www.facebook.com/chutyss/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.instagram.com/chutys_slovenia/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+ <div dmwrapped="true" id="1901957768" class="dmBody u_dmStyle_template_fr dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="u_1651399597 dmRespRow dmSectionParallaxNew" style="text-align: center;" id="1651399597"> <div class="dmRespColsWrapper" id="1602958952"> <div class="dmRespCol small-12 medium-12 large-12 u_1113743457" id="1113743457"> <div class="u_1780639595 dmNewParagraph" id="1780639595" style="line-height: initial; text-align: center;" data-element-type="paragraph" data-version="5"> <h1><span style="display: initial; color: rgb(255, 255, 255);">CHUTY&lsquo;S Franchise de cuisine de rue tha&iuml;</span></h1> 
+</div> <div class="u_1083059462 dmRespRow" id="1083059462"> <div class="dmRespColsWrapper" id="1791383261"> <div class="u_1670547301 dmRespCol small-12 large-4 medium-4" id="1670547301"> <div class="dmNewParagraph u_1086188027" data-element-type="paragraph" data-version="5" id="1086188027" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h4 class="text-align-center" style="line-height: 1.5;"><span style="font-family: 'Be Vietnam'; display: initial; font-weight: bold; color: rgb(255, 255, 255);">La cuisine de rue, un secteur tendance</span></h4> 
+</div> 
+</div> 
+ <div class="u_1764588312 dmRespCol small-12 large-4 medium-4" id="1764588312"> <div class="u_1424806549 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1424806549" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h4 class="text-align-center" style="line-height: 1.5;"><span style="font-family: 'Be Vietnam'; display: initial; font-weight: bold; color: rgb(255, 255, 255);">Faible investissement</span></h4> 
+</div> 
+</div> 
+ <div class="u_1243455139 dmRespCol small-12 large-4 medium-4" id="1243455139"> <div class="u_1391775618 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1391775618" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h4 class="text-align-center" style="line-height: 1.5;"><span style="font-family: 'Be Vietnam'; display: initial; font-weight: bold; color: rgb(255, 255, 255);">Mod&egrave;le de franchise cl&eacute; en main</span></h4> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1006691027 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1006691027"> <div class="dmRespColsWrapper" id="1117469869"> <div class="u_1158597168 dmRespCol small-12 large-6 medium-6" id="1158597168"> <div class="u_1880110956 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1880110956"> <a id="1426428595"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Chutys-2-1920w.png" alt="" id="1070597267" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Chutys-2.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1883737742 dmRespCol small-12 large-6 medium-6" id="1883737742"> <div class="u_1440662350 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1440662350" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h2 style="line-height: 34px;"><span style="display: initial;">CHUTY&lsquo;S, LEADER DE LA CUISINE DE RUE THA&Iuml;</span></h2> 
+<p><span style="display: initial;"><br/></span></p><p><span style="font-style: inherit; display: initial; font-weight: inherit;">CHUTY'S&reg; est le premier concept de cuisine de rue tha&iuml; en r&eacute;seau et depuis 2019, l&rsquo;enseigne est franchis&eacute;e &eacute;galement en Slov&eacute;nie. Depuis l'ouverture de notre premi&egrave;re structure en 2013, CHUTY's est devenu le premier choix en terme de plats gastronomiques asiatiques frais, savoureux et sains, et le leader des plats issus de la cuisine de rue.</span><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1722123997 dmRespRow" id="1722123997"> <div class="dmRespColsWrapper" id="1965423896"> <div class="dmRespCol large-12 medium-12 small-12" id="1296190382"> <div class="u_1975402717 dmRespRow" id="1975402717"> <div class="dmRespColsWrapper" id="1180315400"> <div class="dmRespCol small-12 medium-12 large-12 u_1843416127" id="1843416127"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1100735082" style="transition: opacity 1s ease-in-out 0s;"> <h2 class="text-align-center"><span style="display: unset; color: rgb(255, 255, 255);">CONCEPTS ET &Eacute;tablissements de restauration</span></h2> 
+ <h2 class="text-align-center"><span style="display: unset; color: rgb(255, 255, 255);">&nbsp;CHUTY&lsquo;S &Agrave; ce jour</span><span style="display: initial;"><br/></span></h2> 
+</div> 
+ <div class="dmDividerWrapper clearfix u_1431939422" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1431939422"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1440076244"/></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1102226500"><p class="text-align-center"><span style="display: unset; font-weight: normal; color: rgb(255, 255, 255);">Nous avons 5 &eacute;tablissements &agrave; ce jour en Slov&eacute;nie (&agrave; Ljubljana, la capitale et &agrave; Maribor, la deuxi&egrave;me plus grande ville). Nous avons test&eacute; notre concept dans diverses localit&eacute;s. Nous allons maintenant plus loin dans l&rsquo;histoire de CHUTY&lsquo;S. Nous sommes heureux de vous annoncer du lancement prochain du food truck CHUTY&lsquo;S.</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1312663908 dmRespRow" id="1312663908"> <div class="dmRespColsWrapper" id="1896133220"> <div class="dmRespCol small-12 large-3 medium-3 u_1206060708" id="1206060708"> <div class="u_1719317853 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1719317853"> <a id="1040974358"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Mall-131x131-1920w.png" alt="" id="1366347866" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Mall-131x131.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1769635704 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1769635704" style="transition: opacity 1s ease-in-out 0s;"> <h5 class="text-align-center" style="line-height: 25px;"><span style="display: unset; color: rgb(235, 181, 69);">Centre commercial</span></h5> 
+</div> 
+</div> 
+ <div class="dmRespCol small-12 large-3 medium-3 u_1823002437" id="1823002437"> <div class="u_1210519306 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1210519306"> <a id="1752744918"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/High-street-150x131-1920w.png" alt="" id="1333243529" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/High-street-150x131.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1970663081 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1970663081" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h5 class="text-align-center" style="line-height: 25px;"><span style="display: unset; color: rgb(235, 181, 69);">Rue principale</span></h5> 
+</div> 
+</div> 
+ <div class="dmRespCol small-12 large-3 medium-3 u_1620168096" id="1620168096"> <div class="u_1914537079 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1914537079"> <a id="1197491659"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Market-place-143x131-1920w.png" alt="" id="1801320862" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Market-place-143x131.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1520311010 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1520311010" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h5 class="text-align-center" style="line-height: 25px;"><span style="display: unset; color: rgb(235, 181, 69);">March&eacute;</span></h5> 
+</div> 
+</div> 
+ <div class="dmRespCol large-3 medium-3 small-12 u_1483305595" id="1483305595"> <div class="u_1344643987 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1344643987"> <a id="1384375813"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Food-truck-152x131-1920w.png" alt="" id="1895139640" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Food-truck-152x131.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1336356586 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1336356586" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h5 class="text-align-center"><span style="display: unset; color: rgb(235, 181, 69);">Food truck</span></h5> 
+ <h5 class="text-align-center"><span style="display: unset; color: rgb(235, 181, 69);">(prochainement)</span></h5> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1223003032 dmRespRow" id="1223003032"> <div class="dmRespColsWrapper" id="1702988347"> <div class="dmRespCol small-12 medium-12 large-12 u_1794124966" id="1794124966"> <div class="u_1818500695 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1818500695"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1334764987"/></div> 
+ <div class="dmNewParagraph u_1424872768" data-element-type="paragraph" data-version="5" id="1424872768" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h2 class="text-align-center" style="line-height: 34px;"><span style="display: initial; color: rgb(255, 255, 255);">Nous avons d&eacute;velopp&eacute; 3 concepts CHUTY&lsquo;S :</span></h2> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1954026232 dmRespRow" id="1954026232"> <div class="dmRespColsWrapper" id="1357603365"> <div class="dmRespCol small-12 large-4 medium-4" id="1695257558"> <div class="u_1274153773 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1274153773"> <a id="1523586621"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Restaurant-213x131-1920w.png" alt="" id="1270270162" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Restaurant-213x131.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1530224343 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1530224343" style="transition: opacity 1s ease-in-out 0s;"> <h5 class="text-align-center" style="line-height: 25px;"><span style="color: rgb(235, 181, 69); display: unset;">Restaurant</span></h5> 
+<p class="text-align-center m-size-10 size-12" style="line-height: inherit;"><span class="font-size-12 m-font-size-10" style="color: rgb(255, 255, 255); font-weight: inherit; display: unset; font-style: inherit;">(Concept de cuisine de rue situ&eacute; dans une rue principale)</span><span style="display: initial;"><br/></span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 large-4 medium-4" id="1347264849"> <div class="u_1159689484 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1159689484"> <a id="1643176638"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Take-away-138x131-1920w.png" alt="" id="1293531581" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Take-away-138x131.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1595255587 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1595255587" style="transition: opacity 1s ease-in-out 0s;"> <h5 class="text-align-center" style="line-height: 25px;"><span style="display: unset; color: rgb(235, 181, 69);">Plats &agrave; emporter</span></h5> 
+<p class="text-align-center m-size-10 size-12" style="line-height: inherit;"><span class="font-size-12 m-font-size-10" style="font-style: inherit; display: unset; font-weight: inherit; color: rgb(255, 255, 255);">(Cuisine de rue &ndash; mais pas de table pour consommer sur place)</span><span style="display: initial;"><br/></span></p></div> 
+</div> 
+ <div class="dmRespCol large-4 medium-4 small-12" id="1669019903"> <div class="u_1865306010 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1865306010"> <a id="1436024118"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Street-food-200x131-1920w.png" alt="" id="1645877096" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Street-food-200x131.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1681504207 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1681504207" style="transition: opacity 1s ease-in-out 0s;"> <h5 style="line-height: 25px;" class="text-align-center"><span style="display: initial; color: rgb(235, 181, 69);">Cuisine de rue</span></h5> 
+<p class="size-12 m-size-10 text-align-center"><span class="font-size-12 m-font-size-10" style="font-style: inherit; display: initial; font-weight: inherit; color: rgb(255, 255, 255);">&nbsp;(Concept de cuisine de rue EN EXT&Eacute;RIEUR : dans les MARCH&Eacute;S OUVERTS, avec un kiosque gastronomique, o&ugrave; les clients peuvent s'asseoir et d&eacute;guster leur repas - ou l'emporter)</span></p><p class="text-align-center"><br/></p><p class="size-12 m-size-10 text-align-center"><span class="font-size-12 m-font-size-10" style="font-style: inherit; display: initial; font-weight: inherit; color: rgb(255, 255, 255);">(Concept de cuisine EN INT&Eacute;RIEUR (dans un centre commercial) &ndash; comme un COIN REPAS, o&ugrave; les clients peuvent s'asseoir (souvent aussi dans un jardin ; &agrave; la mani&egrave;re d&rsquo;un concept de fusion)</span><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1728284182 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1728284182"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1061824205"/></div> 
+ <div class="u_1255475345 dmRespRow" id="1255475345"> <div class="dmRespColsWrapper" id="1270701539"> <div class="dmRespCol large-12 medium-12 small-12" id="1216437840"> <div class="u_1702091253 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1702091253" style="transition: opacity 1s ease-in-out 0s;"> <h2><span style="display: initial; text-transform: uppercase; color: rgb(255, 255, 255);">ILS sont tous dot&Eacute;s d&rsquo;UNE CUISINE OUVERTE, O&Ugrave; LA NOURRITURE EST PR&Eacute;PAR&Eacute;E DEVANT LE CLIENT.</span></h2> 
+<p style="line-height: inherit;"><span style="display: initial;"><br/></span></p><p style="line-height: inherit;"><span style="font-style: inherit; display: initial; font-weight: inherit; color: rgb(255, 255, 255);">Cela ajoute un attrait suppl&eacute;mentaire et garantit la fra&icirc;cheur et la qualit&eacute;. Ce qui distingue CHUTY's des autres restaurants asiatiques, c'est que nous pr&eacute;parons nous-m&ecirc;mes toutes nos sauces et nos bouillons. Nous utilisons des l&eacute;gumes frais et des &eacute;pices d'origine asiatique, et nous nous effor&ccedil;ons &eacute;galement de nous fournir en l&eacute;gumes et en produits locaux les plus frais pour que nos repas soient toujours de qualit&eacute;.</span></p><p><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1716275779 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1716275779"> <div class="dmRespColsWrapper" id="1005096471"> <div class="u_1650696822 dmRespCol small-12 large-6 medium-6" id="1650696822"> <div class="u_1092534225 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1092534225"> <a id="1613124263"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Chutys-3-1920w.png" alt="" id="1432884923" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Chutys-3.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1986187907 dmRespCol small-12 large-6 medium-6" id="1986187907"> <div class="dmNewParagraph u_1172750981" data-element-type="paragraph" data-version="5" id="1172750981" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h2><span style="display: initial;">NOTRE PROPOSITION DE MARQUE : HEART OF ASIA</span></h2> 
+<p style="line-height: inherit;"><span style="display: initial;"><br/></span></p><p style="line-height: inherit;"><span style="font-style: inherit; display: initial; font-weight: inherit;">Nous invitons nos clients &agrave; s'immerger au c&oelig;ur de l'Asie et &agrave; d&eacute;couvrir la culture authentique de la cuisine tha&iuml;landaise.</span></p><p><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1702828103 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1702828103"> <div class="dmRespColsWrapper" id="1128851118"> <div class="u_1186719413 dmRespCol small-12 large-6 medium-6" id="1186719413"> <div class="u_1522973452 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1522973452" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h2><span style="display: initial;">NOTRE MISSION: CR&Eacute;ER DES INSTANTS SAVOUREUX</span></h2> 
+<p style="line-height: inherit;"><span style="display: initial;"><br/></span></p><p><span style="font-style: inherit; display: initial; font-weight: inherit;">Nous garantissons dans tous nos &eacute;tablissements la meilleure qualit&eacute; et un engagement constant envers notre mission - cr&eacute;er des instants savoureux.</span></p><p style="line-height: inherit;"><span style="font-style: inherit; display: initial; font-weight: inherit;">Nous avons d&eacute;velopp&eacute; le mod&egrave;le de franchise CHUTY&lsquo;S - pour le concept de cuisine de rue. Nous recherchons des partenaires sur les march&eacute;s europ&eacute;ens.</span></p><p><span style="display: initial;"><br/></span></p></div> 
+</div> 
+ <div class="u_1078127770 dmRespCol small-12 large-6 medium-6" id="1078127770"> <div class="u_1004534949 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1004534949"> <a id="1961376751"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Chutys-1-1920w.png" alt="" id="1957362851" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Chutys-1.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1267288427" id="1267288427"> <div class="dmRespColsWrapper" id="1156734026"> <div class="dmRespCol large-12 medium-12 small-12" id="1306195394"> <div class="u_1613432827 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1613432827" style="transition: opacity 1s ease-in-out 0s;"> <h4 class="text-align-center"><span style="display: unset; color: rgb(255, 255, 255);">VOUS SOUHAITEZ REJOINDRE LA FAMILLE CHUTY&lsquo;S EN PLEINE CROISSANCE, ET DEVENIR PARTENAIRE FRANCHIS&Eacute; DE CHUTY&lsquo;S ?</span></h4> 
+</div> 
+ <a data-display-type="block" class="u_1049131216 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/fr#REQUEST" data-element-type="dButtonLinkId" id="1049131216"> <span class="iconBg" id="1734479153"> <span class="icon hasFontIcon icon-star" id="1085060266"></span> 
+</span> 
+ <span class="text" id="1885040048">DEMANDEZ UN DOSSIER D&rsquo;OFFRE DE FRANCHISE</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1638755498 dmSectionParallaxNew hasBackgroundOverlay" id="1638755498"> <div class="dmRespColsWrapper" id="1574186848"> <div class="dmRespCol large-12 medium-12 small-12" id="1465074810"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1112826959" style="transition: opacity 1s ease-in-out 0s;"> <h2 class="text-align-center" style="line-height: 34px;"><span style="display: unset; color: rgb(255, 255, 255);">POURQUOI DEVENIR FRANCHIS&Eacute; CHUTY&rsquo;S</span></h2> 
+<p><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1412630793" id="1412630793"> <div class="dmRespColsWrapper" id="1800107773"> <div class="dmRespCol small-12 large-4 medium-4 u_1592722429" id="1592722429"> <div class="u_1481625900 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1481625900"> <a id="1167844516"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/1-48x106-1920w.png" alt="" id="1273787067" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/1-48x106.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1008520599 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1008520599" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h4 style="line-height: 25px;"><span style="display: unset; font-weight: bold;">INVESTISSEMENT SIMPLE ET FAIBLE</span></h4> 
+<p><span style="display: initial;"><br/></span></p><p><span style="font-style: inherit; display: unset; font-weight: inherit;">Il s&rsquo;agit d&rsquo;un concept de cuisine de rue - vous n'avez pas besoin d'un restaurant co&ucirc;teux (&agrave; louer/acheter, meubler et g&eacute;rer). Nous avons d&eacute;velopp&eacute; un kiosque gastronomique de grande valeur, tendance et fonctionnel. Il s'agit d'un mod&egrave;le &eacute;conomique de restauration sur place, &agrave; emporter et de livraison. Cette caract&eacute;ristique rend le concept de cuisine de rue CHUTY's encore plus attrayant, car il fournit plusieurs sources de revenus.</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 large-4 medium-4" id="1299638140"> <div class="u_1815109346 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1815109346"> <a id="1543694098"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/2-84x106-1920w.png" alt="" id="1616069879" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/2-84x106.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1976791815 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1976791815" style="transition: opacity 1s ease-in-out 0s;"> <h4 style="line-height: 25px;"><span style="display: initial; font-weight: bold;">LA CUISINE DE RUE : UN MARCH&Eacute; EN EXPENSION ET TENDANCE</span></h4> 
+<p><span style="display: initial;"><br/></span></p><p style="line-height: inherit;"><span style="font-style: inherit; display: initial; font-weight: inherit;">La cuisine de rue est la nouvelle tendance qui fa&ccedil;onne la culture gastronomique. La cuisine de rue ainsi que les livraisons (commande en ligne) se d&eacute;veloppent rapidement, notamment dans la &laquo; nouvelle normalit&eacute; &raquo;. Le concept de franchise CHUTY&rsquo;S s&rsquo;inscrit dans toutes les tendances majeures de la restauration en Europe et dans le monde : il est sain, pratique, vari&eacute;, rapide et son rapport qualit&eacute;-prix est excellent.</span></p><p style="line-height: inherit;"><span style="display: initial; font-style: inherit; font-weight: inherit;"><span class="ql-cursor">﻿</span></span><span style="display: initial;"><br/></span></p></div> 
+</div> 
+ <div class="dmRespCol large-4 medium-4 small-12" id="1356788666"> <div class="u_1712414829 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1712414829"> <a id="1902149448"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/3-83x106-1920w.png" alt="" id="1907679971" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/3-83x106.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1783063141 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1783063141" style="transition: opacity 1s ease-in-out 0s;"> <h4 style="line-height: 25px;"><span style="display: initial; font-weight: bold;">SOLUTION CL&Eacute; EN MAIN ET ACCOMPAGNEMENT CONTINU</span></h4> 
+<p><span style="display: initial;"><br/></span></p><p style="line-height: inherit;"><span style="font-style: inherit; display: initial; font-weight: inherit;">La franchise CHUTY's est une solution cl&eacute; en main. Pas besoin de s'inqui&eacute;ter de la fa&ccedil;on de le mettre en place (que ce soit au niveau de la gestion du commerce comme du kiosque gastronomique) - nous vous accompagnons enti&egrave;rement dans l'ouverture et le fonctionnement de l&rsquo;exploitation.</span></p><p><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1788793927 dmRespRow" id="1788793927"> <div class="dmRespColsWrapper" id="1326823326"> <div class="u_1788859525 dmRespCol small-12 large-5 medium-5" id="1788859525"> <div class="u_1644672052 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1644672052"> <a id="1418371400"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Chutys-5-1-1920w.png" alt="" id="1275516118" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Chutys-5-1.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1738518584 dmRespCol small-12 large-7 medium-7" id="1738518584"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1531223100" style="transition: opacity 1s ease-in-out 0s;"> <h2 style="line-height: 34px;"><span style="display: unset; color: rgb(235, 181, 69);">CE QUE VOUS OBTENEZ AVEC CHUTY&rsquo;S</span></h2> 
+<p><span style="display: initial;"><br/></span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1321705675" style="transition: opacity 1s ease-in-out 0s;"> <ol class="defaultList"><li style="color: rgb(255, 255, 255);"><span style="font-style: inherit; display: unset; font-weight: inherit; color: rgb(255, 255, 255);">Vous rejoindrez une marque reconnue et &eacute;tablie. Nous avons d&eacute;j&agrave; prouv&eacute; que notre promesse de marque est attrayante et que le produit et le service sont remarquables.</span></li><li style="color: rgb(255, 255, 255);"><span style="font-style: inherit; display: unset; font-weight: inherit; color: rgb(255, 255, 255);">En tant que franchiseur, nous vous accompagnerons dans la recherche de l'emplacement optimal de votre bien ainsi que dans le processus de construction. Nos solutions de plats &agrave; emporter sont de grande qualit&eacute; et elles ont fait leurs preuves, tout comme nos solutions de cuisine de rue dans les centres commerciaux (coin repas) et de kiosques gastronomiques dans les march&eacute;s ouverts.</span></li><li style="color: rgb(255, 255, 255);"><span style="font-style: inherit; display: unset; font-weight: inherit; color: rgb(255, 255, 255);">Nous vous proposons des programmes de formation et un accompagnent continu. Vous pourrez &eacute;viter la plupart des incertitudes li&eacute;es au d&eacute;marrage de votre propre entreprise. Vous rejoignez une structure stable avec des op&eacute;rations commerciales bien &eacute;tablies. Cela vous donnera de nombreuses opportunit&eacute;s de r&eacute;ussir.</span></li></ol> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1071633116" id="1071633116"> <div class="dmRespColsWrapper" id="1366746235"> <div class="dmRespCol large-12 medium-12 small-12" id="1450367772"> <div class="u_1422088683 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1422088683" style="transition: opacity 1s ease-in-out 0s;"> <h4 class="text-align-center"><span style="display: unset; color: rgb(255, 255, 255);">POUR DES INFORMATIONS D&Eacute;TAILL&Eacute;ES SUR LA FORMULE DE FRANCHISE, VEUILLEZ REMPLIR LE FORMULAIRE DE DEMANDE D'OFFRE DE FRANCHISE CHUTY&rsquo;S.</span></h4> 
+</div> 
+ <a data-display-type="block" class="u_1066125857 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/fr#REQUEST" data-element-type="dButtonLinkId" id="1066125857"> <span class="iconBg" id="1425919102"> <span class="icon hasFontIcon icon-star" id="1388213546"></span> 
+</span> 
+ <span class="text" id="1098251346">DEMANDEZ UN DOSSIER D&rsquo;OFFRE DE FRANCHISE</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1326330385 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1326330385"> <div class="dmRespColsWrapper" id="1102182397"> <div class="u_1413287823 dmRespCol small-12 large-6 medium-6" id="1413287823"> <div class="u_1596258841 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1596258841"> <a id="1628959104"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Chutys-7-1920w.png" alt="" id="1771369743" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Chutys-7.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1445690921 dmRespCol small-12 large-6 medium-6" id="1445690921"> <div class="dmNewParagraph u_1277741394" data-element-type="paragraph" data-version="5" id="1277741394" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h2 style="line-height: 34px;"><span style="display: initial;">COMBIEN CO&Ucirc;TE l&rsquo;OUVERTURE D&rsquo;UNE FRANCHISE CHUTY&rsquo;S</span></h2> 
+ <h2 style="line-height: 34px;"><br/></h2> 
+<p><span style="display: initial;">L&rsquo;investissement total dans la franchise CHUTY&rsquo;S est d&rsquo;environ 70.000 euros (cela comprend les frais de franchise, toutes les activit&eacute;s d&rsquo;accompagnement pour lancer votre entreprise, avec un fonds de roulement estim&eacute; pour 2-3 mois et tout l&rsquo;&eacute;quipement, avec un kiosque gastronomique de marque inclus). Les franchis&eacute;s avec une bonne situation financi&egrave;re doivent pouvoir emprunter jusqu'&agrave; deux tiers de ce montant aupr&egrave;s d'une banque.</span></p><p style="line-height: inherit;"><span style="display: initial;">Une structure d'investissement plus d&eacute;taill&eacute;e sera fournie dans l'offre de franchise avec des projections de g&eacute;n&eacute;ration de revenus lorsque nous nous rencontrerons.</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1497763899 dmRespRow" id="1497763899"> <div class="dmRespColsWrapper" id="1140043885"> <div class="dmRespCol large-12 medium-12 small-12" id="1908744430"> <div class="u_1073482480 dmRespRow" id="1073482480"> <div class="dmRespColsWrapper" id="1548295693"> <div class="dmRespCol small-12 medium-12 large-12 u_1204784923" id="1204784923"> <div class="dmDividerWrapper clearfix u_1277471063" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1277471063"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1530404721"/></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1029196820" style="transition: opacity 1s ease-in-out 0s;"> <h2 class="text-align-center" style="line-height: 34px;"><span style="display: unset; color: rgb(255, 255, 255);">PROFIL DES FRANCHIS&Eacute;S</span></h2> 
+<p class="text-align-center" style="line-height: 34px;"><span style="display: initial; color: rgb(255, 255, 255);">Les qualit&eacute;s que nous recherchons chez un franchis&eacute; :</span></p><p><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1028350018 dmRespRow" id="1028350018"> <div class="dmRespColsWrapper" id="1688122151"> <div class="dmRespCol small-12 large-3 medium-3 u_1728077114" id="1728077114"> <div class="u_1707956282 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1707956282"> <a id="1323857092"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Vector-Smart-Object-6-1920w.png" alt="" id="1034291900" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Vector-Smart-Object-6.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1735685166 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1735685166" style="transition: opacity 1s ease-in-out 0s;"><p class="text-align-center"><span style="display: initial;"><br/></span></p><p class="text-align-center"><span style="display: initial;"><br/></span></p><p class="text-align-center"><span style="display: unset; color: rgb(255, 255, 255);">Une personnalit&eacute; dynamique avec une vision saine de la vie et une passion pour l'apprentissage et la cuisine.</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 large-3 medium-3 u_1548914681" id="1548914681"> <div class="u_1141510406 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1141510406"> <a id="1703816849"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Vector-Smart-Object-5-1920w.png" alt="" id="1191500166" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Vector-Smart-Object-5.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1101563850 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1101563850" style="transition: opacity 1s ease-in-out 0s;"><p class="text-align-center"><span style="display: initial;"><br/></span></p><p class="text-align-center"><span style="display: initial;"><br/></span></p><p class="text-align-center"><span style="display: unset; color: rgb(255, 255, 255);">Pas besoin d'avoir une formation officielle ni d&rsquo;exp&eacute;rience dans le domaine de l&rsquo;alimentation et des boissons - la passion de la gastronomie est assur&eacute;ment un gros avantage.</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 large-3 medium-3 u_1915702282" id="1915702282"> <div class="u_1730551742 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1730551742"> <a id="1506129502"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Vector-Smart-Object-7-1920w.png" alt="" id="1116205260" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Vector-Smart-Object-7.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1676367436 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1676367436" style="transition: opacity 1s ease-in-out 0s;"><p class="text-align-center"><span style="display: unset; color: rgb(255, 255, 255);">Un esprit d'entreprise aiguis&eacute;, op&eacute;rationnel et d&eacute;sireux de relever les d&eacute;fis, faisant preuve d&rsquo;adaptabilit&eacute;.</span></p></div> 
+</div> 
+ <div class="dmRespCol large-3 medium-3 small-12 u_1249262740" id="1249262740"> <div class="u_1485627142 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1485627142"> <a id="1376855580"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/Vector-Smart-Object-2-1-1920w.png" alt="" id="1451504200" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/Vector-Smart-Object-2-1.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1317993609 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1317993609" style="transition: opacity 1s ease-in-out 0s;"><p class="text-align-center"><span style="display: initial;"><br/></span></p><p class="text-align-center"><span style="display: initial;"><br/></span></p><p class="text-align-center"><br/></p><p class="text-align-center"><span style="display: initial;"><span class="ql-cursor">﻿</span><br/></span></p><p class="text-align-center"><span style="display: unset; color: rgb(255, 255, 255);">Une bonne compr&eacute;hension et connaissance de l'environnement commercial local et des opportunit&eacute;s de march&eacute;.</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1830087357" id="1830087357"> <div class="dmRespColsWrapper" id="1499397818"> <div class="dmRespCol large-12 medium-12 small-12" id="1296545532"> <div class="u_1413869367 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1413869367" style="transition: opacity 1s ease-in-out 0s;"> <h4 class="text-align-center" style="line-height: 25px;"><span style="display: unset; font-weight: bold; color: rgb(255, 255, 255); text-transform: uppercase;">Vous &Ecirc;tes PASSIONN&Eacute; PAR LA CUISINE ? vous avez TOUJOURS R&Ecirc;V&Eacute; D'OUVRIR VOTRE PROPRE structure ET DE FAIRE DE VOTRE PASSION votre travail ? LA cuisine DE RUE est peut &Ecirc;TRE votre prochaine aventure.</span></h4> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_REQUEST dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="REQUEST" data-anchor="REQUEST"> <div class="dmRespColsWrapper" id="1951188205"> <div class="u_1520631316 dmRespCol small-12 large-2 medium-2 empty-column" id="1520631316"></div> 
+ <div class="u_1399561323 dmRespCol small-12 large-8 medium-8" id="1399561323"> <div class="dmform default u_1100153973 native-inputs" data-element-type="dContactUsRespId" captcha="true" data-require-captcha="true" data-captcha-position="bottomleft" id="1100153973" data-layout="layout-4"> <h3 class="dmform-title dmwidget-title" id="1969226334">DEMANDEZ UN  DOSSIER D&rsquo;OFFRE  DE FRANCHISE</h3> 
+ <div class="dmform-wrapper" id="1307958633" captcha-lang="fr"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1314968129"> <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1817739165"> <label for="1208607978" id="1544951865" data-dm-for="dmform-0">Pr&eacute;nom et nom</label> 
+<input type="text" class="" name="dmform-0" id="1208607978"/><input type="hidden" name="label-dmform-0" value="Prénom et nom" id="1346604796" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1031643374"> <label for="1793003336" id="1087315807" data-dm-for="dmform-1">Adresse e-mail</label> 
+<input type="email" class="" name="dmform-1" id="1793003336"/><input type="hidden" name="label-dmform-1" value="Adresse e-mail" id="1700436873" class=""/></div> 
+ <div class="dmforminput large-12 medium-12 dmRespDesignCol small-12" id="1501664660"> <label for="1680644350" id="1803877394" data-dm-for="dmform-3">Votre message</label> 
+ <textarea name="dmform-3" id="1680644350"></textarea> 
+<input type="hidden" name="label-dmform-3" value="Votre message" id="1582595105" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol required newLine medium-12 large-12" id="1688663190"> <label for="11781" id="1981116566" class="" hide="true" data-dm-for="dmform-4">Inscription</label> 
+ <div class="optinwrapper" id="1963647088"> <div id="59910" class="contact-checkable-container"> <label for="11781" class="for-checkable" id="1175885538"><input type="checkbox" value="true" name="dmform-4" id="11781" class="checkable-input"/> <div id="70604"><p class="rteBlock" id="1491607685"><span style="color:rgb(13, 13, 13)" id="1145569994">J'accepte la politique de confidentialit&eacute; de ce site Internet.</span></p></div> 
+ <span class="img-wrapper"><img alt="" id="43847" class="contact-checkable-img" onerror="handleImageLoadError(this)"/></span> 
+</label> 
+</div> 
+</div> 
+<input type="hidden" name="label-dmform-4" value="Inscription" id="1223222404" class=""/></div> 
+ <div class="dmformsubmit dmWidget R" id="1494090641"><input class="" name="submit" type="submit" value="ENVOYER" id="1868027063"/></div> 
+<input name="dmformsendto" type="hidden" value="O0wrseIfFLsSlLR4GAldF88LDWL1RSSWKcdcaddm0B3jZ7FqDnEw1jdymC3Zzixv" id="1834064220" class="" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1153706704"/><input name="dmformsubject" type="hidden" value="Franchise - offre - étape 1" id="1483757743" class=""/><input name="dmformfrom" type="hidden" value="Kokos Agency" id="1490202046" class=""/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" id="1156919026" data-success-page="fr/thai-street-food-franchise---contact">Merci de nous avoir contact&eacute;. Nous vous r&eacute;pondrons dans les plus brefs d&eacute;lais.</div> 
+ <div class="dmform-error" style="display:none" id="1656008421">Oups, une erreur s'est produite lors de l'envoi de votre message. Veuillez r&eacute;essayer plus tard.</div> 
+</div> 
+</div> 
+ <div class="u_1087838574 dmRespCol empty-column small-12 large-2 medium-2" id="1087838574"></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1463842237" style="text-align: center;" id="1463842237"> <div class="dmRespColsWrapper" id="1395156513"> <div class="u_1482299587 dmRespCol small-12 large-4 medium-4" id="1482299587"> <div class="u_1311545864 imageWidget align-center" data-widget-type="image" id="1311545864" data-element-type="image"> <a href="/fr/" id="1636279349"><img src="https://lirp.cdn-website.com/9f999b83/dms3rep/multi/opt/logo_chutys-1920w.png" id="1698821584" class="" data-dm-image-path="https://irp.cdn-website.com/9f999b83/dms3rep/multi/logo_chutys.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1198306658 dmRespCol small-12 hide-for-small large-5 medium-5" id="1198306658"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1344633059" style="transition: opacity 1s ease-in-out 0s;"><p class="m-size-14 size-18" style="letter-spacing: 0px; line-height: 25px;"><span class="font-size-18 m-font-size-14" style="color: rgb(235, 181, 69); font-weight: bold; display: unset; font-style: inherit;">Donn&eacute;es de contact</span></p><p style="line-height: inherit;"><span style="color: rgb(255, 255, 255); font-weight: inherit; display: unset; font-style: inherit;">CHUTIS d. o. o.</span></p><p style="line-height: inherit;"><span style="color: rgb(255, 255, 255); font-weight: inherit; display: unset; font-style: inherit;">Dunajska cesta 56, 1000 Ljubljana</span></p><p style="line-height: inherit;"><span style="color: rgb(255, 255, 255); font-weight: inherit; font-style: inherit; display: unset;">info@chutys.com</span><span style="display: initial;"><br/></span></p></div> 
+</div> 
+ <div class="u_1395724849 dmRespCol small-12 large-3 medium-3" id="1395724849"> <div class="u_1949826649 dmNewParagraph" data-element-type="paragraph" id="1949826649" style="transition: none 0s ease 0s; display: block;" data-version="5"> <h5> <span style="display:initial;">Informations de contact</span> 
+</h5> 
+</div></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1144009043" id="1144009043"> <div class="dmRespColsWrapper" id="1097639711"> <div class="dmRespCol large-12 medium-12 small-12" id="1113709028"> <div class="dmRespRow u_1514204962" id="1514204962"> <div class="dmRespColsWrapper" id="1957035185"> <div class="dmRespCol large-6 medium-6 small-12 u_1905677967" id="1905677967"> <div class="u_1228904399 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1228904399"><p class="m-size-10 size-13" style="line-height: 100%;"><span class="m-font-size-10 font-size-13" style="display: unset;">&copy; 2019 Chutys.com, Tous droits r&eacute;serv&eacute;s.</span></p></div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12 u_1297585024" id="1297585024"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1869794193"><p class="m-size-10 text-align-right size-13" style="line-height: 16px;"><span class="m-font-size-10 font-size-13" style="text-decoration: none; display: unset;"><span class="m-font-size-10 font-size-13" style="text-decoration: none; display: unset;">Conception du site web:</span> 
+</span><a href="https://kokos.agency/" target="_blank" runtime_url="https://kokos.agency/" type="url" class="m-font-size-10 font-size-13" style="text-decoration: none; display: unset;">KokosAgency</a><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1945768614"> <a data-display-type="block" class="u_1721721137 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient sticky-mobile-position-bottom-right sticky-desktop-position-bottom" file="false" href="/fr#REQUEST" data-element-type="dButtonLinkId" id="1721721137"> <span class="iconBg" id="1531924393"> <span class="icon hasFontIcon icon-star" id="1270453031"></span> 
+</span> 
+ <span class="text" id="1206874689">DEMANDEZ UN DOSSIER D&rsquo;OFFRE DE FRANCHISE</span> 
+</a> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow" id="1139121308"> <div class="dmRespColsWrapper" id="1953796967"> <div class="dmRespCol empty-column large-12 medium-12 small-12" id="1523201384"></div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" role="button" aria-label="menu opener" tabindex="0"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "FRENCH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "19..35";
+    var build = "2023-01-04T13_54_14";
+    window['v'+'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2023-01-04T13_54_14";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            }
+            else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+
+
+</script>
+<!-- Load jQuery -->
+<script type="text/javascript" src="https://static.cdn-website.com/libs/jquery/jquery-3.6.0.min.js"></script>
+<!-- End Load jQuery -->
+
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = ' <div>Nous utilisons des cookies pour optimiser votre exp&eacute;rience sur notre site web. Pour en savoir plus, veuillez acc&eacute;der &agrave; la page Confidentialit&eacute;.<\/div> \n';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["facebook.accessToken"] = '126515034112906|8vv7JhnEegS8qz43fIOZjxGZReA';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["feature.flag.contactUsNewForm"] = 'true';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["google.places.key"] = 'AIzaSyBAwUOqPUB1CU31yDztoZYaUE7sPv4ktEI';
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"]=true;
+    rtCommonProps["common.build.dist.folder"]='production/3111';
+    rtCommonProps["common.resources.cdn.host"]='https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"]='https://static.cdn-website.com/mnlt/production/3111';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"]=true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"]=true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"]=true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"]=true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"]=true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"]=true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"]=true;
+    rtCommonProps["feature.flag.addTargetBlankToExternalLinks"]=true;
+    rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"]=true;
+    rtCommonProps["keyboard.navigation.enabled"]=true;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["runtime.save.restore.function.bind"] =true;
+    rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+    rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+    rtCommonProps["new.store.accountPage.ecwid.signIn.fix"] =true;
+    rtCommonProps["fix.ecwid.sign.in.page.with.return.url"] =true;
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+    rtCommonProps["geocode.search.localize"] =false; 
+    rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtCommonProps["feature.flag.performance.logs"]=true;
+    rtCommonProps["site.contact.form.fix.for.attribute"]=true;
+    rtCommonProps["site.widget.form.captcha.type"]='g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/3111/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js" ></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/3111/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>jQuery.DM.updateWidthAndHeight();
+$(window).resize(function () {
+    
+});
+$(window).bind("orientationchange", function (e) {
+    $.layoutManager.initLayout();
+    
+});
+$(document).resize(function () {
+    
+});
+</script>
+
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189487915-1"></script>
+	<script type="text/javascript" id="d_track_ga">
+	  _dm_gaq.siteAlias = '9f999b83';
+	  _dm_gaq.systemAggregatedGaqID = '';
+	  _dm_gaq.externalGaqID = 'UA-189487915-1';
+	  _dm_gaq.gaAggregatedEventAttributes = {
+		  'site_alias':  _dm_gaq.siteAlias,
+		  'product': 'DM_DIRECT',
+		  'plan': 'BUSINESS_PLUS',
+		  'dfooter': 'false',
+		  'sitetype': '1',
+		  'pwaEnabled': 'true'
+	  }
+
+	  _dm_gaq.pushEvent = function(trackingId, event, category, label, value, additionalParams) {
+	  	  var initialProps = {
+			  send_to: trackingId,
+			  event_category: category,
+			  event_label: label,
+			  value: value
+		  }
+		  additionalParams = additionalParams || {};
+	  	  var eventProps = $.extend({}, initialProps, additionalParams, trackingId === _dm_gaq.systemAggregatedGaqID?_dm_gaq.gaAggregatedEventAttributes:{});
+		  gtag('event', event, eventProps);
+	  }
+
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+	  function pushInsiteImpressions(id) {
+		  $.each(_dm_insite, function(idx, rule) {
+			  _dm_gaq.pushEvent(id, 'insite_impression', 'insite', rule.ruleType + '__' + rule.ruleId);
+		  });
+	  }
+
+	if(_dm_gaq.systemAggregatedGaqID){
+		// track aggregated account
+		gtag('config', '', {
+			'send_page_view': false,
+			'anonymize_ip': true,
+			'transport_type': 'beacon',
+			'custom_map': {'dimension1': 'site_alias', 'dimension2': 'product', 'dimension3': 'dFooter', 'dimension4': 'sitetype'}
+		});
+		gtag('set', 'developer_id.dMDU5Nj', true);
+
+		_dm_gaq.pushEvent('', 'page_view');
+		pushInsiteImpressions(_dm_gaq.systemAggregatedGaqID);
+	}
+
+	if(_dm_gaq.externalGaqID && _dm_gaq.externalGaqID!= '') {
+		gtag('config', 'UA-189487915-1', {
+			'send_page_view': false,
+			'anonymize_ip': true,
+			'transport_type': 'beacon',
+			'linker': {
+				'domains': ['chutys.com']
+			}
+		});
+		_dm_gaq.pushEvent('UA-189487915-1', 'page_view');
+		pushInsiteImpressions(_dm_gaq.externalGaqID);
+	}
+
+  </script>
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '9f999b83'
+});
+
+dmsnowplow('trackPageView')
+$.each(_dm_insite, function(idx, rule) {
+	//('trackStructEvent', 'category','action','label','property','value');
+			// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+	        // the tracking is in popup.js
+			if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+ 			$(document).ready(function(){
+ 				$.DM.events.trigger('event-ruleTriggered', {value: rule})}
+ 			);
+ 		});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Fermer (Echap)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Partager"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Passer en mode plein écran"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom avant / arrière"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Précédent (flèche gauche)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Suivant (flèche droite)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="fr_FR"></div>
+<!-- Alias: 9f999b83 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+
+<script>
+
+    jQuery(window).on('load', function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+
+    });
+</script>
+<script>
+    dmAPI.loadScript(
+        window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+        function () {
+            dmAPI.runOnReady('lozadInit', function () {
+                window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                    img.addEventListener('load', function (event) {
+                        var img = event.target;
+                        img.style.filter = 'blur(0)';
+                        setTimeout(function () {
+                            $(img).closest('.imageWidget').addClass('lazyLoaded');
+                        }, 250)
+                    });
+                });
+                lozad('.lazy', {
+                    threshold: 0.1,
+                    loaded: function (element) {
+                        if (element.getAttribute('data-background-image')) {
+                            element.style.setProperty(
+                                'background-image',
+                                "url('" + element.getAttribute('data-background-image') + "')",
+                                "important"
+                            );
+                        }
+                    }
+                }).observe();
+            });
+        }
+    );
+</script>
+<!--  End Script tags -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

@@ -1,0 +1,307 @@
+UTF-8 and Unicode
+
+   Unicode Transformation Format 8-bit is a variable-width encoding that
+   can represent every character in the Unicode character set. It was
+   designed for backward compatibility with ASCII and to avoid the
+   complications of endianness and byte order marks in UTF-16 and UTF-32.
+   ^[1]
+
+   UTF-8 encodes each Unicode character as a variable number of 1 to 4
+   octets, where the number of octets depends on the integer value
+   assigned to the Unicode character. It is an efficient encoding of
+   Unicode documents that use mostly US-ASCII characters because it
+   represents each character in the range U+0000 through U+007F as a
+   single octet.
+
+   UTF-8 is the default encoding for XML and since 2010 has become the
+   dominant character set on the Web.
+
+Standards
+
+     * RFC 3629: UTF-8, a transformation format of ISO 10646. November
+       2003.
+     * The Unicode Standard 5.0, November 2006. [purchase from Amazon.com]
+          + In particular, see the informal description of UTF-8 in
+            sections 2.5 and 2.6, pages 30-32, and a much more formal
+            definition in sections 3.9 and 3.10, pages 77-81.
+
+Articles and background reading
+
+     * UTF-8 and Unicode FAQ for Unix/Linux by Markus Kuhn
+     * Forms of Unicode, an excellent overview by Mark Davis
+     * Wikipedia UTF-8 contains a good discussion of why five- and
+       six-octet sequences are now illegal UTF-8
+     * Unicode Transformation Formats [czyborra.com]
+     * The Absolute Minimum Every Software Developer Absolutely,
+       Positively Must Know About Unicode and Character Sets (No
+       Excuses!), an amusing and informative article by Joel Spolsky
+
+Character Sets
+
+   The MIME character set attribute for UTF-8 is UTF-8. Character sets are
+   case-insensitive, so utf-8 is equally valid. [IANA Character Sets].
+
+   In a modern HTML 5 page, place this tag inside <head> ... </head>:
+<meta charset="UTF-8">
+
+   In an XML prolog, the encoding is typically specified as an attribute:
+<?xml version="1.0" encoding="UTF-8" ?>
+     __________________________________________________________________
+
+   Last modified: Wed Jan 5 12:57:21 PST 2022
+
+   #alternate alternate alternate alternate
+
+     * 百度首页
+
+   网页 新闻 贴吧 知道 网盘 图片 视频 地图 文库 百科
+   ____________________ (BUTTON) 进入词条 (BUTTON) 全站搜索 帮助
+     * 清除历史记录关闭
+
+   近期有不法分子冒充百度百科官方人员，以删除词条为由威胁并敲诈相关企业。在此严正声明：百度百科是免费编辑平台，绝不存在收费代编服务，请勿上当受骗
+   ！详情>>
+
+   首页
+          历史上的今天
+
+          百科冷知识
+
+          图解百科
+
+   秒懂百科
+          懂啦
+
+          秒懂本尊答
+
+          秒懂大师说
+
+          秒懂看瓦特
+
+          秒懂五千年
+
+          秒懂全视界
+
+   特色百科
+          数字博物馆
+
+          非遗百科
+
+          恐龙百科
+
+          多肉百科
+
+          艺术百科
+
+          科学百科
+
+   用户
+          蝌蚪团
+
+          热词团
+
+          百科校园
+
+          分类达人
+
+          百科任务
+
+          百科商城
+
+   知识专题
+
+   权威合作
+          合作模式
+
+          常见问题
+
+          联系方式
+
+   下载百科APP 个人中心
+
+   收藏
+   查看我的收藏
+   0 有用+1 已投票
+   0
+     *
+     *
+     *
+     *
+
+西式快餐
+
+          播报 编辑 锁定 讨论 上传视频 特型编辑
+
+          快餐类型
+
+   西式快餐（Western fast-food; fast
+   food）是指可以迅速准备和供应的食物的总称，通常可以徒手拿取，不需要使用餐具，大部分可以外带或外卖。词语最早出现于西方，上世纪80年代引入中
+   国，亦称“洋快餐”。
+
+   中文名
+          西式快餐
+
+   外文名
+          Western fast-food; fast food
+
+   别    名
+          洋快餐
+
+   代    表
+          肯德基、麦当劳、汉堡王等
+
+   相关视频
+   查看全部
+
+目录
+
+    1. 1 代表
+    2. 2 发展
+    3. 3 现状
+    4. 4 危害
+
+西式快餐代表
+
+   编辑 播报
+   肯德基有限公司 肯德基有限公司
+   肯德基、麦当劳、必胜客等西式快餐。
+   维布西，乐好奇，比克利汉堡等中国地区的西式快餐。
+   麦当劳 麦当劳
+   巴贝拉，萨莉亚，百思富，等休闲餐厅
+   必胜客 必胜客
+
+西式快餐发展
+
+   编辑 播报
+   1984年4月20日，中国第一家西式快餐“义利快餐厅”，在北京西单南口的西绒线胡同正式挂牌开张。
+   1987年11月12日，肯德基在中国的第一家餐厅在北京前门繁华地带正式开业，名为"美国肯德基家乡鸡"
+   1990年10月8日，麦当劳在深圳东门太阳百货对面开设中国第一家快餐店。同年，必胜客在北京开设第一家中国分店。
+   1992年4月23日，北京王府井麦当劳快餐店开张，成为麦当劳在全世界面积最大的快餐店。
+   1996年6月25日，肯德基中国第100家店在北京成立。
+   2003年1月10日，中国必胜客开店突破100家。
+
+西式快餐现状
+
+   编辑 播报
+   西式快餐领域最近动作频频，火药味渐浓。麦当劳加盟政策松动，肯德基猛推新品，德克士宣布开放员工加盟。这三大巨头目前在华门店数量均达到数千家，“三
+   国杀”格局形成。
+   目前西式快餐领域已经形成肯德基、麦当劳、德克士三足鼎立的局面。在此之前，有“美国快餐之父”之称的艾德熊和号称“炸鸡类快餐销售额第一”的美国快餐
+   连锁店派派思先后败走中国；另一全球西式快餐巨头汉堡王进入中国稍晚，目前只有200多家店分布在43个城市。不过，从2013年3月起，汉堡王在中国
+   重启加盟，将迎来新一轮开店高峰。
+   高端餐饮遇冷后，大众餐饮的市场空间被释放出来，这也给了一些大众餐饮品牌弯道超车的机会。数据显示，德克士实现419家店面增长，预计在内地市场增开
+   超过500家连锁店，其一季度开店数量已经超出40%。截至目前，德克士在内地拥有2200家门店。在三大西式快餐中，仅次于肯德基的近5000家店面
+   。智研咨询（2014年中国西式快餐领域最近动作频频）统计显示，开店数量，肯德基计划新增700家，麦当劳预计为300家，汉堡王超过150家。
+   不同的是，从加盟比例上看，肯德基为6.09%，麦当劳为12%，德克士高达90%。同时，麦当劳和肯德基此次放开加盟的区域均指向了一线城市。德克士
+   仍以三四线城市居多。
+
+西式快餐危害
+
+   编辑 播报
+   “三高”、“三低”营养失衡
+   汉堡 汉堡
+   西式快餐具有“三高”(高脂肪、高热量、高蛋白质)和“三低”(低维生素、低矿物质、低纤维)的特点，被营养学家称为“能量炸弹”和“垃圾食品”(ju
+   nk food)。
+   导致肥胖和性早熟
+   2002年11月，纽约一名因长期食用西式快餐而变成肥痴的儿童控告麦当劳，起诉原因是麦当劳的快餐引起儿童肥胖。
+   2003年1月29日，伦敦出版的《新科学家》杂志报道，西式快餐可引起体内激素变化，然后导致上瘾。
+   致癌物质含量很高
+   2002年4月24日，瑞典国家安全管理局公布最新研究成果，炸薯条、汉堡包、薄脆饼、烤猪肉等含有大量的丙烯酰胺，由于丙烯酰胺损害中枢神经系统，可
+   以诱发良性或恶性肿瘤。
+   2004年3月24日，美国食品药品监督管理局公布的对750种食品的检查结果显示，炸薯条、炸薯片、爆玉米花、炸鸡中这类致癌物质含量最高。
+   氢化油导致慢性病
+   1991年，哈佛大学公共卫生学院营养学系主任威利特教授指出，西式快餐使用的氢化油，因为含一些自然界本不存在的反式脂肪酸，而反式脂肪酸会影响人类
+   内分泌系统，危害健康。
+   损害少年儿童智力
+   2004年11月6日，程昭寰教授在《中国食品报》中撰文，介绍了加拿大研究人员用高脂肪和普通饲料来喂养2组小鼠的实验。并得出结论高脂肪的“西式快
+   餐”会损害儿童正在发育的神经系统，并对其大脑和思维素质造成永久性的伤害。
+   百度百科内容由网友共同编辑，如您发现自己的词条内容不准确或不完善，欢迎使用本人词条编辑服务（免费）参与修正。立即前往>>
+   词条图册
+   更多图册
+   分享你的世界
+   查看更多
+     *
+          + 入华 22 年，为什么赛百味还是没能让中国人爱上三明治？
+            全球哪家连锁餐厅门店最多？相信不少人都会猜是麦当劳或肯德基。
+            但正确答案却是赛百味。和赛百味全球地位相比，赛百味在中国的位置一直很尴尬。
+            爱范儿 广州爱范儿科技股份有限公司官方帐号
+          + 肯德基入华三十年，除了卖炸鸡汉堡还做了啥？
+            但谁有能想象到，这个原本声称是「为外国人」服务的餐饮，在入华 30 年来，却都在想方设法迎合中国人的喜好。
+            爱范儿 广州爱范儿科技股份有限公司官方帐号
+          + 德克士带着“无人店”和现做的“肉夹馍”，想重回北上广市场
+            2018 年，德克士计划将一线城市门店翻一倍。
+            为了向消费者和合作伙伴展示品牌的竞争力，德克士在上海开了首家无人智慧餐厅“德克士未来店”，爱范儿前往体验了一番。
+            爱范儿 广州爱范儿科技股份有限公司官方帐号
+          + 洋快餐不仅影响体重，还对免疫系统重编程
+            快餐已成为忙碌都市人的标配。然而，若长期食用洋快餐，遭殃的恐怕不仅仅是你的体重，还有你的免疫系统。在这项研究中，Christ
+            及其同事希望了解饮食如何影响这种类型的免疫和疾病，特别是心血管疾病。Christ表示，下一步他们打算从小鼠转移到人类身上，开
+            展更多的研究。
+            老狼
+     *
+          + 麦当劳居然做起了法国菜，「金拱门」在中国还有哪些变化？
+            最近麦当劳在上海举办了第二届「麦麦全席」，让法国主厨用麦当劳食材做了 5 道法式创意料理，并邀请了数百名媒体、KOL
+            和普通消费者前来品尝，爱范儿也受邀试吃了麦当劳这几道限量「新品」。
+            爱范儿 广州爱范儿科技股份有限公司官方帐号
+
+   西式快餐 (BUTTON) 图集 西式快餐的概述图（1张）
+   V百科往期回顾
+
+   词条统计
+
+          + 浏览次数：次
+          + 编辑次数：51次历史版本
+          + 最近更新： 幸福杨梅樱花 （2022-12-08）
+
+   1 代表
+   2 发展
+   3 现状
+   4 危害
+
+   为您推荐广告
+
+   新手上路
+          成长任务
+
+          编辑入门
+
+          编辑规则
+
+          本人编辑 new
+
+   我有疑问
+          内容质疑
+
+          在线客服
+
+          官方贴吧
+
+          意见反馈
+
+   投诉建议
+          举报不良信息
+
+          未通过词条申诉
+
+          投诉侵权信息
+
+          封禁查询与解封
+
+   ©2023 Baidu 使用百度前必读 | 百科协议 | 隐私政策 | 百度百科合作平台 | 京ICP证030173号
+   [copy_rignt_24.png]
+
+   京公网安备11000002000001号
+
+   ____________________ (BUTTON) 进入词条
+     * 清除历史记录关闭
+
+   播报 编辑 讨论  收藏 赞
+   登录
+
+扫码下载百科APP
+
+领取50财富值奖励
+
+   分享到微信朋友圈
+   打开微信“扫一扫”即可将网页分享至朋友圈
+
+   选择朗读音色
+   00:00
+   00:00

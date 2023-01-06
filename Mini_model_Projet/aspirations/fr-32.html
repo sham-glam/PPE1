@@ -1,0 +1,659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <title>Le marché de la restauration rapide en France, exposé &agrave; t&eacute;l&eacute;charger gratuitement</title>
+        <script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MBX8TZ');
+</script>
+<script type="text/javascript" src="/sharedLibraries/js/jQI.min.js"></script>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=2.0"/>
+        <meta name="description" content="T&eacute;l&eacute;chargez gratuitement Le march&eacute; de la restauration rapide en France. Notre &eacute;tude aujourd'hui porte sur le march&eacute; principal de la restauration rapide, qui est rattach&eacute; au march&eacute; support de la ..." />
+        <meta name="keywords" content="t&eacute;l&eacute;chargez,gratuitement,march&eacute;,restauration,rapide,en,france," />
+        <link rel="shortcut icon" href="//www.marketing-etudiant.fr/favicon.ico" />
+        <link rel="canonical" href="//www.marketing-etudiant.fr/exposes/r/marche-de-la-restauration-rapide.php">
+
+
+        <link type="text/css" href="/css/jquery.ui.stars.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/sharedLibraries/css/style.css" type="text/css" />
+        <link rel="stylesheet" media="screen" type="text/css" title="marketing etudiant" href="/css/newstyle.css" />
+        <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//d3lizf1yw938cm.cloudfront.net/css/font-awesome.min.css" type="text/css"/>
+        <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/digischool-footer/css/footer.css" />
+
+        
+        <script type="text/javascript">
+            jQl.loadjQdep('/script/functions.js');
+
+        </script>
+        <script type="text/javascript" src="/script/prototype.js"></script>
+        <script type="text/javascript" src="/script/jquery.js"></script>
+        <script type="text/javascript"> jQuery.noConflict(); </script>
+        <script type="text/javascript" src="/script/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/script/jquery.ui.stars.min.js"></script>
+        <script type="text/javascript" src="/script/effects.js"></script>
+        <script type="text/javascript" src="/script/window.js"></script>
+                <script type="text/javascript">
+            function isLogged(){
+                                return false;
+                            }
+
+            //-------------------------------affiche la connexion si on n'est pas connecte
+
+            function showConnexion() {
+                Dialog.alert($('form_connexion').innerHTML,
+                    {
+                        className:"zone_connexion",
+                        width:435,
+                        height:164,
+                        destroyOnClose: true
+                    }
+                );
+                return false;
+            }
+
+        </script>
+        <script type="text/javascript">
+            function download(){
+                if (isLogged()) {
+                                    }
+                else {
+                    showConnexion();
+                }
+            }
+            (function($) {
+                $(document).ready(function () {
+                    if ($(".btnTelechargementHaut").length != 0) {
+                        $("#telechargement").clone().prependTo($(".btnTelechargementHaut"));
+                    }
+                    else {
+                        $("#extrait p:eq(1)").after($("#telechargement").clone().css({
+                            "float": "left",
+                            "width": "100%"
+                        }));
+                    }
+
+                    $('.lien_telecharger, .dlButtonInContent').click(function () {
+                        download();
+                        return false;
+                    });
+                    $("#donneTonAvisTextarea").focus(function () {
+                        if (!isLogged()) {
+                            showConnexion();
+                            //$(".zone_connexion_non_log .pseudo").click();
+                            document.forms[0].elements[0].focus();
+                        }
+                    });
+                    $("#donneTonAvisBox textarea").live("keyup change", function () {
+                        btn = $("#donneTonAvisButton");
+                        textarea = $("#donneTonAvisBox textarea");
+                        length = 50 - textarea.val().length;
+                        btn.data('length', length);
+                        if (length <= 0) {
+                            $("span", btn).hide();
+                            (btn).css("color", "#1aaa5b");
+                        }
+                        else {
+                            $("span", btn).html("(" + length + ")").show();
+                            $(btn).css("color", "#7B7A7A");
+                        }
+                    });
+
+                    $(".plusAvisButton").click(function () {
+                        avisOut = $(".avisItem:visible");
+                        avisIn = avisOut.last().nextAll(".avisItem").slice(0, 3);
+                        avisOut.fadeOut("", function () {
+                            avisIn.fadeIn();
+                        });
+
+                        if (avisIn.nextAll(".avisItem").length < 3) {
+                            $(".plusAvisButton").hide();
+                        }
+                    });
+
+                    $("#donneTonAvisButton").click(function () {
+                        btn = $(this);
+                        $("#donneTonAvisBox .messageErreur,#donneTonAvisBox .messageInformation").hide();
+                        if (btn.data('length') <= 0) {
+                            if ($('input[name="donneTonAvisNote"]').val() != 0) {
+                                data = {
+                                    id_document: $('#id_document').val(),
+                                    id_membre: $('#id_membre').val(),
+                                    comment_contenu: $("#donneTonAvisTextarea").val(),
+                                    comment_note: $('input[name="donneTonAvisNote"]').val(),
+                                    comment_pseudo: $('#pseudo_membre').val()
+                                };
+                                $.ajax({
+                                    url: '/ajax/commenteDocument.php',
+                                    type: 'POST',
+                                    data: data,
+                                    success: function (retour) {
+                                        if (retour == 'OK') {
+                                            btn.hide();
+                                            $(".messageSucces").show();
+                                        }
+                                    }
+                                });
+                            }
+                            else {
+                                $("#donneTonAvisBox .messageErreur").show();
+                            }
+                        }
+                        else {
+                            $("#donneTonAvisBox .messageInformation").show();
+                        }
+                    });
+
+                    $("#noteAvis").stars({
+                        inputType: "select",
+                        callback: function (ui, type, value) {
+                            jQuery(ui.$value).removeAttr("disabled");
+                        }
+                    }).append($('<div class="cb"></div>')).prepend('<div class="fl">Votre note :&nbsp;</div>');
+
+                });
+            })(jQuery);
+        </script>
+
+        <script type="text/javascript">
+            function onValidCommentForm(){
+                if(!isLogged()){
+                    Dialog.alert($('form_connexion').innerHTML,
+                    {
+                        className:"zone_connexion",
+                        width:435,
+                        height:164
+                    }
+                );
+                }
+                else{
+                    document.getElementById('commentform').submit();
+                }
+                return false;
+            }
+        </script>
+    </head>
+    <body class="habillage">
+<script type="text/javascript">
+    var site = "https://www.marketing-etudiant.fr";
+    dataLayer.push({
+        'dataLogged': 'false',
+        'dataFirstLogin': '',
+        'category': 'exposes',
+        'sub-category': 'r',
+        'pageUrl': 'https://www.marketing-etudiant.fr/exposes/r/marche-de-la-restauration-rapide.php',
+        'author': '',
+        'dateArticle': ''
+    });
+</script>
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBX8TZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+<script>window.props = { isLogged: false }</script>
+<div id="form_connexion" class="display_none" style='display:none'>
+        <!-- <img src="/images/potes.gif" alt="" style="position:absolute; left:-30px; bottom:171px;" /> -->
+    <img class="btn_close" onclick="Dialog.okCallback()" src="/images_zol/zone_connexion/puce-fermer.gif" alt="puce" />
+    <p id="message_connexion" class="message_z_nonlog documents_color">Vous devez &ecirc;tre membre de digiSchool marketing</p>
+    <div class="zone_lien_non_log">
+        <p>
+            Si ce n'est pas encore fait ?<br />
+            <br />
+            <a href="/forum/profile.php?mode=register&amp;agreed=true"><img src="/images_zol/zone_connexion/btn_inscription_z_nonlog.jpg" alt="Inscrivez-vous !" class="no_border" /></a>
+        </p>
+    </div>
+    <div class="zone_connexion_non_log">
+        <p>
+            ou Identifiez-vous :<br /><br />
+        </p>
+        <form method="post" action="/forum/login.php">
+            <p><input onfocus="this.select();" class="pseudo" type="text" name="username" value="Pseudo" size="20" /><br />
+                <input onfocus="this.select();" class="password" type="password" name="password" value="mdpmd" size="20" />
+                <input type="hidden" name="redirect" value="../exposes/r/marche-de-la-restauration-rapide.php" />
+                <input type="hidden" name="login" value="frm_login" />
+                <input type="submit" class="connexion" value=" " /></p>
+        </form>
+        <p><a href="/forum/profile.php?mode=sendpassword">Mot de passe oubli&eacute; ?</a><br /></p>
+    </div>
+</div>
+<div id="popin" style="display:none;">
+    <img class="btn_close" onclick="Dialog.okCallback()" src="/images_zol/zone_connexion/puce-fermer.gif" alt="puce" />
+    <p class="titre">{TITRE}</p>
+    <p class="message">
+        {MESSAGE}
+    </p>
+</div>
+
+
+
+
+  
+        <div id="digischool-galaxy-menu" data-service="commerce">
+            <div class="galaxy-navigation" data-reactroot=""><div id="navigation"><nav><ul class="list-level-2 glxy-container"><li class="glxy-btn-home row-level-2"><a href="/"><i class="home-icon icon"></i></a></li><li class="row-level-2 "><a href="/cours.php" class="content-level-2" data-index="0"><span>Cours</span></a><ul class="list-level-3"><li class="row-level-3 column "><div class="content-level-3" data-index="0"><span>Ressources</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/cours.php" class="content-level-4" data-index="0"><span>Cours</span></a></li><li class="row-level-4 "><a href="/exposes.php" class="content-level-4" data-index="1"><span>Exposés</span></a></li><li class="row-level-4 "><a href="/memoires.php" class="content-level-4" data-index="2"><span>Mémoires</span></a></li><li class="row-level-4 "><a href="/definitions.php" class="content-level-4" data-index="3"><span>Définitions</span></a></li><li class="row-level-4 "><a href="/echange-fichier/" class="content-level-4" data-index="4"><span>Envoyer un document</span></a></li></ul></li><li class="row-level-3 column "><div class="content-level-3" data-index="1"><span>Pages thématques</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/marketing-strategique-infos.html" class="content-level-4" data-index="0"><span>Marketing Stratégique</span></a></li><li class="row-level-4 "><a href="/marketing-mix.html" class="content-level-4" data-index="1"><span>Le Marketing Mix : 4P</span></a></li><li class="row-level-4 "><a href="/marketing-operationnel.html" class="content-level-4" data-index="2"><span>Marketing Opérationnel</span></a></li><li class="row-level-4 "><a href="/communication-institutionnelle.html" class="content-level-4" data-index="3"><span>Communication Institutionnelle</span></a></li><li class="row-level-4 "><a href="/comportement-consommateur.html" class="content-level-4" data-index="4"><span>Comportement du consommateur</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/marketing-luxe.html" class="content-level-4" data-index="0"><span>Marketing du Luxe</span></a></li><li class="row-level-4 "><a href="/marketing-relationnel.html" class="content-level-4" data-index="1"><span>Marketing Relationnel</span></a></li><li class="row-level-4 "><a href="/marketing-international.html" class="content-level-4" data-index="2"><span>Marketing International</span></a></li><li class="row-level-4 "><a href="/diagnostic-marketing.html" class="content-level-4" data-index="3"><span>Diagnostic Marketing</span></a></li><li class="row-level-4 "><a href="/marketing-viral-exemple.html" class="content-level-4" data-index="4"><span>Marketing Viral</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/blog/marketing-toutes-les-thematiques.php" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_4f7fd2.png" alt="Toutes les pages thématiques"/></div><span>Toutes les pages thématiques</span></a></li></ul></li></ul></li><li class="row-level-2 "><a href="/marketing-box/" class="content-level-2" data-index="1"><span>Marketing Box</span></a><ul class="list-level-3"><li class="row-level-3 column "><div class="content-level-3" data-index="0"><span>Marketing Box</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/marketing-box/fondements-du-marketing.php" class="content-level-4" data-index="0"><span>Fondements du Marketing</span></a></li><li class="row-level-4 "><a href="/marketing-box/marketing-operationnel-le-produit.php" class="content-level-4" data-index="1"><span>Le Produit</span></a></li><li class="row-level-4 "><a href="/marketing-box/marketing-operationnel-la-gamme.php" class="content-level-4" data-index="2"><span>La Gamme</span></a></li><li class="row-level-4 "><a href="/marketing-box/le-prix.php" class="content-level-4" data-index="3"><span>Le Prix</span></a></li><li class="row-level-4 no-title "></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/marketing-box/point-de-vente.php" class="content-level-4" data-index="0"><span>Le Point de vente</span></a></li><li class="row-level-4 "><a href="/marketing-box/la-communication.php" class="content-level-4" data-index="1"><span>La Communication</span></a></li><li class="row-level-4 "><a href="/marketing-box/la-distribution.php" class="content-level-4" data-index="2"><span>La Distribution</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/marketing-box/" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_8bc11c.png" alt="Marketing Box"/></div><span>Marketing Box</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/marketing-box/telechargement/" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_d38fa9.png" alt="Marketing Book"/></div><span>Marketing Book</span></a></li></ul></li></ul></li><li class="row-level-2 "><a href="/tests-anglais/" class="content-level-2" data-index="2"><span>Tests d&#x27;anglais</span></a><ul class="list-level-3"><li class="row-level-3 column "><div class="content-level-3" data-index="0"><span>Entrainement TOEIC</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/tests-anglais/toeic/" class="content-level-4" data-index="0"><span>Présentation</span></a></li><li class="row-level-4 "><a href="/tests-anglais/toeic/quiz/" class="content-level-4" data-index="1"><span>Tests TOEIC</span></a></li><li class="row-level-4 "><a href="/tests-anglais/toeic/lecons/" class="content-level-4" data-index="2"><span>Cours TOEIC</span></a></li></ul></li><li class="row-level-3 column "><div class="content-level-3" data-index="1"><span>Entrainement TOEFL</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/tests-anglais/toefl/" class="content-level-4" data-index="0"><span>Présentation</span></a></li><li class="row-level-4 "><a href="/tests-anglais/toefl/quiz/" class="content-level-4" data-index="1"><span>Tests TOEFL</span></a></li><li class="row-level-4 "><a href="/tests-anglais/toefl/lecons/" class="content-level-4" data-index="2"><span>Cours TOEFL</span></a></li></ul></li><li class="row-level-3 column "><div class="content-level-3" data-index="2"><span>Entrainement Cambridge</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/tests-anglais/cambridge/" class="content-level-4" data-index="0"><span>Présentation</span></a></li><li class="row-level-4 "><a href="/tests-anglais/cambridge/quiz/" class="content-level-4" data-index="1"><span>Tests Cambridge</span></a></li><li class="row-level-4 "><a href="/tests-anglais/cambridge/lecons/" class="content-level-4" data-index="2"><span>Cours Cambridge</span></a></li></ul></li><li class="row-level-3 column "><div class="content-level-3" data-index="3"><span>Entrainement IELTS</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/tests-anglais/ielts/" class="content-level-4" data-index="0"><span>Présentation</span></a></li><li class="row-level-4 "><a href="/tests-anglais/ielts/quiz/" class="content-level-4" data-index="1"><span>Tests IELTS</span></a></li><li class="row-level-4 "><a href="/tests-anglais/ielts/lecons/" class="content-level-4" data-index="2"><span>Cours IELTS</span></a></li></ul></li></ul></li><li class="row-level-2 "><a href="/concours-commerce/" class="content-level-2" data-index="3"><span>Concours Commerce</span></a><ul class="list-level-3"><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/concours-commerce/sesame-22.html" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_7ce52d.png" alt="Sesame"/></div><span>Sesame</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/concours-commerce/acces-19.html" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_3c5c9f.png" alt="Acces"/></div><span>Acces</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/concours-commerce/passerelle-44.html" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_24350b.png" alt="Passerelle"/></div><span>Passerelle</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/concours-commerce/tremplin-53.html" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_783987.png" alt="Tremplin"/></div><span>Tremplin</span></a></li></ul></li></ul></li><li class="row-level-2 "><a href="/ebooks-gratuit" class="content-level-2" data-index="4"><span>E-books</span></a><ul class="list-level-3"><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/swot-references.html" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_0f48c3.png" alt="SWOT Références"/></div><span>SWOT Références</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="pestel-references.html" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_0a23a9.png" alt="PESTEL Références"/></div><span>PESTEL Références</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/cours/e/excel-formation-microsoft-excel.php" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_ec2a7d.png" alt="Formation Excel"/></div><span>Formation Excel</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/top-100-marketing-grandes-marques.html" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_92d0e9.png" alt="TOP 100 grandes marques"/></div><span>TOP 100 grandes marques</span></a></li></ul></li></ul></li><li class="row-level-2 "><a href="/marques" class="content-level-2" data-index="5"><span>Etudes de cas</span></a><ul class="list-level-3"><li class="row-level-3 column "><div class="content-level-3" data-index="0"><span>Toutes les analyses</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/marques#agroalimentaire" class="content-level-4" data-index="0"><span>Agroalimentaire</span></a></li><li class="row-level-4 "><a href="/marques#automobile" class="content-level-4" data-index="1"><span>Automobile</span></a></li><li class="row-level-4 "><a href="/marques#beaute--parfum" class="content-level-4" data-index="2"><span>Beauté / Parfum</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/marques#distribution--autre" class="content-level-4" data-index="0"><span>Distribution / Autres</span></a></li><li class="row-level-4 "><a href="/marques#habillement--luxe" class="content-level-4" data-index="1"><span>Habillement / Luxe</span></a></li><li class="row-level-4 "><a href="/marques#internet--it--telecom" class="content-level-4" data-index="2"><span>Internet / IT / Télécom</span></a></li></ul></li><li class="row-level-3 column "><div class="content-level-3" data-index="2"><span>Top 10 études de cas</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/marques/nike-marketing.html" class="content-level-4" data-index="0"><span>Nike</span></a></li><li class="row-level-4 "><a href="/marques/bmw-marketing.html" class="content-level-4" data-index="1"><span>BMW</span></a></li><li class="row-level-4 "><a href="/marques/chanel-marketing.html" class="content-level-4" data-index="2"><span>Chanel</span></a></li><li class="row-level-4 "><a href="/marques/coca-cola-marketing.html" class="content-level-4" data-index="3"><span>Coca-Cola</span></a></li><li class="row-level-4 "><a href="/marques/dior-marketing.html" class="content-level-4" data-index="4"><span>Dior</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/marques/zara-marketing.html" class="content-level-4" data-index="0"><span>Zara</span></a></li><li class="row-level-4 "><a href="/marques/sephora-marketing.html" class="content-level-4" data-index="1"><span>Sephora</span></a></li><li class="row-level-4 "><a href="/marques/mms-marketing.html" class="content-level-4" data-index="2"><span>M&amp;M&#x27;S</span></a></li><li class="row-level-4 "><a href="/marques/danone-marketing.html" class="content-level-4" data-index="3"><span>Danone</span></a></li><li class="row-level-4 "><a href="/marques/hm-marketing.html" class="content-level-4" data-index="4"><span>H&amp;M</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/marques" class="content-level-4" data-index="0"><div class="crop"><img src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_4cfbee.png" alt="Toutes les études de cas"/></div><span>Toutes les études de cas</span></a></li></ul></li></ul></li><li class="row-level-2 "><a href="/formations-marketing/" class="content-level-2" data-index="6"><span>Formation</span></a><ul class="list-level-3"><li class="row-level-3 column "><div class="content-level-3" data-index="0"><span>Formations</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/formations-marketing/" class="content-level-4" data-index="0"><span>Filières</span></a></li><li class="row-level-4 "><a href="/formations-marketing/diplomes.php" class="content-level-4" data-index="1"><span>Diplômes</span></a></li></ul></li><li class="row-level-3 column "><div class="content-level-3" data-index="1"><span>Métiers</span></div><ul class="list-level-4"><li class="row-level-4 "><a href="/metiers#metiers-du-marketing" class="content-level-4" data-index="0"><span>Marketing</span></a></li><li class="row-level-4 "><a href="/metiers#metiers-de-la-communication" class="content-level-4" data-index="1"><span>Communication</span></a></li><li class="row-level-4 "><a href="/metiers#metiers-du-commerce-et-de-la-vente" class="content-level-4" data-index="2"><span>Commerce/vente</span></a></li></ul></li><li class="row-level-3 column no-title "><ul class="list-level-4"><li class="row-level-4 "><a href="/metiers#metiers-de-l-international" class="content-level-4" data-index="0"><span>International</span></a></li><li class="row-level-4 "><a href="/metier-finance" class="content-level-4" data-index="1"><span>Finance</span></a></li><li class="row-level-4 "><a href="/metiers#metiers-du-web" class="content-level-4" data-index="2"><span>Web</span></a></li></ul></li></ul></li></ul></nav></div><div id="banner" class="glxy-container"><div class="logo" role="button" tabindex="0"><div class="image"></div><div class="caret"></div></div><div id="digi-news"><strong>À la une :</strong><a class="typer" href="https://www.orientation.com/"><span class="blink">|</span></a><div id="news-wrapper"><button>3</button><ul id="news-list"><li class="row-level-2 null"><a href="https://www.orientation.com/" class="content-level-2" data-index="0" target="_blank"><span>Trouver son orientation</span></a></li><li class="row-level-2 null"><a href="https://www.codedelaroute.fr/" class="content-level-2" data-index="1" target="_blank"><span>Obtiens ton code de la route</span></a></li><li class="row-level-2 null"><a href="https://www.doc-etudiant.fr/Methodologie/Lettre-de-motivation/" class="content-level-2" data-index="2" target="_blank"><span>Modèle de lettre de motivation</span></a></li></ul></div></div><div role="button" class="additional-menu" tabindex="0"><ul><li class="row-level-2 null"><a href="https://www.marketing-etudiant.fr/forum/login.php" class="content-level-2" data-index="0"><span>Connexion</span></a></li><li class="row-level-2 null"><a href="https://www.marketing-etudiant.fr/inscription.php?mode=normal" class="content-level-2" data-index="1"><span>Inscription</span></a></li></ul></div></div><div id="galaxy"><div id="galaxy-container" class="glxy-container"><a href="http://www.digischool.fr">digischool</a><nav><ul><li><a href="https://www.digischool.fr">digiSchool.fr</a></li><li><a href="https://www.bac-pro.net">Bac Pro</a></li><li><a href="https://www.brevetdescolleges.fr">Brevet</a></li><li><a href="https://www.codedelaroute.fr">Code de la route</a></li><li><a href="https://www.devoirs.fr/">Devoirs</a></li><li><a href="https://www.doc-etudiant.fr/">Documents</a></li><li><a href="https://www.orientation.com/">Orientation</a></li><li><a href="https://www.super-bac.com">superBac</a></li><li><a href="https://www.cleanum.fr/">Cléa</a></li><li><a href="https://www.alternance.fr/">Alternance</a></li></ul></nav><div id="galaxy-btn-group"><button id="btn-previous"><i></i></button><button id="btn-next"><i></i></button></div></div></div></div>
+        </div>
+        
+    <script type="text/javascript">
+      window.props = Object.assign({"service":"commerce","navigationMenuRow":{"menu":[{"id":254,"title":"Cours","slug":null,"url":"/cours.php","imageFilename":null,"columnType":null,"level":2,"type":"navigation","isExternal":null,"__children":[{"id":710,"title":"Ressources","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":705,"title":"Cours","slug":null,"url":"/cours.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":706,"title":"Exposés","slug":null,"url":"/exposes.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":707,"title":"Mémoires","slug":null,"url":"/memoires.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":708,"title":"Définitions","slug":null,"url":"/definitions.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":709,"title":"Envoyer un document","slug":null,"url":"/echange-fichier/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":716,"title":"Pages thématques","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":711,"title":"Marketing Stratégique","slug":null,"url":"/marketing-strategique-infos.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":712,"title":"Le Marketing Mix : 4P","slug":null,"url":"/marketing-mix.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":713,"title":"Marketing Opérationnel","slug":null,"url":"/marketing-operationnel.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":714,"title":"Communication Institutionnelle","slug":null,"url":"/communication-institutionnelle.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":715,"title":"Comportement du consommateur","slug":null,"url":"/comportement-consommateur.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":722,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":717,"title":"Marketing du Luxe","slug":null,"url":"/marketing-luxe.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":718,"title":"Marketing Relationnel","slug":null,"url":"/marketing-relationnel.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":719,"title":"Marketing International","slug":null,"url":"/marketing-international.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":720,"title":"Diagnostic Marketing","slug":null,"url":"/diagnostic-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":721,"title":"Marketing Viral","slug":null,"url":"/marketing-viral-exemple.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1511,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1510,"title":"Toutes les pages thématiques","slug":null,"url":"/blog/marketing-toutes-les-thematiques.php","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_4f7fd2.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]}]},{"id":255,"title":"Marketing Box","slug":null,"url":"/marketing-box/","imageFilename":null,"columnType":null,"level":2,"type":"navigation","isExternal":null,"__children":[{"id":728,"title":"Marketing Box","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":723,"title":"Fondements du Marketing","slug":null,"url":"/marketing-box/fondements-du-marketing.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":724,"title":"Le Produit","slug":null,"url":"/marketing-box/marketing-operationnel-le-produit.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":725,"title":"La Gamme","slug":null,"url":"/marketing-box/marketing-operationnel-la-gamme.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":726,"title":"Le Prix","slug":null,"url":"/marketing-box/le-prix.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":727,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":731,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":729,"title":"Le Point de vente","slug":null,"url":"/marketing-box/point-de-vente.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":730,"title":"La Communication","slug":null,"url":"/marketing-box/la-communication.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1454,"title":"La Distribution","slug":null,"url":"/marketing-box/la-distribution.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1451,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1450,"title":"Marketing Box","slug":null,"url":"/marketing-box/","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_8bc11c.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1453,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1452,"title":"Marketing Book","slug":null,"url":"/marketing-box/telechargement/","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_d38fa9.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]}]},{"id":256,"title":"Tests d'anglais","slug":null,"url":"/tests-anglais/","imageFilename":null,"columnType":null,"level":2,"type":"navigation","isExternal":null,"__children":[{"id":735,"title":"Entrainement TOEIC","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":732,"title":"Présentation","slug":null,"url":"/tests-anglais/toeic/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":733,"title":"Tests TOEIC","slug":null,"url":"/tests-anglais/toeic/quiz/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":734,"title":"Cours TOEIC","slug":null,"url":"/tests-anglais/toeic/lecons/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":739,"title":"Entrainement TOEFL","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":736,"title":"Présentation","slug":null,"url":"/tests-anglais/toefl/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":737,"title":"Tests TOEFL","slug":null,"url":"/tests-anglais/toefl/quiz/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":738,"title":"Cours TOEFL","slug":null,"url":"/tests-anglais/toefl/lecons/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":743,"title":"Entrainement Cambridge","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":740,"title":"Présentation","slug":null,"url":"/tests-anglais/cambridge/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":741,"title":"Tests Cambridge","slug":null,"url":"/tests-anglais/cambridge/quiz/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":742,"title":"Cours Cambridge","slug":null,"url":"/tests-anglais/cambridge/lecons/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":747,"title":"Entrainement IELTS","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":744,"title":"Présentation","slug":null,"url":"/tests-anglais/ielts/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":745,"title":"Tests IELTS","slug":null,"url":"/tests-anglais/ielts/quiz/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":746,"title":"Cours IELTS","slug":null,"url":"/tests-anglais/ielts/lecons/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]}]},{"id":257,"title":"Concours Commerce","slug":null,"url":"/concours-commerce/","imageFilename":null,"columnType":null,"level":2,"type":"navigation","isExternal":false,"__children":[{"id":1443,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1442,"title":"Sesame","slug":null,"url":"/concours-commerce/sesame-22.html","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_7ce52d.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1445,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1444,"title":"Acces","slug":null,"url":"/concours-commerce/acces-19.html","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_3c5c9f.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1447,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1446,"title":"Passerelle","slug":null,"url":"/concours-commerce/passerelle-44.html","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_24350b.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1449,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1448,"title":"Tremplin","slug":null,"url":"/concours-commerce/tremplin-53.html","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_783987.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]}]},{"id":259,"title":"E-books","slug":null,"url":"/ebooks-gratuit","imageFilename":null,"columnType":null,"level":2,"type":"navigation","isExternal":null,"__children":[{"id":1456,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1455,"title":"SWOT Références","slug":null,"url":"/swot-references.html","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_0f48c3.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1458,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1457,"title":"PESTEL Références","slug":null,"url":"pestel-references.html","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_0a23a9.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1460,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1459,"title":"Formation Excel","slug":null,"url":"/cours/e/excel-formation-microsoft-excel.php","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_ec2a7d.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1462,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1461,"title":"TOP 100 grandes marques","slug":null,"url":"/top-100-marketing-grandes-marques.html","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_92d0e9.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]}]},{"id":1487,"title":"Etudes de cas","slug":null,"url":"/marques","imageFilename":null,"columnType":null,"level":2,"type":"navigation","isExternal":null,"__children":[{"id":1491,"title":"Toutes les analyses","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1488,"title":"Agroalimentaire","slug":null,"url":"/marques#agroalimentaire","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1489,"title":"Automobile","slug":null,"url":"/marques#automobile","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1490,"title":"Beauté / Parfum","slug":null,"url":"/marques#beaute--parfum","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1495,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1492,"title":"Distribution / Autres","slug":null,"url":"/marques#distribution--autre","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1493,"title":"Habillement / Luxe","slug":null,"url":"/marques#habillement--luxe","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1494,"title":"Internet / IT / Télécom","slug":null,"url":"/marques#internet--it--telecom","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1501,"title":"Top 10 études de cas","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1496,"title":"Nike","slug":null,"url":"/marques/nike-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1497,"title":"BMW","slug":null,"url":"/marques/bmw-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1498,"title":"Chanel","slug":null,"url":"/marques/chanel-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1499,"title":"Coca-Cola","slug":null,"url":"/marques/coca-cola-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1500,"title":"Dior","slug":null,"url":"/marques/dior-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1507,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1502,"title":"Zara","slug":null,"url":"/marques/zara-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1503,"title":"Sephora","slug":null,"url":"/marques/sephora-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1504,"title":"M&M'S","slug":null,"url":"/marques/mms-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1505,"title":"Danone","slug":null,"url":"/marques/danone-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1506,"title":"H&M","slug":null,"url":"/marques/hm-marketing.html","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1509,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":2,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1508,"title":"Toutes les études de cas","slug":null,"url":"/marques","imageFilename":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/_4cfbee.png","columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]}]},{"id":1463,"title":"Formation","slug":null,"url":"/formations-marketing/","imageFilename":null,"columnType":null,"level":2,"type":"navigation","isExternal":null,"__children":[{"id":1467,"title":"Formations","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1465,"title":"Filières","slug":null,"url":"/formations-marketing/","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1466,"title":"Diplômes","slug":null,"url":"/formations-marketing/diplomes.php","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1471,"title":"Métiers","slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1468,"title":"Marketing","slug":null,"url":"/metiers#metiers-du-marketing","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1469,"title":"Communication","slug":null,"url":"/metiers#metiers-de-la-communication","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1470,"title":"Commerce/vente","slug":null,"url":"/metiers#metiers-du-commerce-et-de-la-vente","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]},{"id":1475,"title":null,"slug":null,"url":null,"imageFilename":null,"columnType":1,"level":3,"type":"navigation","isExternal":null,"__children":[{"id":1472,"title":"International","slug":null,"url":"/metiers#metiers-de-l-international","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1473,"title":"Finance","slug":null,"url":"/metier-finance","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]},{"id":1474,"title":"Web","slug":null,"url":"/metiers#metiers-du-web","imageFilename":null,"columnType":null,"level":4,"type":"navigation","isExternal":false,"__children":[]}]}]}]},"galaxyMenuRow":{"sites":[{"title":"digiSchool.fr","slug":"digischoolfr","url":"https://www.digischool.fr","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/digischoolfr_068e0a.svg","hideServices":false},{"title":"Bac Pro","slug":"bac-pro","url":"https://www.bac-pro.net","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/bac-pro_43fa9e.svg","hideServices":null},{"title":"Brevet","slug":"brevet","url":"https://www.brevetdescolleges.fr","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/brevet_619117.svg","hideServices":false},{"title":"Code de la route","slug":"codedelaroute","url":"https://www.codedelaroute.fr","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/codedelaroute_a9287c.svg","hideServices":false},{"title":"Commerce","slug":"commerce","url":"https://www.marketing-etudiant.fr/","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/commerce_15c5b5.svg","hideServices":false},{"title":"Devoirs","slug":"devoirs","url":"https://www.devoirs.fr/","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/devoirs_92e6c9.svg","hideServices":false},{"title":"Documents","slug":"documents","url":"https://www.doc-etudiant.fr/","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/documents_efa8c8.svg","hideServices":null},{"title":"Orientation","slug":"orientation","url":"https://www.orientation.com/","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/orientation_397dfd.svg","hideServices":false},{"title":"superBac","slug":"super-bac","url":"https://www.super-bac.com","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/superbac_ce333c.png","hideServices":false},{"title":"Cléa","slug":"clea","url":"https://www.cleanum.fr/","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/clea_72199f.svg","hideServices":false},{"title":"Alternance","slug":"alternance","url":"https://www.alternance.fr/","image":"https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/data/img/items/alternance_4e8e4b.svg","hideServices":false}]},"loggedMenuRow":{"menu":[{"id":262,"title":"Profil","slug":null,"url":"https://www.marketing-etudiant.fr/espace-membre.php","imageFilename":null,"columnType":null,"level":2,"type":"menu_logged","isExternal":null,"__children":[]},{"id":1519,"title":"Déconnexion","slug":null,"url":"https://www.marketing-etudiant.fr?logout=true","imageFilename":null,"columnType":null,"level":2,"type":"menu_logged","isExternal":false,"__children":[]}]},"loggedOutMenuRow":{"menu":[{"id":263,"title":"Connexion","slug":null,"url":"https://www.marketing-etudiant.fr/forum/login.php","imageFilename":null,"columnType":null,"level":2,"type":"menu_logged_out","isExternal":null,"__children":[]},{"id":264,"title":"Inscription","slug":null,"url":"https://www.marketing-etudiant.fr/inscription.php?mode=normal","imageFilename":null,"columnType":null,"level":2,"type":"menu_logged_out","isExternal":null,"__children":[]}]},"newsMenuRow":{"menu":[{"id":1516,"title":"Trouver son orientation","slug":null,"url":"https://www.orientation.com/","imageFilename":null,"columnType":null,"level":2,"type":"news","isExternal":false,"__children":[]},{"id":1517,"title":"Obtiens ton code de la route","slug":null,"url":"https://www.codedelaroute.fr/","imageFilename":null,"columnType":null,"level":2,"type":"news","isExternal":null,"__children":[]},{"id":1518,"title":"Modèle de lettre de motivation","slug":null,"url":"https://www.doc-etudiant.fr/Methodologie/Lettre-de-motivation/","imageFilename":null,"columnType":null,"level":2,"type":"news","isExternal":null,"__children":[]}]}}, (window && window.props)?window.props:{});
+    </script>
+    <script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/digischool-public/menu-galaxy/production/app/static/js/main.js"></script>
+
+    <div id="calque_noir"></div>
+
+
+    <div class="book">
+
+        <img src="/images_zol/book.png" alt="Marketing book"/>
+        <a id="close" href="#">Fermer</a>
+        <p>Marketing book gratuit - 245 pages</p>
+        <a class="button green_btn" data-type="book" id="havetoconnect">
+            T&eacute;l&eacute;charger<i class="icon icon-download"></i>
+        </a>
+    </div>
+
+<div class="box">
+    <i class="icon icon-times"></i>
+    <h4>Merci de vous inscrire pour t&eacute;l&eacute;charger le document</h4>
+    <p>Je cr&eacute;e un compte gratuit</p>
+    <a href="/inscription.php?mode=normal&utm_source=mktb&utm_medium=push&utm_campaign=mktp" class="button green_btn" title="S'inscrire">S'inscrire</a>
+    <span>OU</span>
+    <p>J'ai d&eacute;j&agrave; un compte</p>
+    <a href="/forum/login.php" class="button blue_btn" title="Se connecter">Se connecter</a>
+</div>
+
+<script type="text/javascript">
+    jQl.loadjQdep('/js/script.js');
+
+</script>
+        <div id="gabarit" class="disppub-maincontainer">
+
+            <div id="conteneur">
+                <div id="bug">
+                        <div id="content_page">
+                            <div style="background: #f0f3f6 none repeat scroll 0 0;border-bottom: 1px solid #dadde2;padding: 15px 20px 20px;position: relative;text-align: center">
+                                <h1 style=" font-size: 36px;margin: -10px 0 20px;padding-top: 20px;">
+                                    <span itemprop="name">Le marché de la restauration rapide en France</span>
+                                </h1>
+                                <div style="height: 25px;margin:10px auto;text-align: center;width: 560px;">
+                                    <span class="datemaj"></span>
+                                    <span class="comm">
+                                        <p id="nbAvis">
+                                            <span itemprop="reviewCount">
+                                                                                            </span>
+                                            Avis >
+                                            <span>
+                                                <a rel="nofollow" href="#donneTonAvisBox">Donne ton avis</a>
+                                            </span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <span class="smallarrow"></span>
+                                <div class="">
+                                    <button style="cursor:pointer;cursor:hand;background-color: #009ee3;background-image: linear-gradient(to bottom, #009ee3, #009ee3);background-repeat: repeat-x;border-color: -moz-use-text-color -moz-use-text-color #1aaa5b;border-style: none none solid;border-width: 0 0 2px;color: #fff;font-weight: 700;padding: 12px;" class="lien_telecharger">
+                                        <span class="icon-cloud-download"></span>
+                                        Télécharger Gratuitement
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="center">
+                                <div id="youarehereinter">
+                                                                                                            <div id="fil_ariane2">
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb" style="display:inline;">
+			<a href="/" itemprop="url">
+						<span itemprop="title" >Accueil</span>
+						</a>
+			&rsaquo;
+			</div>
+						<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb" style="display:inline;">
+			<a href="/expos?s.php" itemprop="url">
+						<span itemprop="title" >Exposé</span>
+						</a>
+			&rsaquo;
+			</div>
+						<span itemprop="title" class="current">Le marché de la restauration rapide en France</span>
+			</div>
+                                </div>
+                                                                <div id="ficheDocument" itemscope itemtype="http://schema.org/Article">
+
+                                    <div id="apercu" class="fl" style="float: right; margin:20px;">
+                                        <div  class="btn_telecharger_doc lien_telecharger" style="position:absolute;bottom:0">
+                                            <div class="btn_telecharger_doc_left fl"></div>
+                                            <div class="btn_telecharger_doc_mid fl"  style="width:198px">
+                                                <p>Téléchargement</p>
+                                            </div>
+                                            <div class="btn_telecharger_doc_right fl"></div>
+                                        </div>
+                                        <span id="nbdls">
+                                            <p id="telechargements">2903 t&eacute;l&eacute;chargements</p>
+                                        </span>
+                                        <img itemprop="image" src="/images/787747743a06d4e14f57cb40ac6eb29f-marche-fast-food.jpg" alt="Le march� de la restauration rapide en France" width="205" height="273"/>
+                                    </div>
+
+
+                                    <div id="extrait">
+                                        <h2>Extrait du document</h2>
+                                                                                <div itemprop="description" class="bbox">
+                                            <p>Notre étude aujourd'hui porte sur le marché principal de la restauration rapide, qui est rattaché au marché support de la restauration, celui-ci faisant lui même partie du marché générique de l'alimentation.</p>
+<p> </p>
+<div class="btnTelechargementHaut"> </div>
+<p> </p>
+<p> </p>
+<p> </p>
+<h2><span style="color: #07799e;">I - L’OFFRE</span></h2>
+<p> </p>
+<h3 style="padding-left: 30px;"><span style="color: #07799e;">A) La Production</span></h3>
+<p> </p>
+<h4 style="padding-left: 60px;"><span style="color: #07799e;">1) Les segments</span></h4>
+<p> </p>
+<p> </p>
+<p>On distingue <strong>7 segments </strong>de restauration rapide : les fast-foods, la restauration alternative, les spécialités locales, les sandwicheries, les coffee shop, la restauration ethnique et les pizzerias. En 2008, les plus grosses parts de marchés se partagaient entre la <strong>restauration alternative</strong> (34%), les<strong> spécialités locales</strong> (24%) et les <strong>fast-food</strong> (20%).</p>
+<p> </p>
+<p> </p>
+<h4 style="padding-left: 60px;"><span style="color: #07799e;">2) Les acteurs</span></h4>
+<p> </p>
+<p> </p>
+<p>Le secteur de la restauration rapide en France est très <strong>concurrentiel</strong>, les principaux acteurs se nomment <strong>Mc Donald's</strong>, <strong>Quick</strong>, le groupe <strong>Holder </strong>(boulangeries Paul), <strong>Eliance restauration rapide</strong> (Pomme de pain) ou encore le <strong>groupe Yum</strong> (KFC). On peut constater que les boulangeries sont très bien placées en terme de CA vis à vis des groupes de fast food.</p>
+<p> </p>
+<p> </p>
+<h3 style="padding-left: 30px;"><span style="color: #07799e;">B) La Distribution</span></h3>
+<p> </p>
+<h4 style="padding-left: 60px;"><span style="color: #07799e;">1) Descriptif</span></h4>
+<p> </p>
+<p><strong>La vente au comptoire</strong> : Comptoir unique avec une ou plusieurs caisses où le client passe sa commande, paie, retire ses prestations à emporter ou à consommer sur place. (Quick, Mc Donald's, KFC)</p>
+<p> </p>
+<p><strong>La restauration automatique</strong> : Formule d'auto service réalisée par la mise en place de distributeurs.</p>
+<p> </p>
+<p><strong>La grande distribution </strong>: C'est la partie du secteur du commerce de détail de biens de consommation constituée de groupements de points de vente d'une certaine importance dotés de centrales d'achat et d'une enseigne, afin de bénéficier d'une image de marque commune.</p>
+<p> </p>
+<p> </p>                                         </div>
+
+                                        <div class="publicite-content" style="width: 100%;"></div>
+                                        <div itemprop="description" class="bbox">
+                                          
+<h4 style="padding-left: 60px;"><span style="color: #07799e;">2) Qualitatif</span></h4>
+<p> </p>
+<p> </p>
+<p>La concurrence dans la restauration rapide se joue en général sur<strong> 3 aspects</strong> liés au consommateur. Tout d'abord <strong>le temps</strong>, la pause déjeuner dure de moins en moins longtemps, il faut pouvoir vendre rapidement un produit qui se consommera tout aussi rapidement. Le <strong>prix </strong>joue également un rôle ici, un menu se situe en moyenne entre 8 et 10€, il faut essayer de se démarquer sur ce crénau. Enfin, les consommateurs vont de plus en plus<strong> attention à ce qu'ils mangent</strong>, ils ont tendance à privilegier les produits bio, sains, aux fast food.</p>
+<p> </p>
+<p> </p>
+<h2><span style="color: #07799e;">II - LA DEMANDE</span></h2>
+<p> </p>
+<h3 style="padding-left: 30px;"><span style="color: #07799e;">A) La demande quantitative</span></h3>
+<p> </p>
+<p> </p>
+<p>En France, la restauration rapide est constituée d'un marché de <strong>35 000 entreprises</strong> (123 000 salariés) et pèse 10 milliards de chiffre d'affaires. Près de <strong>2 milliards</strong> de repas sont pris sur le pouce par année en France. 7 achats sur 10 sont des<strong> ventes à emporter</strong>. Le taux de croissance moyen annuel de la restauration rapide est d'environ 5,4%. 4500 professionnels se lancent dans la restauration rapide chaque année. </p>
+<p> </p>
+<p> </p>
+<h3 style="padding-left: 30px;"><span style="color: #07799e;">B) La demande qualitative</span></h3>
+<p> </p>
+<p> </p>
+<p>Le consommateur exige <strong>rapidité </strong>et <strong>practicité</strong>, la <strong>proximité </strong>des restaurants rapides lui permet de gagner du temps. Il sera également <strong>curieux </strong>face à une restauration "à thème". La restauration rapide apporte liberté et convivialité, un bon rapport qualité/prix et un équilibre alimentaire.</p>
+<p> </p>
+<p>Les personnes faisant attention à leur ligne et recherchant une alimentation saine ne seront à priori <strong>pas attirées </strong>par la restauration rapide.</p>
+<p> </p>
+<h2><span style="color: #07799e;">Conclusion</span></h2>
+<p> </p>
+<p> </p>
+<p>Le secteur de la restauration rapide est en <strong>pleine expansion</strong>, de nombreux points de vente s'ouvrent chaque jour en France. Ils s'adaptent à la demande des consommateurs qui veulent manger vite mais surtout manger bien. Le marché de la restauration sera toujours en évolution car il y a un grand besoin de s'adapter aux besoins des consommateurs qui évoluent sans cesse.</p>
+<p> </p>
+<p> </p>
+<h2><span style="color: #07799e;">Plan du document</span></h2>
+<p><span style="color: #07799e;"> </span></p>
+<p> </p>
+<p> </p>
+<li class="Style97">I - L’OFFRE</li>
+<li class="Style97" style="padding-left: 30px;">A) La Production</li>
+<li class="Style97" style="padding-left: 60px;">1) Les segments</li>
+<li class="Style97" style="padding-left: 60px;">2) Les acteurs</li>
+<li class="Style97" style="padding-left: 30px;">B) La Distribution</li>
+<li class="Style97" style="padding-left: 60px;">1) Descriptif</li>
+<li class="Style97" style="padding-left: 60px;">2) Qualitatif</li>
+<li class="Style97">II - LA DEMANDE</li>
+<li class="Style97" style="padding-left: 30px;">A) La demande quantitative</li>
+<li class="Style97" style="padding-left: 30px;">B) La demande qualitative</li>
+<li class="Style97">Conclusion</li>
+<p> </p>                                         </div>
+                                    </div>
+
+
+                                    <div>
+                                        <a href="" class="lien_telecharger">
+                                            <div class="btn_telecharger_doc" class="lien_telecharger">
+                                                <div class="btn_telecharger_doc_left fl"></div>
+                                                <div class="btn_telecharger_doc_mid fl">
+                                                    <p >T&eacute;l&eacute;charger ce document</p>
+                                                </div>
+                                                <div class="btn_telecharger_doc_right fl"></div>
+
+                                            </div>
+                                        </a>
+                                        <div style="clear: both;"></div>
+                                    </div>
+
+
+
+                                    <div id="avisDocument">
+
+                                        <div id="donneTonAvis" class="fl">
+                                            <div id="donneTonAvisBox">
+                                                <h2>Donne ton avis !</h2>
+                                                <div class="contenu">
+                                                    <form>
+                                                        <div id="noteAvis">
+                                                            <select id="comment_note" name="donneTonAvisNote" id="donneTonAvisNote">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option  value="5" selected>5</option>
+                                                            </select>
+                                                        </div>
+                                                        <h3>R&eacute;diger votre avis</h3>
+
+                                                        <textarea id="donneTonAvisTextarea"></textarea>
+                                                        <input id="id_document" type="hidden" name="id_document" value="2652" />
+                                                        <input id="id_membre" type="hidden" name="id_membre" value="-1" />
+                                                        <input id="pseudo_membre" type="hidden" name="pseudo_membre" value=""  />
+                                                    </form>
+
+                                                    <div id="donneTonAvisButton">
+                                                        <div class="donneTonAvisButtonLeft"></div>
+                                                        <div class="donneTonAvisButtonMid"><span>(50)</span> Valider</div>
+                                                        <div class="donneTonAvisButtonRight"></div>
+
+                                                    </div>
+                                                    <div class="messageSucces">
+                                                        Votre commentaire est en attente de validation. Il s'affichera d&egrave;s qu'un membre de digiSchool marketing le validera.
+                                                    </div>
+                                                    <div class="messageInformation">
+                                                        Attention, les commentaires doivent avoir un minimum de 50 caract&egrave;res !
+                                                    </div>
+                                                    <div class="messageErreur">
+                                                        Vous devez donner une note pour valider votre avis.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div id="avis" class="fl">
+                                            <h3 id="liste_commentaires">Les avis sur ce document</h3>
+                                                                                    </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="clear_both"></div>
+
+                            </div>
+
+
+                            <div id="gauche">
+            <div id="sb_cloud_tag" data-nbitem="12">
+            <div class="hd_cloud"><a href="http://www.marketing-etudiant.fr/definitions.php" title="D&eacute;finitions">D&eacute;finitions</a></div>
+            <div class="body">
+                <div class="listing_tag">
+                                    <a href="/marketing-social.html" title="Marketing Social">
+                        <span>Marketing Social</span>
+                    </a>
+                                    <a href="/marketing-relationnel.html" title="Marketing Relationnel et N&eacute;gociation">
+                        <span>Marketing Relationnel</span>
+                    </a>
+                                    <a href="/marketing-strategique-infos.html" title="Marketing Strat&eacute;gique">
+                        <span>Marketing Strat&eacute;gique</span>
+                    </a>
+                                    <a href="/marketing-mix.html" title="Le Marketing Mix : 4P">
+                        <span>Marketing Mix 4P</span>
+                    </a>
+                                    <a href="/benchmarking.html" title="Benchmark : D&eacute;finition et applications du benchmarking">
+                        <span>Benchmarking</span>
+                    </a>
+                                    <a href="/marketing-luxe.html" title="Le Marketing du Luxe">
+                        <span>Marketing du Luxe</span>
+                    </a>
+                                    <a href="/marketing-bancaire.html" title="Marketing Bancaire : D&eacute;finition et Cours">
+                        <span>Marketing Bancaire</span>
+                    </a>
+                                    <a href="/marketing-mobile.html" title="Le marketing Mobile">
+                        <span>Marketing Mobile</span>
+                    </a>
+                                    <a href="/bts-commerce-international.html" title="Cours gratuits de BTS Commerce International">
+                        <span>BTS Commerce International</span>
+                    </a>
+                                    <a href="/bts-muc.html" title="Cours gratuits de BTS MUC">
+                        <span>BTS MUC</span>
+                    </a>
+                                    <a href="/bts-communication.html" title="Cours gratuits de BTS Communication">
+                        <span>BTS Communication</span>
+                    </a>
+                                    <a href="/facing.html" title="Facing : D&eacute;finition, exemples et ressources">
+                        <span>Facing</span>
+                    </a>
+                                </div>
+                <div class="clear_both"></div>
+                                    <ul class="pager">
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li ><a href="#">2</a></li>
+                                                <li ><a href="#">3</a></li>
+                                                <li ><a href="#">4</a></li>
+                                                <li ><a href="#">5</a></li>
+                                                <li ><a href="#">6</a></li>
+                                                <li ><a href="#">7</a></li>
+                                                <li ><a href="#">8</a></li>
+                                                <li ><a href="#">9</a></li>
+                                                <li ><a href="#">10</a></li>
+                                                <li ><a href="#">11</a></li>
+                                            </ul>
+
+                            </div>
+        </div>
+
+        <!--[if IE 7]>
+     <style type="text/css">
+        #hautderniersforuminter .head{
+            background: rgb(26, 170, 91) !important;
+        }
+    </style>
+<![endif]-->
+
+<div id="hautderniersforuminter">
+    <div class="head">
+        <p class="questionsreponses"><em>Questions</em> / R&eacute;ponses</p>
+        <p class="directforums">EN DIRECT DES FORUMS</p>
+        <p class="chiffreforums"><strong>136550</strong> messages <strong>220872</strong>  r&eacute;ponses</p>
+    </div>
+
+
+    <div id="derniersforum">
+        <ul><li class="odd">
+			<span class="date">02/07
+		 	</span> |
+		 	<a href="/forum/seriess58-watch-love-amp-hip-hop-atlanta-season-7-episod-vt256317.html">Seriess58 Watch *Love &amp; Hip ...</a></li><li class="">
+			<span class="date">02/07
+		 	</span> |
+		 	<a href="/forum/58seriess-watch-love-amp-hip-hop-atlanta-peace-and-bl-vt256315.html">[58Seriess] Watch Love &amp; Hip...</a></li><li class="odd">
+			<span class="date">02/07
+		 	</span> |
+		 	<a href="/forum/-zhan-lang-ii-hd-watch-online-stream-vt256313.html">[[ Zhan lang II ]] HD  Watch onl...</a></li><li class="">
+			<span class="date">02/07
+		 	</span> |
+		 	<a href="/forum/seriess-full-hd-watch--quotlove-amp-hip-hop-atlanta-sea-vt256311.html">Seriess Full HD Watch \&quot;Lov...</a></li><li class="odd">
+			<span class="date">02/07
+		 	</span> |
+		 	<a href="/forum/love-amp-hip-hop-atlanta-season-7-episode-16-peace-and-b-vt256309.html">Love &amp; Hip Hop: Atlanta Seas...</a></li></ul>    </div>
+
+    <div id="boutonforum">
+        <div class="left"></div>
+        <div class="mid">
+            <p><a href="http://www.marketing-etudiant.fr/forum/" title="Participer aux forums">Participer aux forums</a></p>
+        </div>
+        <div class="right"></div>
+        <div style="clear:both"></div>
+    </div>
+    </div>
+
+
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery('body').on('click', '.pager li a', function(){
+               var e = jQuery(this);
+               if(!e.hasClass('active')) {
+                   cloud_tag = e.closest('#sb_cloud_tag').data();
+                   nbpage = e.text();
+                   jQuery.ajax({
+                       type: 'post',
+                       url: '/ajax/getThematicPage.php',
+                       data: {
+                           nbitem: cloud_tag.nbitem,
+                           nbpage: nbpage
+                       },
+                       success: function (data) {
+                           if (data.length > 0) {
+                               jQuery('.listing_tag').html(data);
+                               jQuery('.pager .active').removeClass('active');
+                               e.parent().addClass('active');
+                           }
+                       }
+                   });
+               }
+               return false;
+           });
+        });
+    </script>
+</div>
+                            <div class="clear_both"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+                                        <script type="text/javascript">
+
+                    jQuery("iframe[src*='youtube.com']").parent().append('<div style="position:absolute;margin-top:-315px;margin-left:30px"><a href="http://www.marketing-etudiant.fr/inscription.php?mode=normal"><img src="http://www.marketing-etudiant.fr/wp-content/uploads/2016/02/youtube1.png" /></a></div>');
+
+                </script>
+                        <div class="footer_global"></div>
+<script type="text/javascript">
+    jQl.loadjQdep('/sharedLibraries/js/footerV3.js');
+    jQl.loadjQdep('/sharedLibraries/js/responsive.js');
+
+    function smartBanner(title, icon) {
+        jQuery(document).ready(function() {
+            setTimeout(function(){
+                if (typeof $.smartbanner == 'function') {
+                    $.smartbanner({
+                        title: title,
+                        icon: icon,
+                        daysHidden: 1,
+                        daysReminder: 30,
+                        iOSUniversalApp: true
+                    });
+                }
+            },1000);
+        });
+    }
+</script>
+
+
+    </body>
+</html>
