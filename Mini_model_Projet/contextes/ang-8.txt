@@ -1,9 +1,24 @@
+   Page semi-protected
+
+Fast food
+
+   From Wikipedia, the free encyclopedia
+   Jump to navigation Jump to search
+   Food prepared and served in a small amount of time
+   For other uses, see Fast food (disambiguation).
+   See also: Processed food
+   This article's lead section may be too long for the length of the
+--
    Please discuss this issue on the article's talk page. (November 2021)
 
    Examples of fast food (left to right, top to bottom): Cheeseburger,
    soft drink, french fries, pizza margherita, hot dog, fried chicken,
    submarine sandwich, and donuts.
---
+
+   Fast food is a type of mass-produced food designed for commercial
+   resale, with a strong priority placed on speed of service. It is a
+   commercial term, limited to food sold in a restaurant or store with
+   frozen, preheated or precooked ingredients and served in packaging for
    take-out/take-away. Fast food was created as a commercial strategy to
    accommodate large numbers of busy commuters, travelers and wage
    workers. In 2018, the fast food industry was worth an estimated $570
@@ -14,23 +29,29 @@
    primarily hamburger outlets such as McDonald's, use mass-produced,
    pre-prepared ingredients (bagged buns and condiments, frozen beef
 --
+   cook the meat and french fries fresh, before assembling "to order".
+
    Fast food restaurants are traditionally distinguished by the
    drive-through. Outlets may be stands or kiosks, which may provide no
    shelter or seating,^[2] or fast food restaurants (also known as quick
    service restaurants).^[3] Franchise operations that are part of
    restaurant chains have standardized foodstuffs shipped to each
 --
+
+   Many fast foods tend to be high in saturated fat, sugar, salt and
+   calories.^[5] Fast food has been linked to increased risk of
+   cardiovascular disease, colorectal cancer, obesity, high cholesterol,
    insulin resistance conditions and depression.^[6]^[7]^[8]^[9]^[10]
    These correlations remain strong even when controlling for confounding
    lifestyle variables, suggesting a strong association between fast food
    consumption and increased risk of disease and early mortality.^[11]
    [ ]
 --
-   inconvenienced by waiting for their food to be cooked on-the-spot (as
-   is expected from a traditional "sit down" restaurant). In Ancient Rome,
-   cities had street stands – a large counter with a receptacle in the
-   middle from which food or drink would have been served.^[13] It was
-   during post-WWII American economic boom that Americans began to spend
+
+   Pulling wheat dough into thin strands to form lamian
+   See also: Fast food restaurant § History
+
+   The concept of ready-cooked food for sale is closely connected with
 --
    and inexpensive food for both lunch and dinner. The traditional family
    dinner is increasingly being replaced by the consumption of takeaway
@@ -78,7 +99,9 @@ United States
    Neighboring fast food restaurant advertisement signs in Bowling Green,
    Kentucky for Wendy's, KFC, Krystal and Taco Bell. A McDonald's sign can
    be seen in the very far background.
---
+   See also: Fast food restaurant § North America
+
+   As automobiles became popular and more affordable following World War
    I, drive-in restaurants were introduced. The American company White
    Castle, founded by Billy Ingram and Walter Anderson in Wichita, Kansas
    in 1921, is generally credited with opening the second fast food outlet
@@ -98,6 +121,7 @@ United States
    rising costs and unemployment characterized by the great recession,
    suggesting an inelastic demand.^[29] However, some areas are more
 --
+   in Chicago.
 
    Fast food outlets are take-away or take-out providers that promise
    quick service. Such fast food outlets often come with a "drive-through"
@@ -115,6 +139,8 @@ United States
    mashed potatoes, and salads.
 
 --
+  Street vendors and concessions
+
    Main article: Street food
 
    Street vendor serving fast food in Nepal
@@ -125,19 +151,6 @@ United States
    Traditional street food is available around the world, usually through
    small and independent vendors operating from a cart, table, portable
    grill or motor vehicle. Common examples include Vietnamese rice soup
-   vendors, Middle Eastern falafel stands, New York City hot dog carts,
-   and taco trucks. Turo-Turo vendors (Tagalog for point point) are a
-   feature of Philippine life. Commonly, street vendors provide a colorful
-   and varying range of options designed to captivate passers-by and
-   attract as much attention as possible quickly.
-
-   Multiple street vendors may specialize in specific types of food;
-   typically, they are characteristic of a given cultural or ethnic
-   tradition depending on the locale. In some cultures, it is typical for
-   street vendors to call out prices, sing or chant sales-pitches, play
-   music, or engage in other forms of "street theatrics" to engage
-   prospective customers. In some cases, this can garner more attention
-   than the food.^[citation needed]
 --
    Fastfood in Ilorin, Kwara
 
@@ -249,6 +262,12 @@ Business
    average growth and excellent opportunity as a result of high turnover.
    However, in April 2011, McDonald's hired approximately 62,000 new
 --
+   acceptance rate of 6.2%.^[49] The median age of workers in the industry
+   in 2013 was 28.^[50] Obtaining Human Resource Management diploma or
+   diploma in Fast Food Management can help to get a job in major fast
+   food restaurants since it is one of the most desired.^[51]
+
+--
    McDonald's in Russia
 
    McDonald's, Kentucky Fried Chicken, and Pizza Hut fast food restaurants
@@ -266,6 +285,8 @@ Criticism
    Main article: Criticism of fast food
 
    Further information: Fast food worker strikes
+
+   Fast-food chains have come under criticism over concerns ranging from
 --
    ^[77]
 
@@ -284,6 +305,7 @@ Criticism
    students consume fast food on a weekly basis.^[83] The researcher who
    wrote Fast Food Nation, Eric Schlosser, highlights this fact, arguing
    that this is not only a financial but also a psychological bait, in
+   that the students are lured towards this early employment opportunity
 --
    compared to the students of the same age after some other social
    factors were controlled.^[clarification needed] Also, the percentage of
@@ -297,17 +319,45 @@ Criticism
 
 See also
 --
+     * icon Business portal
+
+     * Fast food in China
+     * Fast Food Song
      * Food group
      * Junk food
      * List of fast food restaurant chains
      * List of pizza chains
      * List of restaurant terminology
 --
+References
+
+    1. ^ "Fast Food Industry Analysis 2018 – Cost & Trends".
+       franchisehelp.com. Franchise Help. 2018. p. 1. Retrieved July 16,
+       2019.
+    2. ^ Jakle, John (1999). Fast Food: Roadside Restaurants in the
+       Automobile Age. Johns Hopkins University Press.
+       ISBN 978-0-8018-6920-4.;
+--
+   GlobeNewswire. August 18, 2021. Retrieved August 26, 2021.
+
+     ^ Talwar, Jennifer (2003). Fast Food, Fast Track: Immigrants, Big
+   Business, and the American Dream. Westview Press.
+   ISBN 978-0-8133-4155-2.
+--
    LIVESTRONG.COM". LIVESTRONG.COM. Retrieved May 3, 2016.
 
      ^ "The link between fast food and depression has been confirmed".
    EurekAlert!. Retrieved April 22, 2018.
 
+     ^ Pietrangelo, Ann; Carey, Elea. "13 Effects of Fast Food on the
+   Body". Healthline. Retrieved March 20, 2016.
+
+--
+
+     ^ Pan, An; Malik, Vasanti; Hu, Frank B. (July 10, 2012). "Exporting
+   Diabetes to Asia: The Impact of Western-Style Fast Food". Circulation.
+   126 (2): 163–165. doi:10.1161/CIRCULATIONAHA.112.115923.
+   ISSN 0009-7322. PMC 3401093. PMID 22753305.
 --
    S2CID 154951102.
 
@@ -332,11 +382,66 @@ See also
    Los Angeles Times.
 
 --
+   Retrieved May 22, 2015.
+
+     ^ Maclay, Kathleen (October 15, 2013). "Fast Food, Poverty Wages: The
+   Public Cost of Low-wage jobs in the Fast Food Industry" (PDF).
+   University of California Labor Center.
+
+--
+
+     ^ Rehm, Colin D.; Drewnowski, Adam (2014). "A New Method to Monitor
+   the Contribution of Fast Food Restaurants to the Diets of US Children".
+   PLOS ONE. 9 (7): e103543. Bibcode:2014PLoSO...9j3543R.
+   doi:10.1371/journal.pone.0103543. PMC 4111613. PMID 25062277.
+--
+   History". Retrieved May 24, 2015.
+
+     ^ "Fast Food Industry Analysis 2015 – Cost & Trends". Retrieved May
+   24, 2015.
+
+     ^ Schlosser, Eric (2001). Fast Food Nation: The Dark Side of the
+   All-American Meal. Houghton Mifflin Books. ISBN 978-0-395-97789-7.
+
+--
+   402–420. doi:10.1108/01425450610683627. ISSN 0142-5455.
+
+     ^ University, Yale. "Fast Food FACTS — Fast Food Facts in Brief".
+   www.fastfoodmarketing.org. Retrieved April 18, 2017.
+
+--
+   2013. Retrieved April 8, 2016.
+
+     ^ "Fast Food Job Applications".
+
+     ^ "Our Life Policy Research Notes on takeaways – The UK fast-food
+--
+   Retrieved July 28, 2012.
+
+     ^ "The Fast Food Factory".
+
+     ^ Caldwell, Melissa L. "Domesticating the French Fry: McDonald’s and
+--
      ^ "Taco Bell".
 
      ^ Jeffery, Robert (January 25, 2006). "Are fast food restaurants an
    environmental risk factor for obesity?". International Journal of
    Behavioral Nutrition and Physical Activity. 3: 2.
+   doi:10.1186/1479-5868-3-2. PMC 1397859. PMID 16436207.
+
+     ^ Freeman, Andrea (December 6, 2007). "Fast Food: Oppression through
+   Poor Nutrition". California Law Review. 95 (6): 2221–2259.
+   JSTOR 20439143.
+
+     ^ Ronald, Adams (September 8, 2008). "Fast Food and Animal Rights: An
+   Examination and Assessment of the Industry's Response to Social
+   Pressure". Business and Society Review. 113 (3): 301–328.
+--
+     ^ Singer, P (1975). Animal liberation. ISBN 978-0-394-40096-9.
+
+     ^ Schlosser, Eric. Fast Food Nation: The Dark Side of the
+   All-American Meal. Harper Collins Publishers. 2001
+
 --
    10.1353/foc.2006.0009. [1]
 
@@ -345,19 +450,88 @@ See also
    strike serves this system of super-exploitation right". April 10, 2013
 --
 
+     ^ Hossein Rouhani, Mohammad; Mirseifinezhad, Maryam; Omrani, Nasrin;
+   Esmaillzadeh, Ahmad; Azadbakht, Leila (2012). "Fast Food Consumption,
+   Quality of Diet, and Obesity among Isfahanian Adolescent Girls".
+   Journal of Obesity. 2012: 597924. doi:10.1155/2012/597924. PMC 3352603.
+--
+   names: authors list (link)
+
+     ^ Schlosser, Eric. Fast Food Nation. The Dark Side of All American
+   Meals. Mariner Books. New York. 2012. Print.
+
+--
+   13, 2015.
+
+     ^ Brownwell, Kelly. "Are Children Prey for Fast Food Companies?" The
+   Atlantic. The Atlantic. November 8, 2008. Web. November 13, 2015.
+
+     ^ Purtell, K. M.; Gershoff, E. T. (2014). "Fast Food Consumption and
+   Academic Growth in Late Childhood". Clinical Pediatrics. 54 (9):
+   871–77. doi:10.1177/0009922814561742. PMC 8887837. PMID 25480321.
+--
+
      ^ Brindal, Emily; Mohr, Philip; Wilson, Carlene; Wittert, Gary (July
    1, 2008). "Obesity and the effects of choice at a fast food
    restaurant". Obesity Research & Clinical Practice. 2 (2): 111–117.
    doi:10.1016/j.orcp.2008.03.004. ISSN 1871-403X. PMID 24351729.
 --
+   City: Penguin
+
+     Schlosser, Eric, Fast Food Nation: The Dark Side of the All-American
+   Meal, Houghton Mifflin Company, 2001
+
+--
+External links
+
+     * Media related to Fast food at Wikimedia Commons
      * Fast food in the United States and Canada travel guide from
        Wikivoyage
      * QSR magazine – publication that covers the fast food industry
      * A copy of the Caesar Barber lawsuit
      * Caloric Intake from Fast Food Among Adults: United States,
+       2007–2010
+
+--
+     * e
+
+   Fast food
+
+   Types
+--
+     * Junk food
+     * Snack food
+     * Street food
+     * Take-out
+          + Drive-through
+--
+   Points of sale
+
+     * Fast food restaurant
+     * Food booth
+     * Food cart
 --
    Issues
 
      * Criticism of fast food
      * Fast food advertising
 
+    Companies portal
+--
+
+     * Classique
+     * Fast food
+     * Fusion
+          + New American
+--
+     * Exponential population growth
+     * Fast fashion
+     * Fast food
+     * Instant gratification
+     * Overconsumption
+--
+
+   Categories:
+     * Fast food
+     * American inventions
+     * Convenience foods

@@ -1,6 +1,6 @@
    [new_home_r1_c1.gif] [home_r1_c4.jpg]
 
-     Wednesday, January 4, 2023
+     Monday, January 9, 2023
 
            Home [red.gif] FNB Mart About Us [red.gif] Contact Us [red.gif]
          Feedback [red.gif] Search [red.gif] Subscribe [red.gif] Advertise
@@ -196,17 +196,17 @@
 
                                  Send Mail!
 
-                   Post Your comments Post Your Comment
-                    * Name   :  ____________________
-                    * Email  :  ____________________
-                     Website :   ____________________
-                   Comments  :
+                    Post Your comments Post Your Comment
+                     * Name   : ____________________
+                     * Email  : ____________________
+                      Website :  ____________________
+                    Comments  :
                             ____________________
                             ____________________
 
 
 
-                    Captcha  : ____________________ [9k=]
+                     Captcha  : ____________________ [Z]
                 [BUTTON Input] (not implemented)______  Reset
 
 

@@ -1,3 +1,16 @@
+   Confectionery manufacture, Fishing, Aquaculture, Grain-milling and
+   Grain-based products, Meat and poultry processing, Alcoholic beverages,
+   Milk processing, Tomato paste, Fast food, Ready-to-eat breakfast
+   cereals, Food additives, flavors etc^2
+
+--
+   which dominate with an 84% share of total FSR value sales in 2003.
+   Independent operators hold more than an almost 90% value share of the
+   Fast food sector in India, offering a variety of menus catering to
+   local tastes. Therefore, value shares held by Fast food sub sectors
+   such as burger and chicken are comparatively low, and penetration is
+   still limited.
+--
    Indian market is different due to its cultural diversity. Gaining local
    acceptance and blending in to the Indian culture still remains a
    challenge for many fast food restaurants. Most multinational-chained
@@ -22,6 +35,9 @@
    categories of it, not to identify how to successfully promote one
    specific brand.
 --
+   The study gains importance from both the producer and consumer’s point
+   of view, as it will identify drawbacks, limitations and constraints
+   existing in the Fast food marketing structure.
 
    1.4 Key Research Questions Addressed in the Study:
      * Who are the consumers of these Western fast food offerings?
@@ -74,18 +90,24 @@
    its global menu^8.
 
 --
+   meat-eaters, beef is taboo^10.
 
    2.4 Fast Food in India:
    The concept of fast food isn’t new. Early in the 19th century, at the
    start of the Industrial Age when people had to work 12 to 14 hours a
    day, there was scarcely any time for long breaks for eating. The first
 --
+   outside the home have become an essential part of our lifestyle.
 
    2.4.1 Introduction to Fast food:
    The term “fast food” means just that. However, the boundary between
    fast foods and traditional dishes is fluid. In particular, it’s
    difficult to provide a qualitative distinction. Fast foods can also
 --
+   of time selecting and eating, and if necessary will eat standing or
+   walking, on the bus, park bench, or at work. The variety of foods and
+   beverages is usually very limited. Fast food frequently does not come
+   with knives and forks, making it “finger food.” When silverware, cups
    and plates are necessary, they are disposable.
 
    The characteristics of fast food, therefore, are that they require
@@ -98,16 +120,20 @@
    1. Self-service restaurants with a fast-food palette like McDonalds,
    Wendy’s, Burger King, Pizza Hut, etc.
 --
-   beverages.
-
-   3.”On the street corner” hot-dog stands and snack stands with counters
    or a pair of stand-up tables.
 
    2.4.2 Fast food Industry Overview:
    Fast food is a food prepared and served quickly at a fast food
    restaurant or a shop. It is served usually in a carton or bags in order
    to minimize cost. Fast food outlets often provide take away or take out
+   foods in addition to sit down services. Fast food is a multi billion
+   industry continuing to grow at a rapid pace in coming years.
+
+   Fast food is often highly processed and prepared in an industrial
+   fashion i.e., with standard ingredients, methodical cooking and
+   production methods. Logistical planning and outsourcing of ingredients
 --
+   Advertisements
    [INS: :INS]
    2.4.3 The Start of Fast food Culture:
    The concept of fast food pops up during 1920s.The 1950s first witnessed
@@ -125,7 +151,9 @@
    players. Over 400 shopping malls, multiplexes, fast food giants,
    restaurants etc. are in planning or construction stage across the
    country^12.
---
+
+   2.5.1 Market Size & Major Players:
+   Fast food is one of the worlds largest growing food type. India’s fast
    food industry is growing by 40% a year and is expected to generate a
    billion dollars in sales by 2005. The multinational segment of Indian
    fast food industry is up to Rs.6 bn, a figure expected to zoom to Rs.70
@@ -136,6 +164,9 @@
    material for fast food, Global chains are flooding into the country^13.
 
    There are approximately 22,000 registered restaurants in India. In
+   addition, there are more than 100,000 dhabas (small roadside food
+   stalls) that sell a variety of foods in cities and on highways. By
+   1998, there were approximately 1,568 registered hotels in India, half
 --
    India’s imports of processed consumer foods have traditionally remained
    low. Since the early 1990s, India’s food service sales have
@@ -165,6 +196,12 @@
    chains have developed a range of Indian-styled products to suit local
    preferences (such as the Maharaja chicken burger, veggie burger, etc.).
 --
+   HRI food service sector; Annual 2005; US Embassy 2005.
+
+   2.7. Factors Affecting the Fast Food Industry in India:
+   Income distribution: The long-term growth trend in India is improving.
+   The past three decades have seen a steady acceleration. Average annual
+--
    variety in their choice of foods and are willing to spend more on
    international cuisine, including fast foods. Consequently, a growing
    number of domestic fast food outlets, home delivery, take-away
@@ -177,6 +214,8 @@
 
    Relaxation in rules and regulations: With the economic liberalization
 --
+   sandwiches and other type of fast foods.
+
    2.8 Problems of Fast Food Industry in India:
    Environmental friendly products cost high: Government is legislating
    laws in order to keep check on the fast food industry and it is
@@ -213,12 +252,8 @@
    western influence in urban areas are fuelling the demand for fast food.
 
    India already has the entire requirement for a head start in Fast food
---
-   be increase in competition in the near future. Studies indicate that
-   the highest percentage increase in units can be expected in the
-   unorganized street stalls/kiosks sector. The one who will better
-   understand and get closer to its target customer will win the game.
-
+   industry. Basic materials such as food, vegetables and meat can be
+   sourced locally or easily imported if local availability is not
 --
        the process of primary data collection through the questionnaire
        method. The standard questionnaire covered the awareness, attitude
@@ -241,17 +276,29 @@
    The interpretation and analysis, which comprises of both quantitative
    and qualitative nature, is based on both the secondary and primary
 --
+   3.5 Trends in the Indian Market:
+
+   Marketing to children’s: Fast food outlets in India target children’s
+   as their major customers. They introduce varieties of things that will
+   attract the children’s attention and by targeting children’s they
+--
 
    Value added technology services: There is continuous improvement in the
    technology as far as fast food market in India is considered. The
    reason behind that is food is a perishable item and in order to ensure
    that it remains fresh for a longer period of time, there is a need for
 --
+   improvement and up gradation of technology in food sector.
+
+   Attracting different segments of the market: Fast food outlets are
+   introducing varieties of products in order to cater the demands of each
+   and every segment of the market. They are introducing all categories of
+--
+   come and become a customer of their food line.
+
    3.6 Challenges for the Fast Food Industry in India:
    Social and cultural implications of Indians switching to western
    breakfast food: Generally, Hindus avoid all foods that are believed to
-   inhibit physical and spiritual development. Eating meat is not
-   explicitly prohibited, but many Hindus are vegetarian because they
 --
    impure foods when they are prepared together. Some foods, such as beef
    or alcohol, are innately polluted and can never be made pure. But now,
@@ -290,7 +337,6 @@
    Most of the participants preferred to shop at organized fast food
    restaurants rather than in street stalls for the following reasons:
      * Shop premises is spacious and clean
-     * Good sales service
 --
      * Fresh ingredients used
 
@@ -388,6 +434,11 @@
    population of 6.5 million, comprising mostly of domestic households.
 
 --
+   love to associate themselves with the western culture. Gender roles are
+   now changing. Females have started working outside. So, they have no
+   time for their home, especially for cooking food. Fast food is an easy
+   way out because these are easily available and are convenient/easy to
+   eat. Larger families often dine out at dinnertime, and most working
    people dine out at lunchtime.
 
    Awareness of Western fast food products among Hong Kong consumers is
@@ -483,6 +534,9 @@
        alternative to pizzas. The most important products preferred in
        combination with the pizzas are beverages, ketchup, dip sauce and
 --
+
+   5.2 Introduction to Recommendations:
+   The Fast food industry in India is poised for significant growth over
    the next few decades, particularly in urban India. Gaining local
    acceptance and blending in to the Indian culture still remains a
    challenge for many fast food restaurants. The study was undertaken with
@@ -522,6 +576,12 @@
        youngsters and the desire for a large family meal. The marketers
        should focus more on positioning themselves as family restaurants
 --
+       into the diets of consumers. The marketers should gauge to what
+       extent preferences converge between the west and India with respect
+       to product category. Fast food outlets should introduce varieties
+       of products in order to cater the demands of each and every segment
+       of the market. Fusion of Indian flavors with western products can
+--
        having a more efficient distribution system in par with existing
        global standards. It needs to expand in India in parallel to the
        new trend in fast food chains, setting out tiny outlets such as
@@ -543,6 +603,15 @@
        market like India.
 
 --
+   Thunderbird, The Garvin School of
+   International Management.
+   8 Vivek Gupta, “McDonald’s- Fast Food Fables”, Marketing Management,
+   Vol-1, pg 121-127
+   Publisher ICFAI books.
+--
+   10 D. Balasubramanian, “Changes in the Indian Menu over the Ages,” The
+   Hindu, October 21, 2004
+   10 Lane Kelsey, Fast food, Southern India style, Embarcadero publishing
    company
    www.my-voice.com (Accessed July 18, 2005).
    11 Khurshid Anwar Warsi & Syeedun Nisa, Food Retailing: fast food

@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-# see egrep or others
+# Ce script bash prend en arguement un fichier .txt et le nom d'un tableau html (qu'il génère en sortie)
+# qui contient les URLS concernant Fast ou Street Food
+# Vérifie l'encodage, et crée/ extrait les informations souhaités : dump, nombre d'occurence du motif, contexte
+#see egrep or others
 
 #===============================================================================
 # VOUS DEVEZ MODIFIER CE BLOC DE COMMENTAIRES.
@@ -30,8 +33,9 @@ then
 	exit
 fi
 
-mot="\b(street|fast)-? food\b"
-# street food # à modifier selon langue
+# à modifier selon langue
+mot="\b(street|fast|roadside)[-]? food\b"
+
 
 echo $fichier_urls;
 basename=$(basename -s .txt $fichier_urls)
@@ -89,6 +93,8 @@ while read -r URL; do
 	
 	# dump 
 	echo "$dump" > "../dumps-text/$basename-$lineno.txt"
+	# concatenation de dumps-texts pour analyse ultérieure
+	#echo "$dump" >> "../concat/ang-dumps.txt"
 	
 	# number of instances of a word , insert in HTML Table 
 	occurences=$(grep -E -o -i "$mot" ../dumps-text/$basename-$lineno.txt | wc -l)
@@ -105,14 +111,17 @@ while read -r URL; do
 	# ou prétraiter les dossier avant
 	
 	# extraction des contextes
-	contexte=$(grep -E -A2 -B2 "$mot" ../dumps-text/$basename-$lineno.txt > ../contextes/$basename-$lineno.txt)
+	contexte=$(grep -i -E -A2 -B2 "$mot" ../dumps-text/$basename-$lineno.txt > ../contextes/$basename-$lineno.txt)
 	echo "$contexte"
 	
+	
+	### This is the last part 
 	## iTrameur 
+	#../programmes/correction1_itrameur.sh ../dumps-text $basename > ../itrameur/$basename-$lineno.txt
 	
 	
+	############
 	
-
 	echo "<tr><td>$lineno</td>
 	<td>$code</td>
 	<td>$charset</td>
@@ -128,5 +137,5 @@ while read -r URL; do
 	lineno=$((lineno+1));
 	
 done < $fichier_urls
-echo "</table>" >> $fichier_tableau
+echo "</table>" >> $fichier_tableauTAL
 echo "</body></html>" >> $fichier_tableau

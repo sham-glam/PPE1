@@ -4,7 +4,7 @@
 # Cela lui permet de récupérer les fichiers dans les bons dossiers.
 # 
 # Se lancera donc comme ça :
-# $ ./programmes/correction_itrameur.sh
+# $ ./programmes/correction1_itrameur.sh
 
 if [[ $# -ne 2 ]]
 then
@@ -13,9 +13,9 @@ then
 fi
 
 folder=$1 # dumps-text OU contextes
-basename=$2 # en, fr, ru, pl, it, jp, etc...
+basename=$2 # en, fr, chin 
 
-echo "<lang=\"$basename\">" > "./itrameur/$folder-$basename.txt"
+echo "<lang=\"$basename\">" > "../itrameur/$folder-$basename.txt"
 
 for filepath in $(ls $folder/$basename-*.txt)
 do

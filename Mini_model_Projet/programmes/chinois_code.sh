@@ -29,7 +29,7 @@ then
 	exit
 fi
 
-mot="快餐"
+mot="快餐|速食|便餐"
 # street food # à modifier selon langue
 
 echo $fichier_urls;

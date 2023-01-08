@@ -5,15 +5,15 @@
    Let's play
 
    PLAYMAKER
-     * It's Wednesday
+     * It's Monday
        What day is it?
+          + It's Monday
+          + It's Tuesday
           + It's Wednesday
           + It's Thursday
           + It's Friday
           + It's Saturday
           + It's Sunday
-          + It's Monday
-          + It's Tuesday
      * Now
        What time is it?
           + Now
@@ -267,31 +267,31 @@ Pasta
 
 POPULAR EVENTS
 
-     * Maho Magic Bar
      * 'Air' at GOMA
-     * Triangle of Sadness
-     * CRYSTAL — Cirque du Soleil
-     * Field Day 2023
+     * Maho Magic Bar
+     * Japan Travel Fair
+     * Sydney Festival 2023
+     * Summer at Bondi Pavilion
 
 POPULAR STORIES
 
-     * Automated Brewers, Parilla Grills and Charcoal Smokers: the Go-To
-       Gift Guide for Your Favourite Hands-On Foodie
-     * A Guide to the Best Swimming Spots in and Around Sydney
-     * Ready to Elevate Your Summer? Here Are Seven Ways We're Planning to
-       Live Large This Season
-     * A Blockbuster Fairy Tales Exhibition Is Taking Over Brisbane's
-       Gallery of Modern Art in 2023
+     * Sydney Town Hall Has Temporarily Turned Into an Indoor Beach
+       Complete with 26 Tonnes of Sand
+     * Eleven Fantastically Different Events Calling You to Queensland
+       This Year
+     * CP Picks: How Our Editors Are Enjoying Canned Cocktails This Summer
      * A Huge Frida Kahlo, Diego Rivera and Mexican Modernism Exhibition
        Is Coming to Australia in 2023
+     * Lego's Stunning New 'Great Wave' Set Will Let You Recreate
+       Hokusai's Masterpiece at Home
 
 POPULAR PLACES
 
-     * Backyard at The Alex
-     * Baba's Place
+     * The Charles Grand Brasserie & Bar
+     * Pinky Ji
+     * Tiva
      * Toko Restaurant
-     * Good Ways Deli Alexandria
-     * Avi's Kantini
+     * Backyard at The Alex
 
 EXPLORE SYDNEY
 

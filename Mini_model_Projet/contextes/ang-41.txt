@@ -1,15 +1,18 @@
+   History of Fast Food (BUTTON)
+     * Fast Food History
+     * Fast Food Facts
+     * Fast Food Types
+
+    1. Home
+    2. Fast Food History
+    3. Street Food History and Facts
+
 History of Street Food and Interesting Facts
 
    Street Food is a type of prepared food sold on the streets and other
    public places. It is usually cheaper food than one sold in restaurants
    and it can be sold from a kiosk, portable food booth, food cart or food
 --
-   universal, type of food like hot dogs, burgers and such. Food and
-   Agriculture Organization of the United Nations performed a study in
-   2007 that showed that some 2.5 billion people in the world eat street
-   food every day.
-   [INS: :INS]
-
    People sold ready-to-eat food since the earliest civilizations. Ancient
    Greeks had street vendors that sold small fried fish while the Ancient
    Romans (or at least their lower classes) depended on street food for
@@ -36,7 +39,7 @@ History of Street Food and Interesting Facts
      * Multiple studies showed that contamination of food that street food
        vendors sell is at the same level as the contamination at
        restaurants.
-     * Take-away pizza sold by street vendors in Italy is different than a
+--
        pizza from pizzeria. It has a a thick base and is baked and sold in
        square or rectangular portions.
      * Polish vendors sell, among other street food, zapiekankas which are
@@ -54,3 +57,11 @@ History of Street Food and Interesting Facts
        popular street food.
 
    [INS: :INS]
+   [INS: :INS]
+   Picture Of Hong Kong Street Food
+   Picture Of Hong Kong Street Food
+   Picture Of Chinese Street Food
+   Picture Of Indian Street Food
+   Picture Of Indian Street Junk Food
+
+   © 2023 - History of Fast Food | Privacy Policy | Contact

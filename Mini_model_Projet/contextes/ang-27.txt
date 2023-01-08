@@ -1,10 +1,16 @@
+Blog
+
+Short History of Street Food. Love for Indian Street Food at Indico
+
+   5 May 2017
+
+   Street food consists of readymade food items that are sold by a vendor
    in markets or open places. They may include the solid food items,
    various drinks or juices. Street food has become a very important
    business nowadays. And people have always admired and loved street food
    and street food markets.
    You walk across the street and you will see many vendors selling the
    food items. These are the delicious, traditional food items. They have
-   a unique aroma and flavor attached with them that makes every passer-by
 --
    these food items. According to a report of FAO (Food and Agriculture
    organization) there are around 2.5 million people who tend to eat
@@ -19,18 +25,7 @@
    of ancient Rome street food was their main source of food. The
    ‘chickpea soup’ was a commonly sold item. China has a similar history.
    During colonial time of America, the vendors used to sell ‘roasted
-   oysters and corn’. Oysters remained as a popular street dish due to its
-   cheap price and delicious taste till 1910. After that there came a
-   little set back to it. New York had a bit different history. The
-   government put many restrictions on vendors and then actually
-   completely banned this business by 1707. In Africa, many women and
-   children get their earnings from selling street meals. Another example,
-   during 19th century in Transylvania, vendors used to sell ‘ginger
-   bread’ and ‘corn mixed with cream’ on the streets. ‘French fries’
-   emerged in Paris as the most selling street meal by 1840. In Thailand,
-   initially this business couldn’t gain much popularity. In Japan, street
-   food business started 100 years back where it was provided to students
-   and laborers.
+--
 
 
 Advantages of street food
@@ -38,8 +33,6 @@ Advantages of street food
    There are certain advantages of street food that has contributed to its
    popularity worldwide, such as:
    • It is easily available on the streets. Hence you can easily buy them
-   without making an extra effort to go to a far place for food
-   • The taste is delicious and unique
 --
 
 
@@ -48,7 +41,9 @@ Difference between street food and fast food
    A strong association between street food and fast food is often
    created. But this is entirely wrong. They can only be linked in the
    sense that both are readily available. You don’t have to wait extra
---
+   time for it to get prepared. But there is a huge difference in their
+   preparation methods and qualities.
+   • Fast food is a processed food. Its preparation includes using lots of
    preservatives and chemical compounds. Fast food companies spend lots of
    money for preserving the texture and flavor of their food items with
    the use of these chemical additives. Whereas the street food is fresh
