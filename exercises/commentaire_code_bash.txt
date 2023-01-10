@@ -1,0 +1,33 @@
+# commentaires BASH script projet
+
+#===============================================================================
+# VOUS DEVEZ MODIFIER CE BLOC DE COMMENTAIRES.
+# Ici, on décrit le comportement du programme.
+# Indiquez, entre autres, comment on lance le programme et quels sont
+# les paramètres.
+# La forme est indicative, sentez-vous libres d'en changer !
+# Notamment pour quelque chose de plus léger, il n'y a pas de norme en bash.
+###################################################
+
+
+# curl -ILs = -I header -L suivre redirection, -s silencieux  
+# grep -e =egrep ^http (line beg with http) , obtained header by curl 
+# -Eo grep etendu, o = only d | cut (sérapré par) -d(délimiteur)" "-f2 (f= field/columns, -f2 = looking for 2nd column, délimité par = | tail -n 1 (last line of file) 
+# the commands above can be stored in a variable 
+#pour fichier csv délimiteur , , donc 
+### for context :m
+#regexp (...)(mitif à chercher ?)(...)
+#regexp (\w+\W)(robots?)(\w\w+)
+# cat nomFicher.txt | sed 's/\(.../)robots\?(...)/____/'
+#===============================================================================
+
+...
+
+
+	# la façon attendue, sans l'option -w de cURL
+	code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)
+	charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
+
+	# autre façon, avec l'option -w de cURL
+	# code=$(curl -Ls -o /dev/null -w "%{http_code}" $URL)
+	# charset=$(curl -ILs -o /dev/null -w "%{content_type}" $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
