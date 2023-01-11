@@ -1,0 +1,29 @@
+Comments 
+
+History 
+influence US America 
+
+# missing aspiration et contextes
+# syntax for concordances etc> 
+<td><a href=\"./dumps-text/$basename-$lineno.txt\">$basename-$lineno</a></td>
+
+# inspiration projet taalcool
+http://www.tal.univ-paris3.fr/plurital/travaux-2021-2022/ppe-s1/19/talcoolaad.wixsite.com/talcool.html
+
+script: 
+http://www.tal.univ-paris3.fr/plurital/travaux-2021-2022/ppe-s1/19/talcoolaad.wixsite.com/talcool/script-bash.html
+
+- see projet impot 
+
+--text file
+--stopwords file
+
+
+see the code in the link below: 
+http://www.tal.univ-paris3.fr/plurital/travaux-2021-2022/ppe-s1/09/
+
+wordcloud_cli --text ./dump-txt
+
+note stopwords in a file stopwords-en.txt
+
+
